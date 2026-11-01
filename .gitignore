@@ -1,0 +1,116 @@
+# Local configuration and credentials; examples remain shareable.
+.env
+.env.*
+!.env.example
+!.env.*.example
+.aws
+.codex/
+.agents/
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+credentials
+credentials.json
+*service-account*.json
+id_rsa*
+id_ed25519*
+.npmrc
+.netrc
+.pypirc
+device-backup.json
+
+# Dependencies, caches and build outputs (all projects and staging copies).
+node_modules/
+.pnpm-store/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+bin/
+build/
+dist/
+coverage/
+.coverage
+.coverage.*
+*.test
+*.out
+
+# Generated desktop bridge and downloaded research tools/vendor artifacts.
+/resa/desktop/.generated/
+/resa/tools/
+/resa/extracted/
+/resa/Thor_II_X16V2_Software_V1.0_23041800.exe
+/resa/evidence/ghidra-home/
+/resa/evidence/ghidra-project/
+/api/resa-*/desktop/.generated/
+/api/resa-*/tools/
+/api/resa-*/extracted/
+/api/resa-*/Thor_II_X16V2_Software_V1.0_23041800.exe
+/api/resa-*/evidence/ghidra-home/
+/api/resa-*/evidence/ghidra-project/
+
+# Local screenshots and recordings (source UI assets remain included).
+screenshots/
+captures/
+recordings/
+/api/assets/
+[Ss]creenshot*.png
+[Ss]creenshot*.jpg
+[Ss]creenshot*.jpeg
+[Ss]creenshot*.webp
+[Ss]creenshot*.gif
+[Ss]creenshot*.bmp
+*.mp4
+*.webm
+*.mov
+*.mkv
+/api/mouse
+*.pcap
+*.pcapng
+*.pcap.json
+*.pcapng.json
+
+# Editor and operating-system clutter.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Publish reviewed mappings and filtered trace reports; keep raw data local.
+/api/analysis/*
+!/api/analysis/INDEX.md
+!/api/analysis/*-mapping.json
+!/api/analysis/trace-*.md
+!/api/analysis/trace-*.json
+
+# Private research history and duplicate staging trees stay local.
+/api/resa-*/
+/api/resa-*.patch
+/api/resa-*.json
+/api/RESA_*.md
+/api/SESSION_HANDOFF.md
+/api/scripts/analyze-advanced-capture.py
+/api/scripts/verify-advanced-capture.py
+/api/scripts/install-resa-*.py
+/api/scripts/trace-rapid-fire-input.py
+/resa/docs/DEVELOPMENT_HISTORY.md
+
+# Publish only compact protocol summaries and the descriptor test fixture.
+# Raw dumps, decompilations, session exports and generated previews stay local.
+/resa/evidence/*
+!/resa/evidence/README.md
+!/resa/evidence/*-support.json
+!/resa/evidence/linux-discovery.json
+
+# Underside reference photo includes the original printed device label.
+/resa/assets/41b32af5-4786-4d08-9a2e-6177c0bf9db9.jpeg
