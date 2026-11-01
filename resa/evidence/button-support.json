@@ -1,0 +1,142 @@
+{
+  "device": "Fantech Thor II X16v2 30fa:1440",
+  "descriptor_sha256": "0ec3eb2dc293bd8edcb490f5cee9ab272ebec8f4e0edc5f9f365f1bab53b2018",
+  "button_slots": {
+    "1": "0044",
+    "2": "0046",
+    "3": "0045",
+    "4": "0048",
+    "5": "0047",
+    "6": "0049",
+    "7": "004a"
+  },
+  "action_mask_hex": "1f",
+  "preserved_upper_mask_hex": "e0",
+  "actions": [
+    {
+      "ui_action": "Left click",
+      "action_code_hex": "01",
+      "byte_with_recorded_20_flags_hex": "21",
+      "recordings": [
+        "08"
+      ]
+    },
+    {
+      "ui_action": "Right click",
+      "action_code_hex": "03",
+      "byte_with_recorded_20_flags_hex": "23",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "Middle click",
+      "action_code_hex": "02",
+      "byte_with_recorded_20_flags_hex": "22",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "Back",
+      "action_code_hex": "04",
+      "byte_with_recorded_20_flags_hex": "24",
+      "recordings": [
+        "08",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "ui_action": "Forward",
+      "action_code_hex": "05",
+      "byte_with_recorded_20_flags_hex": "25",
+      "recordings": [
+        "08",
+        "11"
+      ]
+    },
+    {
+      "ui_action": "Rapid Fire",
+      "action_code_hex": "09",
+      "byte_with_recorded_20_flags_hex": "29",
+      "recordings": [
+        "11"
+      ]
+    },
+    {
+      "ui_action": "DPI Loop",
+      "action_code_hex": "06",
+      "byte_with_recorded_20_flags_hex": "26",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "DPI up",
+      "action_code_hex": "0b",
+      "byte_with_recorded_20_flags_hex": "2b",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "DPI down",
+      "action_code_hex": "0c",
+      "byte_with_recorded_20_flags_hex": "2c",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "Color cycle",
+      "action_code_hex": "15",
+      "byte_with_recorded_20_flags_hex": "35",
+      "recordings": [
+        "12"
+      ]
+    }
+  ],
+  "capture_context": "Windows vendor application, Game I; capture and reports retained in sibling api/captures and api/analysis directories.",
+  "sources": [
+    {
+      "filename": "trace-08-button4-forward-middle-backward-fordward-1792208411-ZG4EIUHF.pcapng",
+      "sha256": "d22ea70f5ad0b9a70bff99ead5448062c2e570df2c876e6f67ce93acca482fd8",
+      "analysis_report": "trace-08-button4-forward-middle-backward-fordward-1792208411-ZG4EIUHF.md"
+    },
+    {
+      "filename": "trace-11-button5-1792240266-NXMGP7X5.pcapng",
+      "sha256": "9795847f7d6f7f608aa967a2c20d9012809a89381758c28ed6d89f55ce0b87e8",
+      "analysis_report": "trace-11-button5-1792240266-NXMGP7X5.md"
+    },
+    {
+      "filename": "trace-12-button5-remaining-action-1792250416-TEKTHPZD.pcapng",
+      "sha256": "d001e890c8625b0a87272347be5970917744ec30a0ba30f86520c8cef53faffa",
+      "analysis_report": "trace-12-button5-remaining-action-1792250416-TEKTHPZD.md"
+    },
+    {
+      "filename": "trace-13-button-slot-mapping-1792251199-53GC3I5W.pcapng",
+      "sha256": "1c359029cfdc438602419139beac11ff3fd7d5ebf0b48f6f9bf4c3e75c335f9a",
+      "analysis_report": "trace-13-button-slot-mapping-1792251199-53GC3I5W.md"
+    },
+    {
+      "filename": "trace-13-button1-fordward-left-1792251871-HG3OUP7G.pcapng",
+      "sha256": "22bf6c077c1c98ef5067c16b0f335b8de51c3edb449327badf4648d0f096f6b7",
+      "analysis_report": "trace-13-button1-fordward-left-1792251871-HG3OUP7G.md"
+    }
+  ],
+  "implementation": "All seven numbered dropdowns and the fixed native allowlist use the recovered slots and common action dictionary. At least one Left click is required. Older backup fields are restored without changing unrecorded fields.",
+  "validation": {
+    "javascript_tests": 38,
+    "python_worker_tests": 30,
+    "go_tests_build_vet": "passed",
+    "renderer_dom": "passed with mocked bridge",
+    "physical_commands_sent_by_agent": false
+  },
+  "limitations": [
+    "Correlations use operator actions, retained static serializer and recorded traffic; candidate data reside in VirtualBox setup slots and missing bytes are not reconstructed.",
+    "Each slot is independently correlated, but every action on every button was not separately captured or physically measured.",
+    "These are logical protocol coordinates, not verified physical memory addresses.",
+    "Keyboard/modifier records, onboard macros and persistence remain unverified and are not implemented here."
+  ]
+}

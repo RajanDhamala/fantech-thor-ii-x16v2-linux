@@ -1,0 +1,326 @@
+{
+  "device": "30fa:1440",
+  "capture_root": "../api/captures/vm-052785d3b59d",
+  "polling": {
+    "device": {
+      "vendor_id": "30fa",
+      "product_id": "1440"
+    },
+    "transport": {
+      "interface": 1,
+      "report_id": 7,
+      "report_length": 8
+    },
+    "candidate_field": {
+      "command_hex": "18",
+      "block_coordinate_hex": "0018",
+      "offset_hex": "06",
+      "value_byte_index": 6,
+      "physical_address_verified": false
+    },
+    "rate_codes": {
+      "1000": {
+        "code_hex": "00",
+        "evidence": "1000 Hz Apply captures 02/03, restored by 05; 06 sweep final restoration"
+      },
+      "500": {
+        "code_hex": "01",
+        "evidence": "500 Hz capture 04 and starting configuration of 05"
+      },
+      "250": {
+        "code_hex": "03",
+        "evidence": "06 sweep second burst, candidate frame 16178"
+      },
+      "125": {
+        "code_hex": "07",
+        "evidence": "06 sweep third burst, candidate frame 28572"
+      }
+    },
+    "validation": "controlled UI-to-configuration capture correlation for all four visible choices, including 1000/500 forward-reverse and sweep restoration",
+    "physical_reporting_frequency_measured": false,
+    "safe_linux_replay_established": false,
+    "captures": [
+      {
+        "file": "trace-04-polling-1000-to-500-1792206857-QPDF4WZS.pcapng",
+        "sha256": "b6c2dd73db717e5b775ee03763d44cbdbf3b1ab0d72b412df53e407ddf9506ce"
+      },
+      {
+        "file": "trace-05-polling-500-to-1000-1792207040-6LHSSJUX.pcapng",
+        "sha256": "b1b9231f3b90f7320844a920dce61d5b3d6925597ffaac9a532d3d0619666af4"
+      },
+      {
+        "file": "trace-06-polling-sweep-250-125-1000-1792207271-XOHBMEBE.pcapng",
+        "sha256": "8682aceb4e331b90c325e0c8b605a22602163d1dba7fefa2949044bc203b1cb7"
+      }
+    ],
+    "analysis_ignore_first_seconds": 5,
+    "startup_handled_separately": true,
+    "formula_inference": "code=(1000/rate_hz)-1 for these four recorded choices only",
+    "capture_collection_status": "complete for 125, 250, 500, 1000 Hz UI choices"
+  },
+  "dpi": {
+    "device": {
+      "vid": "30fa",
+      "pid": "1440"
+    },
+    "report_id": 7,
+    "interface": 1,
+    "stage_pair_low_nibble_fields_hex": [
+      "0015",
+      "0016",
+      "0017"
+    ],
+    "packing": "Even zero-based stages use the high nibble; odd stages use low nibble. Logical field 0013 bit i supplies code bit 4 for stage i.",
+    "stage_enable_mask_field_hex": "0019",
+    "selected_stage_field_hex": "0018",
+    "selected_stage_mask_hex": "07",
+    "physical_addresses_verified": false,
+    "dpi_codes": [
+      {
+        "dpi": 200,
+        "code_hex": "01",
+        "evidence": "captured_stage_one_and_static"
+      },
+      {
+        "dpi": 400,
+        "code_hex": "02",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 600,
+        "code_hex": "03",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 800,
+        "code_hex": "04",
+        "evidence": "captured_stage_one_and_static"
+      },
+      {
+        "dpi": 1000,
+        "code_hex": "05",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 1200,
+        "code_hex": "06",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 1400,
+        "code_hex": "07",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 1600,
+        "code_hex": "08",
+        "evidence": "captured_stage_one_and_static"
+      },
+      {
+        "dpi": 1800,
+        "code_hex": "09",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 2000,
+        "code_hex": "0a",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 2400,
+        "code_hex": "0c",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 3200,
+        "code_hex": "0d",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 4000,
+        "code_hex": "0e",
+        "evidence": "captured_stage_one_and_static"
+      },
+      {
+        "dpi": 4800,
+        "code_hex": "0f",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 5600,
+        "code_hex": "10",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 6400,
+        "code_hex": "11",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 7200,
+        "code_hex": "12",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 8000,
+        "code_hex": "13",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 8800,
+        "code_hex": "14",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 9600,
+        "code_hex": "15",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 10400,
+        "code_hex": "16",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 11200,
+        "code_hex": "17",
+        "evidence": "static_source_only"
+      },
+      {
+        "dpi": 12800,
+        "code_hex": "18",
+        "evidence": "static_source_only"
+      }
+    ],
+    "source": "historical FantechX9ThorDriver/x16_dpi.py (not distributed)",
+    "source_sha256": "54d24896b92506a4c2b3da20d75d4d765ddd9a7cc4be15bfc2df7d57d50860e1",
+    "runtime_capture": {
+      "file": "trace-07-dpi-stage-1-sweep-1792207729-YDYKEDTC.pcapng",
+      "sha256": "bd1339ccbd701e138d50839f23a8dd6eaf7c1daf648cb30cec18414b714a66b6"
+    },
+    "current_configuration": {
+      "burst": 4,
+      "first": 51.537941,
+      "last": 54.804172,
+      "fields": {
+        "0013": "30",
+        "0015": "e4",
+        "0016": "6f",
+        "0017": "28",
+        "0018": "18",
+        "0019": "3d",
+        "001e": "00"
+      },
+      "stage_codes": [
+        "0e",
+        "04",
+        "06",
+        "0f",
+        "12",
+        "18"
+      ],
+      "decoded_dpi_values": [
+        4000,
+        800,
+        1200,
+        4800,
+        7200,
+        12800
+      ],
+      "enabled_mask_hex": "3d",
+      "enabled_stages": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "selected_stage_1based": 1
+    },
+    "physical_optical_dpi_measured": false,
+    "safe_linux_write_verified": false
+  },
+  "button4": {
+    "device": "Fantech X16v2 30fa:1440",
+    "capture": "captures/vm-052785d3b59d/trace-08-button4-forward-middle-backward-fordward-1792208411-ZG4EIUHF.pcapng",
+    "sha256": "d22ea70f5ad0b9a70bff99ead5448062c2e570df2c876e6f67ce93acca482fd8",
+    "profile_context": "Game I highlighted in preceding UI screenshot",
+    "observed_gui_button": 4,
+    "gui_button": 4,
+    "logical_coordinate_hex": "0048",
+    "block_coordinate_hex": "0048",
+    "offset_hex": "00",
+    "report_template_hex": "07 18 03 00 48 00 VALUE 07",
+    "value_byte_index_zero_based": 6,
+    "observed_values_hex": [
+      "25",
+      "21",
+      "24",
+      "25"
+    ],
+    "correlated_assignments": {
+      "Left Click": "21",
+      "Backward": "24",
+      "Forward": "25"
+    },
+    "label_basis": "Left Click explicitly corrected by operator; Backward and Forward follow guided actions and preceding UI screenshot. Byte differences alone do not identify UI labels.",
+    "physical_address_verified": false,
+    "button_slot_order": "GUI numbering must not be inferred from sequential configuration offsets.",
+    "evidence": [
+      {
+        "phase": "Startup: Forward",
+        "frame": 4468,
+        "relative_time": 6.56563,
+        "report_hex": "07 18 03 00 48 00 25 07"
+      },
+      {
+        "phase": "First Apply: Left Click (operator correction)",
+        "frame": 21410,
+        "relative_time": 18.674167,
+        "report_hex": "07 18 03 00 48 00 21 07"
+      },
+      {
+        "phase": "Second Apply: Backward (guided sequence)",
+        "frame": 36446,
+        "relative_time": 26.346541,
+        "report_hex": "07 18 03 00 48 00 24 07"
+      },
+      {
+        "phase": "Restore Apply: Forward (guided sequence)",
+        "frame": 50586,
+        "relative_time": 33.393104,
+        "report_hex": "07 18 03 00 48 00 25 07"
+      }
+    ],
+    "restoration_matches_07_final_apply_candidates": 867,
+    "middle_click_runtime_tested": false,
+    "all_buttons_runtime_tested": false,
+    "safe_linux_write_verified": false,
+    "limitations": [
+      "VirtualBox control-phase setup slots contain candidate data-stage bytes; many records are shortened. No missing payload bytes were reconstructed.",
+      "UI labels rely on operator actions; button 4 association is not an independently measured physical-button event.",
+      "Only the observed slot and assignments were changed; this does not validate every button, action, or profile.",
+      "Physical behavior, memory addresses, and safe standalone Linux write transactions remain unverified. No device commands were replayed."
+    ]
+  },
+  "brightness": {
+    "source": "captures/vm-052785d3b59d/trace-10-led-brightness-on-off-1792209568-IRWKJBIU.pcapng",
+    "sha256": "b090a0caf0f0c57dbaf5cc2ca03105e83245f2fdabeaab7a0d08d2c2344efaef",
+    "report": "analysis/trace-10-led-brightness-on-off-1792209568-IRWKJBIU.md",
+    "apply_raw_codes": [
+      0,
+      6,
+      4
+    ],
+    "only_brightness_changes_between_apply_sequences": true,
+    "maximum_lowest_middle_labels_from_guided_order": true,
+    "inverse_ui_code_relationship": "suggested by guided maximum=0, lowest reachable=6, middle=4; not measured luminance",
+    "absolute_minimum_reached": false,
+    "raw_code_7_observed": false,
+    "physical_off_confirmed": false,
+    "physical_lights_at_lowest": "pending operator response",
+    "color_selection_confirmed": false
+  },
+  "live_rgb": "Existing X16v2 source path; off user-reported working. New Resa color, effect and device behavior require physical validation."
+}
