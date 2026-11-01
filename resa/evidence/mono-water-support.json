@@ -1,0 +1,109 @@
+{
+  "effect": "Mono Water Effect",
+  "captures": [
+    {
+      "source": "captures/vm-052785d3b59d/trace-27-mono-water-ampde-speed-direction-1792401710-NYCAUUKD.pcapng",
+      "sha256": "8e3d4aba9cd2d1d4463b427d005665126b9cc35f321af7d81f963e548e1deadb",
+      "analysis_report": "analysis/trace-27-mono-water-ampde-speed-direction-1792401710-NYCAUUKD.md"
+    },
+    {
+      "source": "captures/vm-052785d3b59d/trace-28-mono-water-brightness-1792428713-UJQ7FOCG.pcapng",
+      "sha256": "306eb8403a8d3b1013d585569aea93593eaa8ef20bba4949c9269fdcc7b7f8b1",
+      "analysis_report": "analysis/trace-28-mono-water-brightness-1792428713-UJQ7FOCG.md"
+    },
+    {
+      "source": "captures/vm-052785d3b59d/trace-29-mono-water-all-7-slots-color-toggle-1792429242-GHGGFUJU.pcapng",
+      "sha256": "e3c0fdb323eeaa152f07e8c6c1ef8d6f28013a535b7dafeec045779a32351bcd",
+      "analysis_report": "analysis/trace-29-mono-water-all-7-slots-color-toggle-1792429242-GHGGFUJU.md"
+    },
+    {
+      "source": "captures/vm-052785d3b59d/trace-29-mono-water-all-5-7-ots-1792429467-ML3WCPYF.pcapng",
+      "sha256": "ff2cca45ad37592650124f5edd122679b81057b0129f8c0364b0c56e464ea219",
+      "analysis_report": "analysis/trace-29-mono-water-all-5-7-ots-1792429467-ML3WCPYF.md"
+    }
+  ],
+  "mode": 4,
+  "mode_and_speed_bytes_hex": {
+    "maximum": "c5",
+    "middle": "c2",
+    "minimum": "c0"
+  },
+  "mode_extension_byte_hex": "1f",
+  "brightness_codes": {
+    "maximum": 0,
+    "middle": 4,
+    "minimum": 6
+  },
+  "directions": [
+    "Clockwise",
+    "Anti Clockwise",
+    "Two way"
+  ],
+  "direction_bytes_hex": [
+    "0b",
+    "1b",
+    "2b"
+  ],
+  "symmetry_off_on_off_bytes_hex": [
+    "2b",
+    "6b",
+    "2b"
+  ],
+  "palette_inverted_nibbles": [
+    [
+      15,
+      15,
+      0
+    ],
+    [
+      0,
+      15,
+      7
+    ],
+    [
+      7,
+      0,
+      0
+    ],
+    [
+      11,
+      7,
+      7
+    ],
+    [
+      11,
+      15,
+      7
+    ],
+    [
+      15,
+      0,
+      15
+    ],
+    [
+      0,
+      15,
+      15
+    ]
+  ],
+  "participation_off_bytes_hex": [
+    "fe",
+    "fd",
+    "fb",
+    "f7",
+    "ef",
+    "df",
+    "bf"
+  ],
+  "slot7_packing": {
+    "R": "003e high nibble",
+    "G": "003e low nibble",
+    "B": "003f low nibble",
+    "brightness": "003f bits6..4"
+  },
+  "limits": [
+    "Palette samples combine completed per-slot Applies from both recordings named29; exact picker RGB values are unknown. Stored four-bit channels reuse the captured shared serializer.",
+    "The first recording29 ends during slot5 off. Only completed slots1-4 are used from it; follow-up supplies completed slots5-7.",
+    "Physical effect, timing, arbitrary RGB rounding and persistence remain unmeasured. No physical mouse command is needed to install or test this change."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "recording": 26,
+  "source": "captures/vm-052785d3b59d/trace-26-advanced-sensitivity-scroll-doubleclick-1792304302-XCM3YW6M.pcapng",
+  "sha256": "0cd5a14becb04059cac453a94132fabb0ef326b94c186aa6df5f0d5863ce6843",
+  "device_timing": {
+    "low_coordinate_hex": "001a",
+    "high_coordinate_hex": "001b",
+    "formula": "value = byte001a + 256 * byte001b",
+    "captured_values": [
+      300,
+      150,
+      8
+    ],
+    "units": "milliseconds from operator UI values",
+    "static_name": "FIRE_TIME, DAT_0066304c",
+    "intermediate_values": "Direct integer serialization supports bounded8..300 slider steps; only anchors300/150/8 and startup50 were captured, and physical intermediate timing is unmeasured."
+  },
+  "pointer": {
+    "USB_delta_observed": false,
+    "windows_UI_levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "windows_pointer_speed_table": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "source": "retained00419e20.c lines2320-2361; SystemParametersInfoW 0x71",
+    "operator_restore": {
+      "from": 1,
+      "to": 10,
+      "extra_apply": "Ten Applies are consistent with the planned nine plus restore. Identical payloads prevent uniquely attributing each earlier burst."
+    }
+  },
+  "wheel": {
+    "USB_delta_observed": false,
+    "host_setting": "Windows scroll lines via SystemParametersInfoW 0x69",
+    "user_UI_range": [
+      1,
+      11
+    ]
+  },
+  "linux_implementation": {
+    "pointer": "Cinnamon/GNOME gsettings speed; Resa level1..11 maps linearly to -1..1, distinct from Windows table.",
+    "wheel": "Optional /usr/bin/imwheel -d -b45 with owned ~/.imwheelrc. Only explicit Apply starts it, and Resa stops its own child on quit.",
+    "timing": "Device word001a/001b; integer8..300ms. Captured anchors8/50/150/300."
+  },
+  "references": [
+    "https://learn.microsoft.com/en-us/windows/win32/inputdev/using-mouse-input",
+    "https://imwheel.sourceforge.net/imwheel.1.html",
+    "https://wayland.freedesktop.org/libinput/doc/latest/faqs.html"
+  ],
+  "limits": [
+    "No claim that absence of a candidate difference proves every possible report or host action; VirtualBox records are shortened.",
+    "Double Click Speed is the vendor label; retained nameFIRE_TIME does not establish a Linux desktop double-click threshold. No SetDoubleClickTime call was found in the focused retained functions.",
+    "Linux pointer/wheel controls require host support; Windows level tables are not Linux gain calibration.",
+    "No hardware writes, Windows execution or desktop setting changes were performed during this analysis."
+  ]
+}

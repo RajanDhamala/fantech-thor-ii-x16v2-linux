@@ -1,0 +1,4 @@
+# Match the USB product first; udev parent matches within one rule must refer
+# to the same ancestor. Match the configuration interface in a separate rule.
+SUBSYSTEM=="hidraw", KERNEL=="hidraw*", ATTRS{idVendor}=="30fa", ATTRS{idProduct}=="1440", ENV{.RESA_MOUSE}="1"
+SUBSYSTEM=="hidraw", KERNEL=="hidraw*", ENV{.RESA_MOUSE}=="1", ATTRS{bInterfaceNumber}=="01", TAG+="uaccess"
