@@ -1,0 +1,211 @@
+{{define "page"}}<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="htmx-config" content='{"timeout":20000,"includeIndicatorStyles":false}'>
+  <title>ScreenDrop · VM screenshots</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23d64b2c'/%3E%3Cpath d='M12 16v-4h5m6 0h5v4m0 8v4h-5m-6 0h-5v-4' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/htmx.min.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</head>
+<body class="min-h-dvh bg-paper font-sans text-ink antialiased selection:bg-orange-100">
+  {{template "icons"}}
+  <header class="border-b border-line bg-white/70">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-5 sm:px-8 lg:px-12">
+      <a href="/" class="flex items-center gap-3" aria-label="ScreenDrop home">
+        <span class="flex size-9 items-center justify-center rounded-xl bg-accent text-white"><svg class="size-5" aria-hidden="true"><use href="#icon-capture"/></svg></span>
+        <span class="text-xl font-semibold tracking-tight">ScreenDrop<span class="text-accent">.</span></span>
+      </a>
+      <div class="flex items-center gap-3">{{if .Network}}<a href="/network" class="inline-flex min-h-11 items-center rounded-lg border border-line bg-white px-3 text-xs font-medium hover:bg-paper">Network</a>{{end}}<span class="hidden items-center gap-2 rounded-full border border-line bg-white px-3 py-1.5 text-xs font-medium text-muted sm:inline-flex"><span class="size-1.5 rounded-full bg-emerald-600"></span>Local workspace</span></div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-5 pb-12 pt-9 sm:px-8 sm:pt-14 lg:px-12">
+    <div class="mb-8 sm:mb-10">
+      <p class="mb-3 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-accent"><span class="h-px w-6 bg-accent"></span>Your VM, a little closer</p>
+      <h1 class="text-3xl font-semibold tracking-[-0.04em] sm:text-5xl">A snapshot. From anywhere.</h1>
+      <p class="mt-3 max-w-xl text-sm leading-6 text-muted sm:text-base">Capture your virtual machine’s screen and bring it straight to the device in your hand.</p>
+    </div>
+
+    <div class="grid items-start gap-6 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-8">
+      <aside class="contents lg:block lg:space-y-5" aria-label="Capture controls">
+        <section class="overflow-hidden rounded-2xl border border-line bg-white shadow-sm">
+          <div class="border-b border-line px-5 py-4"><h2 class="text-sm font-semibold">Capture a screen</h2></div>
+          <div class="p-5">
+            <p class="mb-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">Source machine</p>
+            <div class="flex items-center gap-3 rounded-xl border border-line bg-paper/70 p-3.5">
+              <span class="flex size-10 shrink-0 items-center justify-center rounded-lg border border-line bg-white"><svg class="size-5 text-muted" aria-hidden="true"><use href="#icon-monitor"/></svg></span>
+              <div class="min-w-0"><p class="break-words text-sm font-semibold">{{.VM}}</p><p class="mt-0.5 text-xs text-muted">VirtualBox · primary display</p></div>
+            </div>
+            <p class="mb-5 mt-3 flex items-center gap-1.5 text-xs text-muted"><svg class="size-3.5" aria-hidden="true"><use href="#icon-info"/></svg>The VM must be running to capture.</p>
+            <form action="/capture" method="post" hx-post="/capture" hx-target="#capture-preview" hx-swap="innerHTML" hx-disabled-elt="find button" hx-indicator="this" hx-sync="this:drop" id="capture-form">
+              <button type="submit" class="flex min-h-12 w-full items-center justify-center gap-2.5 rounded-xl bg-accent px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#bc3d21] disabled:opacity-70">
+                <span class="capture-idle inline-flex items-center gap-2.5"><svg class="size-4" aria-hidden="true"><use href="#icon-capture"/></svg>Take screenshot</span>
+                <span class="capture-loading items-center gap-2.5" role="status"><svg class="size-4 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" opacity=".3"/><path d="M12 3a9 9 0 0 1 9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Capturing screen…</span>
+              </button>
+            </form>
+            <p class="mt-3 text-center text-[11px] text-muted">One click. One fresh PNG.</p>
+            <div id="capture-error" role="alert" class="mt-3">{{if .Error}}{{template "capture-error" .}}{{end}}</div>
+            <noscript><p class="mt-3 text-xs text-muted">Capturing still works without JavaScript. The page will reload.</p></noscript>
+          </div>
+        </section>
+
+        {{if .Controls}}
+        <section class="order-3 overflow-hidden rounded-2xl border border-line bg-white shadow-sm lg:order-none" aria-labelledby="controls-heading">
+          <div class="border-b border-line px-5 py-4"><h2 id="controls-heading" class="flex items-center gap-2 text-sm font-semibold"><svg class="size-4 text-muted" aria-hidden="true"><use href="#icon-keyboard"/></svg>Control the VM</h2></div>
+          <div class="space-y-4 p-5">
+            <div><label for="control-token" class="mb-2 block text-xs font-medium">Control token</label><input id="control-token" type="password" autocomplete="off" spellcheck="false" placeholder="From your server terminal" class="min-h-11 w-full rounded-lg border border-line bg-paper/60 px-3 text-sm"><p class="mt-1.5 text-[10px] leading-4 text-muted">Input goes to {{.VM}}. The token stays in this page.</p></div>
+            <form id="text-input-form" class="space-y-2">
+              <label for="remote-text" class="block text-xs font-medium">Type text · US keyboard layout</label>
+              <input id="remote-text" type="text" maxlength="1000" autocomplete="off" spellcheck="false" placeholder="Text to type in the VM" required class="min-h-11 w-full rounded-lg border border-line bg-paper/60 px-3 text-sm">
+              <button type="submit" data-input-button class="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-ink px-3 text-xs font-medium text-white hover:bg-black disabled:opacity-40"><svg class="size-4" aria-hidden="true"><use href="#icon-keyboard"/></svg>Type in VM</button>
+            </form>
+            <form id="key-input-form" class="flex flex-wrap items-end gap-2">
+              <div class="min-w-0 flex-1"><label for="remote-key" class="mb-2 block text-xs font-medium">Key or shortcut</label><select id="remote-key" class="min-h-11 w-full rounded-lg border border-line bg-paper/60 px-2 text-sm">
+                <option>ENTER</option><option>TAB</option><option>ESC</option><option>BACKSPACE</option><option>DELETE</option><option>SPACE</option><option>UP</option><option>DOWN</option><option>LEFT</option><option>RIGHT</option><option>WIN</option><option>CTRL+A</option><option>CTRL+C</option><option>CTRL+V</option><option>CTRL+S</option><option>CTRL+Z</option><option>ALT+TAB</option><option>WIN+R</option>
+              </select></div>
+              <button type="submit" data-input-button class="min-h-11 rounded-lg border border-line px-3 text-xs font-medium hover:bg-paper disabled:opacity-40">Send key</button>
+            </form>
+            <div class="space-y-3 border-t border-line pt-4">
+              <label class="flex items-center gap-2 text-xs font-medium"><input id="mouse-control" type="checkbox" class="size-4 accent-accent">Click screenshot to control</label>
+              <p class="text-[10px] leading-4 text-muted">Enabling this captures a fresh frame. Tap the main preview to click; the gallery remains view-only.</p>
+              <div><label for="mouse-action" class="mb-2 block text-xs font-medium">On tap</label><select id="mouse-action" class="min-h-11 w-full rounded-lg border border-line bg-paper/60 px-2 text-sm"><option value="left">Left click</option><option value="right">Right click</option><option value="double">Double click</option><option value="move">Move pointer</option></select></div>
+              <div class="flex flex-wrap gap-2"><button type="button" data-mouse-scroll="-3" data-input-button class="min-h-11 flex-1 rounded-lg border border-line px-3 text-xs font-medium hover:bg-paper disabled:opacity-40">Scroll up</button><button type="button" data-mouse-scroll="3" data-input-button class="min-h-11 flex-1 rounded-lg border border-line px-3 text-xs font-medium hover:bg-paper disabled:opacity-40">Scroll down</button></div>
+            </div>
+            <p id="input-status" role="status" class="break-words text-xs leading-5 text-muted">Send text to the focused guest application. A fresh screenshot follows each input.</p>
+          </div>
+        </section>
+        {{end}}
+
+        <section class="order-3 rounded-2xl border border-line bg-[#eeeee6] p-5 lg:order-none">
+          <span class="mb-3 flex size-9 items-center justify-center rounded-xl border border-[#dcded1] bg-white/60"><svg class="size-4" aria-hidden="true"><use href="#icon-phone"/></svg></span>
+          <h2 class="text-sm font-semibold">Pick it up on your phone</h2>
+          <p class="mt-2 text-xs leading-5 text-muted">Connect to the same Wi-Fi and open this computer’s LAN address on port 3030.</p>
+          <div class="mt-3 break-all rounded-lg border border-[#dcded1] bg-white/60 px-3 py-2.5 font-mono text-[11px] text-ink" id="lan-address">http://&lt;computer-ip&gt;:3030</div>
+          <p class="mt-2 text-[10px] leading-4 text-muted">Your terminal shows the LAN link when the server starts.</p>
+        </section>
+      </aside>
+
+      <section class="order-2 min-w-0 overflow-hidden rounded-2xl border border-line bg-white shadow-sm lg:order-none" aria-labelledby="preview-heading">
+        <div class="flex items-center justify-between gap-3 border-b border-line px-5 py-4 sm:px-6">
+          <h2 id="preview-heading" class="flex items-center gap-2.5 text-sm font-semibold"><svg class="size-4 text-muted" aria-hidden="true"><use href="#icon-image"/></svg>Screenshot preview</h2>
+          <span class="rounded-md border border-line px-2 py-0.5 font-mono text-[10px] text-muted">PNG</span>
+        </div>
+        <div id="capture-preview" aria-live="polite" aria-atomic="true">{{template "preview" .}}</div>
+      </section>
+    </div>
+
+    <section class="mt-8 overflow-hidden rounded-2xl border border-line bg-white shadow-sm" aria-labelledby="gallery-heading">
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-4 sm:px-6">
+        <div><h2 id="gallery-heading" class="text-sm font-semibold">Screenshot gallery</h2><p class="mt-1 text-xs text-muted">Your saved captures, newest first. Tap one to browse.</p></div>
+        <button type="button" data-start-slideshow class="inline-flex min-h-11 items-center gap-2 rounded-lg bg-ink px-4 text-xs font-medium text-white hover:bg-black"><svg class="size-4 shrink-0" aria-hidden="true"><use href="#icon-play"/></svg>Play slideshow</button>
+      </div>
+      <div id="gallery">{{template "gallery" .}}</div>
+    </section>
+
+    <footer class="mt-9 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-5 text-[11px] text-muted">
+      <p class="flex items-center gap-1.5"><svg class="size-3.5" aria-hidden="true"><use href="#icon-wifi"/></svg>Made for your local network</p>
+      <p>Available to devices that can reach this server.</p>
+    </footer>
+  </main>
+
+  <dialog id="image-dialog" aria-label="Screenshot slideshow" class="fixed inset-0 m-auto max-h-[95dvh] w-[96vw] max-w-none flex-col gap-3 overflow-auto rounded-xl bg-ink p-3 text-white sm:p-5">
+    <div class="flex items-center justify-between gap-3"><p class="text-sm">Screenshot viewer <span id="slide-count" class="ml-2 text-xs text-white/60" aria-live="polite"></span></p><button type="button" data-close-preview class="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-white/20 px-4 text-sm hover:bg-white/10">Close<svg class="size-4 shrink-0" aria-hidden="true"><use href="#icon-close"/></svg></button></div>
+    <div id="slide-viewport" class="min-h-0 overflow-auto rounded-lg bg-black/20"><img id="full-image" alt="VM screenshot" class="mx-auto block max-h-[65dvh] max-w-full object-contain"></div>
+    <p id="slide-caption" class="break-words text-center text-xs text-white/70"></p>
+    <div class="flex flex-wrap items-center justify-center gap-2">
+      <button type="button" data-slide-previous aria-label="Previous screenshot" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-white/20 px-4 text-sm hover:bg-white/10 disabled:opacity-40"><svg class="size-4 shrink-0" aria-hidden="true"><use href="#icon-chevron-left"/></svg>Previous</button>
+      <button type="button" data-slide-play aria-pressed="false" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-white/20 px-4 text-sm hover:bg-white/10 disabled:opacity-40"><svg class="size-4 shrink-0" aria-hidden="true"><use href="#icon-play"/></svg><span data-play-label>Play</span></button>
+      <button type="button" data-slide-next aria-label="Next screenshot" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-white/20 px-4 text-sm hover:bg-white/10 disabled:opacity-40">Next<svg class="size-4 shrink-0" aria-hidden="true"><use href="#icon-chevron-right"/></svg></button>
+      <button type="button" data-slide-zoom aria-pressed="false" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-white/20 px-4 text-sm hover:bg-white/10"><svg class="size-4 shrink-0" aria-hidden="true"><use href="#icon-zoom-in"/></svg><span data-zoom-label>Actual size</span></button>
+      <a id="slide-download" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-white px-4 text-sm font-medium text-ink" download><svg class="size-4 shrink-0" aria-hidden="true"><use href="#icon-download"/></svg>Download</a>
+      <button type="button" data-delete-current class="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-red-400/40 px-4 text-sm text-red-300 hover:bg-red-500/10"><svg class="size-4 shrink-0" aria-hidden="true"><use href="#icon-trash"/></svg>Delete</button>
+    </div>
+    <p class="text-center text-[10px] text-white/50">Swipe or use arrow keys to browse · Esc to close</p>
+  </dialog>
+
+  <dialog id="delete-dialog" aria-labelledby="delete-title" aria-describedby="delete-description" class="fixed inset-0 m-auto max-h-[90dvh] w-[90vw] max-w-md flex-col gap-4 overflow-auto rounded-2xl border border-line bg-white p-6 text-ink shadow-xl">
+    <span class="flex size-11 items-center justify-center rounded-xl bg-red-50 text-red-600"><svg class="size-5" aria-hidden="true"><use href="#icon-trash"/></svg></span>
+    <div><h2 id="delete-title" class="text-lg font-semibold">Delete this screenshot?</h2><p id="delete-description" class="mt-2 text-sm leading-6 text-muted">This permanently removes the saved image from your gallery. This action can’t be undone.</p></div>
+    <img id="delete-image" alt="Screenshot selected for deletion" class="max-h-36 w-full rounded-lg border border-line bg-paper object-contain">
+    <p id="delete-caption" class="break-words text-xs text-muted"></p>
+    <form id="delete-form" class="space-y-4">
+      <div id="delete-error" role="alert"></div>
+      <div class="flex flex-wrap justify-end gap-2"><button type="button" data-cancel-delete autofocus class="min-h-11 rounded-lg border border-line px-4 text-sm font-medium hover:bg-paper disabled:opacity-40">Cancel</button><button type="submit" id="confirm-delete" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-red-600 px-4 text-sm font-medium text-white hover:bg-red-700 disabled:opacity-50"><svg class="size-4" aria-hidden="true"><use href="#icon-trash"/></svg><span id="delete-label">Delete screenshot</span></button></div>
+    </form>
+  </dialog>
+</body>
+</html>{{end}}
+
+{{define "preview"}}
+{{if .Image}}
+  <div class="dot-grid p-3 sm:p-6">
+    <button type="button" data-open-preview class="block w-full overflow-hidden rounded-lg border border-line bg-white shadow-sm" aria-label="Open screenshot at full size">
+      <img id="screenshot" src="{{.Image}}" alt="Screenshot of {{.VM}} captured at {{.CapturedAt}}" class="block max-h-[65dvh] w-full object-contain" data-filename="{{.Filename}}">
+    </button>
+  </div>
+  <div class="flex flex-wrap items-center justify-between gap-4 border-t border-line px-5 py-4 sm:px-6">
+    <div><p class="flex items-center gap-1.5 text-xs font-medium"><span class="size-1.5 rounded-full bg-emerald-600"></span>Captured at {{.CapturedAt}}</p><p class="mt-1 font-mono text-[10px] text-muted">{{.Dimensions}} px · {{.Size}} · PNG</p></div>
+    <div class="flex flex-wrap gap-2">
+      <button type="button" data-open-preview class="inline-flex min-h-11 items-center gap-2 rounded-lg border border-line px-3 text-xs font-medium transition hover:bg-paper"><svg class="size-3.5" aria-hidden="true"><use href="#icon-expand"/></svg>Full size</button>
+      <button type="button" data-download class="inline-flex min-h-11 items-center gap-2 rounded-lg bg-ink px-3 text-xs font-medium text-white transition hover:bg-black"><svg class="size-3.5" aria-hidden="true"><use href="#icon-download"/></svg>Download</button>
+      <button type="button" data-delete-screenshot data-filename="{{.Filename}}" data-url="{{.Image}}" data-captured="{{.CapturedAt}}" class="inline-flex min-h-11 items-center gap-2 rounded-lg border border-red-200 px-3 text-xs font-medium text-red-700 transition hover:bg-red-50"><svg class="size-3.5" aria-hidden="true"><use href="#icon-trash"/></svg>Delete</button>
+    </div>
+  </div>
+{{else}}
+  <div class="dot-grid flex min-h-64 flex-col items-center justify-center px-6 py-14 text-center sm:min-h-[390px]">
+    <div class="relative mb-6 flex h-24 w-32 items-center justify-center rounded-xl border border-line bg-white shadow-sm">
+      <svg class="size-12 text-[#c5c8bb]" aria-hidden="true"><use href="#icon-image"/></svg>
+      <span class="absolute -bottom-2 -right-2 flex size-9 items-center justify-center rounded-xl bg-ink text-white shadow-sm"><svg class="size-4" aria-hidden="true"><use href="#icon-capture"/></svg></span>
+    </div>
+    <h3 class="text-base font-semibold tracking-tight">Your next screenshot goes here</h3>
+    <p class="mt-2 max-w-64 text-xs leading-5 text-muted">Hit <span class="font-medium text-ink">Take screenshot</span> to see what’s on your virtual machine right now.</p>
+  </div>
+  <div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-4 text-[11px] text-muted sm:px-6"><span class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#c1c4b8]"></span>Waiting for your first capture</span><span>Original resolution</span></div>
+{{end}}
+{{end}}
+
+{{define "capture-result"}}{{template "preview" .}}<div id="gallery" hx-swap-oob="innerHTML">{{template "gallery" .}}</div>{{end}}
+
+{{define "gallery"}}
+{{if .Gallery}}
+  <p class="px-5 pt-5 text-xs text-muted sm:px-6">{{len .Gallery}} saved {{if eq (len .Gallery) 1}}screenshot{{else}}screenshots{{end}}</p>
+  <div class="grid grid-cols-2 gap-3 p-5 sm:grid-cols-3 sm:gap-4 sm:p-6 lg:grid-cols-4">
+    {{range .Gallery}}
+    <article class="group min-w-0 overflow-hidden rounded-xl border border-line bg-paper/50 transition hover:border-accent hover:shadow-sm">
+    <a href="/?image={{.Filename}}#capture-preview" data-gallery-image data-url="{{.Image}}" data-filename="{{.Filename}}" data-captured="{{.CapturedAt}}" class="block" aria-label="View screenshot captured {{.CapturedAt}}">
+      <div class="dot-grid flex aspect-video items-center justify-center overflow-hidden border-b border-line"><img src="{{.Image}}" alt="Screenshot captured {{.CapturedAt}}" loading="lazy" decoding="async" class="size-full object-contain transition group-hover:scale-[1.03]"></div>
+      <div class="p-3"><p class="text-[11px] font-medium leading-5">{{.CapturedAt}}</p><p class="mt-1 font-mono text-[10px] text-muted">{{.Dimensions}} · {{.Size}}</p></div>
+    </a>
+    <div class="border-t border-line px-3 py-1"><button type="button" data-delete-screenshot data-filename="{{.Filename}}" data-url="{{.Image}}" data-captured="{{.CapturedAt}}" aria-label="Delete screenshot captured {{.CapturedAt}}" class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 text-xs font-medium text-red-700 hover:text-red-900"><svg class="size-3.5" aria-hidden="true"><use href="#icon-trash"/></svg>Delete</button></div>
+    </article>
+    {{end}}
+  </div>
+{{else}}
+  <p class="px-6 py-10 text-center text-sm text-muted">No saved screenshots yet. Your first capture will appear here.</p>
+{{end}}
+{{end}}
+
+{{define "capture-error"}}<p class="rounded-lg border border-red-200 bg-red-50 p-3 text-xs leading-5 text-red-800">{{.Error}}</p>{{end}}
+
+{{define "icons"}}<svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true"><defs>
+  <symbol id="icon-capture" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><circle cx="12" cy="12" r="3.5"/></symbol>
+  <symbol id="icon-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol>
+  <symbol id="icon-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m21 16-6-6L4 21"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></symbol>
+  <symbol id="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></symbol>
+  <symbol id="icon-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 8a15 15 0 0 1 18 0M6 12a10 10 0 0 1 12 0m-9 4a5 5 0 0 1 6 0m-3 4h.01"/></symbol>
+  <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+  <symbol id="icon-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+  <symbol id="icon-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></symbol>
+  <symbol id="icon-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 4 12 8-12 8Z"/></symbol>
+  <symbol id="icon-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></symbol>
+  <symbol id="icon-zoom-in" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M7.5 10.5h6m-3-3v6"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  <symbol id="icon-keyboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M7 15h10"/></symbol>
+  <symbol id="icon-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+</defs></svg>{{end}}

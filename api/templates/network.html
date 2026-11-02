@@ -1,0 +1,56 @@
+{{define "network-page"}}<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6f5f1">
+  <title>ScreenDrop · Packets</title>
+  <link rel="stylesheet" href="/static/app.css"><script src="/static/network.js" defer></script>
+</head>
+<body class="min-h-dvh bg-paper font-sans text-ink antialiased">
+  {{template "icons"}}
+  <header class="border-b border-line bg-white/70"><div class="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-3 px-5 sm:px-8 lg:px-12"><a href="/" class="flex items-center gap-3"><span class="flex size-9 items-center justify-center rounded-xl bg-accent text-white"><svg class="size-5" aria-hidden="true"><use href="#icon-capture"/></svg></span><span class="text-xl font-semibold tracking-tight">ScreenDrop<span class="text-accent">.</span></span></a><a href="/" class="inline-flex min-h-11 items-center rounded-lg border border-line bg-white px-3 text-xs font-medium hover:bg-paper">Screenshots</a></div></header>
+  <main id="network-page" class="mx-auto max-w-7xl px-5 py-9 sm:px-8 sm:py-14 lg:px-12">
+    <p class="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-accent">Inside your virtual machine</p>
+    <h1 class="text-3xl font-semibold tracking-[-0.04em] sm:text-5xl">Follow the mouse.</h1>
+    <p class="mt-3 text-sm leading-6 text-muted">Watch physical USB/HID transfers in {{.VM}}, updated every second. Choose network adapter {{.Adapter}} when you need network traffic.</p>
+    <div class="mt-8 grid items-start gap-5 lg:grid-cols-2">
+      <section class="rounded-2xl border border-line bg-white p-5 shadow-sm sm:p-6" aria-labelledby="trace-heading">
+        <div class="flex flex-wrap items-center justify-between gap-2"><h2 id="trace-heading" class="text-sm font-semibold">VM capture</h2><span id="network-state" class="rounded-full bg-paper px-3 py-1 text-xs font-medium">Checking…</span></div>
+        <p class="mt-2 text-xs leading-5 text-muted">Stops after the selected duration or near 20 MB. Recording starts only when you press Start.</p>
+        <label for="network-source" class="mb-2 mt-4 block text-xs font-medium">Capture source</label>
+        <select id="network-source" class="min-h-11 w-full rounded-lg border border-line bg-paper/60 px-3 text-sm"><option value="usb" selected>Physical mouse · USB/HID</option><option value="network">VM network adapter</option></select>
+        <p id="network-source-note" class="mt-2 text-xs leading-5 text-muted">Pass the physical mouse through using VirtualBox Devices → USB first. Start/Stop briefly reconnects it inside the VM; no mouse settings are written.</p>
+        <form id="network-capture-form" class="mt-5 flex flex-wrap items-end gap-3">
+          <div class="w-full"><label for="network-name" class="mb-2 block text-xs font-medium">Recording name <span class="text-accent">*</span></label><input id="network-name" name="name" required maxlength="120" autocomplete="off" placeholder="01 · Startup + unchanged Apply" class="min-h-11 w-full rounded-lg border border-line bg-paper/60 px-3 text-sm" aria-describedby="network-name-help"><p id="network-name-help" class="mt-1 text-[11px] leading-5 text-muted">Give each experiment a name. Every recording gets its own capture and notes file.</p></div>
+          <div class="w-full"><label for="network-notes" class="mb-2 block text-xs font-medium">Notes <span class="font-normal text-muted">(optional)</span></label><textarea id="network-notes" name="notes" maxlength="2000" rows="3" placeholder="What will you do? Include the starting settings and the one thing you will change." class="w-full resize-y rounded-lg border border-line bg-paper/60 px-3 py-3 text-xs leading-5"></textarea></div>
+          <div class="min-w-28 flex-1"><label for="network-duration" class="mb-2 block text-xs font-medium">Duration</label><select id="network-duration" class="min-h-11 w-full rounded-lg border border-line bg-paper/60 px-3 text-sm"><option value="15">15 seconds</option><option value="30" selected>30 seconds</option><option value="60">60 seconds</option><option value="120">2 minutes</option></select></div>
+          <button id="network-start" type="submit" class="min-h-11 rounded-lg bg-accent px-4 text-sm font-semibold text-white hover:bg-[#bc3d21] disabled:opacity-40">Start capture</button>
+          <button id="network-stop" type="button" disabled class="min-h-11 rounded-lg border border-line px-4 text-sm font-medium hover:bg-paper disabled:opacity-40">Stop / recover</button>
+        </form>
+        <div id="network-capture-error" hidden role="alert" class="mt-3 rounded-xl border border-red-200 bg-red-50 p-3 text-red-800"><p id="network-capture-error-title" class="text-xs font-semibold">Couldn’t start capture</p><p id="network-capture-error-detail" class="mt-1 whitespace-pre-wrap break-words text-xs leading-5"></p></div>
+        <p id="network-status" role="status" class="mt-4 break-words text-xs leading-5 text-muted">Loading capture status…</p>
+      </section>
+      <section class="rounded-2xl border border-line bg-white p-5 shadow-sm sm:p-6" aria-labelledby="saved-traces-heading">
+        <div class="flex items-center justify-between gap-3"><h2 id="saved-traces-heading" class="text-sm font-semibold">Live &amp; saved captures</h2><button id="network-refresh" type="button" class="min-h-11 rounded-lg border border-line px-3 text-xs font-medium hover:bg-paper">Refresh</button></div>
+        <label for="network-captures" class="mb-2 mt-3 block text-xs text-muted">Choose a capture · recording files update live</label>
+        <select id="network-captures" class="min-h-11 w-full rounded-lg border border-line bg-paper/60 px-3 text-xs"><option value="">No saved captures yet</option></select>
+        <div id="network-recording-details" hidden class="mt-4 rounded-xl border border-line bg-paper/50 p-4"><h3 id="network-recording-name" class="break-words text-sm font-semibold"></h3><p id="network-recording-notes" class="mt-2 whitespace-pre-wrap break-words text-xs leading-5 text-muted"></p><p id="network-recording-file" class="mt-3 break-all font-mono text-[10px] leading-5 text-muted"></p></div>
+        <div class="mt-4 flex flex-wrap items-center justify-between gap-3"><span id="network-decoder" class="text-xs text-muted">Wireshark decoder…</span><a id="network-download" hidden class="inline-flex min-h-11 items-center gap-2 rounded-lg bg-ink px-4 text-xs font-medium text-white" download><svg class="size-4" aria-hidden="true"><use href="#icon-download"/></svg>Download PCAP</a></div>
+      </section>
+    </div>
+    <section class="mt-6 overflow-hidden rounded-2xl border border-line bg-white shadow-sm" aria-labelledby="packets-heading">
+      <div class="border-b border-line p-5 sm:p-6">
+        <div class="flex flex-wrap items-center justify-between gap-3"><h2 id="packets-heading" class="text-sm font-semibold">Packet explorer</h2><label class="inline-flex min-h-11 items-center gap-2 text-xs"><input id="network-follow" type="checkbox" checked class="size-4 accent-accent">Live · every 1 second</label></div>
+        <form id="network-filter-form" class="mt-4 flex flex-wrap gap-2"><label for="network-filter" class="sr-only">Wireshark display filter</label><input id="network-filter" maxlength="1024" autocomplete="off" spellcheck="false" value="usb.transfer_type == 0x02" placeholder="Wireshark display filter" class="min-h-11 min-w-0 flex-1 rounded-lg border border-line bg-paper/60 px-3 font-mono text-xs"><button id="network-apply" type="submit" class="min-h-11 rounded-lg bg-ink px-4 text-xs font-medium text-white disabled:opacity-40">Apply filter</button></form>
+        <div id="network-presets" class="mt-3 flex flex-wrap gap-2" aria-label="Protocol filters"></div>
+        <p id="network-filter-note" class="mt-2 text-xs leading-5 text-muted">Control transfers are shown by default to focus on driver configuration calls. Mouse movement/interrupt reports and other protocols are hidden. Show USB/HID or Interrupt reports to include them.</p>
+        <div class="mt-3 flex flex-wrap gap-3 text-[10px] text-muted" aria-label="Protocol color legend"><span class="packet-key packet-control">USB control</span><span class="packet-key packet-hid">HID</span><span class="packet-key packet-usb">USB</span><span class="packet-key packet-dns">DNS</span><span class="packet-key packet-tcp">TCP</span><span class="packet-key packet-tls">TLS</span><span class="packet-key packet-http">HTTP</span><span class="packet-key packet-udp">UDP</span></div>
+        <p id="network-summary" class="mt-4 text-xs leading-5 text-muted" aria-live="polite">Start a USB capture or choose a saved file. Control transfers are selected by default.</p>
+        <p id="network-error" role="alert" class="mt-2 break-words text-xs leading-5 text-red-700"></p>
+        <div id="network-protocols" class="mt-3 flex flex-wrap gap-1.5"></div>
+      </div>
+      <div id="network-packet-scroll" class="max-h-[34rem] overflow-auto"><table class="w-full min-w-[720px] text-left text-xs"><thead class="sticky top-0 border-b border-line bg-paper text-muted"><tr><th class="px-4 py-3 font-medium">No.</th><th class="px-4 py-3 font-medium">Time</th><th class="px-4 py-3 font-medium">Source</th><th class="px-4 py-3 font-medium">Destination</th><th class="px-4 py-3 font-medium">Protocol</th><th class="px-4 py-3 font-medium">Length</th><th class="px-4 py-3 font-medium">Info</th></tr></thead><tbody id="network-packets" aria-live="off"><tr><td colspan="7" class="px-4 py-10 text-center text-muted">No packets loaded.</td></tr></tbody></table></div>
+      <div class="flex flex-wrap items-center justify-between gap-3 border-t border-line px-5 py-4"><p id="network-page-label" class="text-xs text-muted">100 packets per page</p><div class="flex gap-2"><button id="network-previous" type="button" disabled class="inline-flex min-h-11 items-center gap-1 rounded-lg border border-line px-3 text-xs disabled:opacity-40"><svg class="size-4" aria-hidden="true"><use href="#icon-chevron-left"/></svg>Previous</button><button id="network-next" type="button" disabled class="inline-flex min-h-11 items-center gap-1 rounded-lg border border-line px-3 text-xs disabled:opacity-40">Next<svg class="size-4" aria-hidden="true"><use href="#icon-chevron-right"/></svg></button></div></div>
+    </section>
+    <p class="mt-5 text-[11px] leading-5 text-muted">USB captures show device transfers and HID requests, not Windows function names or call stacks. Network adapter captures cannot show USB traffic. Downloads open in Wireshark; TLS remains encrypted.</p>
+  </main>
+</body></html>{{end}}
