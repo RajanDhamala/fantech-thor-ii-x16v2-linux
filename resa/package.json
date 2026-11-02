@@ -1,0 +1,18 @@
+{
+  "name": "resa-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Thor II X16v2 desktop interface, device discovery and experimental lighting",
+  "type": "module",
+  "main": "desktop/main.js",
+  "packageManager": "pnpm@10.25.0",
+  "scripts": {
+    "desktop": "node scripts/build-preload.js && electron .",
+    "preview": "node scripts/preview.js",
+    "snapshot": "node scripts/export-preview.js",
+    "check": "node --check desktop/main.js && node --check desktop/preload.js && node --check desktop/dropdown.js && node --check desktop/renderer.js && node --check desktop/mouse-viewer.js && node --check desktop/live-lighting.js && node desktop/lighting-contract.test.js && node desktop/live-lighting.test.js && node desktop/model.test.js && node desktop/mouse-geometry.test.js && node desktop/mouse-input.test.js && node --check desktop/device-controls.js && node desktop/device-contract.test.js && node desktop/device-controls.test.js && node desktop/captured-lighting.test.js && node --check desktop/session-controls.js && node desktop/session-settings.test.js"
+  },
+  "devDependencies": {
+    "electron": "44.7.0"
+  }
+}

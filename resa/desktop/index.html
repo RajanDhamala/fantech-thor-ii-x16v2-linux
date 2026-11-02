@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Resa — Thor II X16v2</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="renderer.js"></script>
+</head>
+<body>
+  <svg class="icon-definitions" aria-hidden="true"><defs>
+    <symbol id="i-mouse" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="6"/><path d="M12 2v7m-6 1h12"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><rect x="7" y="4" width="4" height="6" rx="1"/><rect x="14" y="14" width="4" height="6" rx="1"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M6 9h.1M10 9h.1M14 9h.1M18 9h.1M6 12h.1M10 12h.1M14 12h.1M18 12h.1M7 15h10"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 8a8 8 0 1 0 0 8M20 3v5h-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M8 4 3 9l5 5M3 9h10a7 7 0 0 1 0 14"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.1"/></symbol>
+  </defs></svg>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <a class="brand" href="#" aria-label="Resa home"><span class="brand-mark">r<span>.</span></span><span>resa<span class="brand-divider">/</span><span class="brand-sub">DEVICE STUDIO</span></span></a>
+      <div class="header-right"><span class="version">EARLY ACCESS <span>0.1</span></span><button id="device-info" class="icon-button" aria-label="Device details"><svg><use href="#i-info"/></svg></button></div>
+    </header>
+
+    <main>
+      <section class="device-heading" aria-label="Device overview">
+        <div><p class="eyebrow">FANTECH <span>/</span> WIRED GAMING MOUSE</p><h1>Thor II <span>X16v2</span></h1><p class="device-subtitle">Your mouse. Your way.</p></div>
+        <div class="connection"><div id="connection-badge" class="status-badge"><span class="status-dot"></span><span id="connection-label">Checking device</span></div><button id="refresh" class="icon-button" aria-label="Reload mouse settings"><svg><use href="#i-refresh"/></svg></button><p id="connection-detail">Connect to load mouse settings</p></div>
+      </section>
+
+      <nav class="tabs" role="tablist" aria-label="Mouse settings">
+        <button role="tab" id="tab-buttons" aria-controls="panel-buttons" aria-selected="true" data-tab="buttons"><svg><use href="#i-mouse"/></svg>Buttons<span>01</span></button>
+        <button role="tab" id="tab-sensitivity" aria-controls="panel-sensitivity" aria-selected="false" tabindex="-1" data-tab="sensitivity"><svg><use href="#i-sliders"/></svg>Sensitivity<span>02</span></button>
+        <button role="tab" id="tab-lighting" aria-controls="panel-lighting" aria-selected="false" tabindex="-1" data-tab="lighting"><svg><use href="#i-sun"/></svg>Lighting<span>03</span></button>
+        <button role="tab" id="tab-macros" aria-controls="panel-macros" aria-selected="false" tabindex="-1" data-tab="macros"><svg><use href="#i-keyboard"/></svg>Macros<span>04</span></button>
+      </nav>
+
+      <fieldset id="settings-editor" class="settings-editor"><div class="workspace">
+        <section role="tabpanel" id="panel-buttons" aria-labelledby="tab-buttons">
+          <div class="section-heading"><div><h2>A place for every action.</h2><p>Choose an action for each button. Keep at least one assigned to Left click.</p></div><span class="quiet-tag">7 BUTTONS</span></div>
+          <div class="button-layout">
+            <div class="assignment-column" id="assign-left"></div>
+            <div class="mouse-stage">
+              <div class="mouse-view-toolbar">
+                <div class="mouse-view-switch" role="group" aria-label="Mouse display mode">
+                  <button type="button" data-mouse-view="2d" aria-pressed="true">2D</button>
+                  <button type="button" data-mouse-view="3d" aria-pressed="false">3D</button>
+                </div>
+                <button type="button" id="mouse-photos" class="mouse-photo-button">Your photos <span aria-hidden="true">↗</span></button>
+                <button type="button" id="model-focus" class="mouse-focus-button" aria-pressed="false" hidden>Focus view</button>
+              </div>
+              <span class="view-label" id="mouse-view-direction">TOP VIEW <span>↑</span></span>
+              <div class="mouse-art" id="mouse-art">
+                <svg class="mouse-drawing" viewBox="0 0 320 440" role="img" aria-label="Illustrated gaming mouse; button placement is a preview">
+                  <defs>
+                    <linearGradient id="body" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#41474b"/><stop offset=".3" stop-color="#282d31"/><stop offset=".65" stop-color="#1b2023"/><stop offset="1" stop-color="#393e42"/></linearGradient>
+                    <linearGradient id="left" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#484e52"/><stop offset=".5" stop-color="#30363b"/><stop offset="1" stop-color="#23292d"/></linearGradient>
+                    <linearGradient id="right" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#383e42"/><stop offset="1" stop-color="#22282c"/></linearGradient>
+                    <linearGradient id="palm" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#30363b"/><stop offset="1" stop-color="#14181b"/></linearGradient>
+                    <radialGradient id="shadow"><stop stop-color="#000" stop-opacity=".7"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+                  </defs>
+                  <ellipse cx="160" cy="394" rx="145" ry="30" fill="url(#shadow)"/>
+                  <path d="M160 0v57" stroke="#07090a" stroke-width="9"/><path d="M158 0v55" stroke="#343a3e" stroke-width="2"/>
+                  <path d="M154 55C100 55 68 78 59 131L39 296C32 354 62 412 151 419C238 422 284 374 279 317L261 142C256 89 222 55 167 55Z" fill="url(#body)" stroke="#555c60" stroke-width="1.5"/>
+                  <path d="M64 138C70 87 100 65 151 62L149 225 54 255Z" fill="url(#left)" stroke="#51575c" stroke-width=".8"/>
+                  <path d="M169 62C218 62 246 91 255 143L266 255 170 225Z" fill="url(#right)" stroke="#464d51" stroke-width=".8"/>
+                  <path d="M153 63 151 232M167 63l3 169" stroke="#0c1012" stroke-width="4"/>
+                  <rect x="147" y="92" width="25" height="76" rx="12" fill="#0d1114" stroke="#646b6e" stroke-width="1"/>
+                  <rect x="152" y="97" width="15" height="65" rx="7" fill="#343b40"/>
+                  <path d="M153 104h13m-13 6h13m-13 6h13m-13 6h13m-13 6h13m-13 6h13m-13 6h13m-13 6h13m-13 6h13" stroke="#171c20" stroke-width="3"/>
+                  <rect x="151" y="184" width="17" height="21" rx="4" fill="#151a1e" stroke="#50595e"/>
+                  <rect x="151" y="213" width="17" height="21" rx="4" fill="#151a1e" stroke="#50595e"/>
+                  <path class="rgb-line" d="m54 260 95-26h21l96 26" fill="none" stroke-width="3"/>
+                  <path d="m52 268 95-27h25l96 27 5 49C277 363 241 406 158 410 79 408 43 360 47 313Z" fill="url(#palm)" stroke="#3b4247"/>
+                  <path d="M58 280c-13 62 1 89 27 109M261 280c12 56 0 89-26 109" stroke="#5c6266" stroke-opacity=".2" fill="none"/>
+                  <path d="M49 176 43 203l-1 26 9-6 5-45Z" fill="#121719" stroke="#5b6266"/>
+                  <path d="m41 235-2 28-2 20 10-5 3-44Z" fill="#151a1d" stroke="#51595f"/>
+                  <path class="rgb-mark" d="M145 337h21c15 0 19 18 5 23l13 17h-13l-16-22h10c6 0 6-8 0-8h-9v30h-11Z"/>
+                </svg>
+                <button class="hotspot" data-button="0" aria-label="Select button 1, left click">1</button>
+                <button class="hotspot" data-button="1" aria-label="Select button 2, right click">2</button>
+                <button class="hotspot" data-button="2" aria-label="Select button 3, middle click">3</button>
+                <button class="hotspot" data-button="3" aria-label="Select button 4, forward">4</button>
+                <button class="hotspot" data-button="4" aria-label="Select button 5, back">5</button>
+                <button class="hotspot" data-button="5" aria-label="Select button 6, DPI up">6</button>
+                <button class="hotspot" data-button="6" aria-label="Select button 7, Color cycle">7</button>
+              </div>
+              <div class="mouse-3d" id="mouse-3d" hidden>
+                <canvas id="mouse-canvas" tabindex="0" role="img" aria-label="Interactive approximate Thor II X16v2 3D model" aria-describedby="model-instructions"></canvas>
+                <p id="model-status" class="model-status" role="status" hidden></p>
+              </div>
+              <div class="model-controls" id="model-controls" hidden>
+                <div class="model-zoom-row"><label for="model-zoom">Zoom</label><input id="model-zoom" type="range" min="66" max="165" value="100"><output id="model-zoom-value" for="model-zoom">100%</output></div>
+                <div class="model-actions"><button type="button" id="model-rotate" aria-pressed="false">Auto-rotate</button><button type="button" id="model-reset">Reset view</button><button type="button" id="model-test" aria-pressed="false">Test inputs</button></div>
+                <p id="model-instructions">Drag to orbit · Scroll to zoom · Arrow keys also work</p>
+                <section id="mouse-input-panel" class="mouse-input-panel" aria-label="Mouse input test" hidden>
+                  <div class="mouse-input-heading"><span id="mouse-input-status">Test ready</span><button type="button" id="mouse-input-clear">Clear results</button></div>
+                  <p id="mouse-input-event" role="status" aria-live="polite">Click or scroll inside this window.</p>
+                  <div id="mouse-input-counts" class="mouse-input-counts"></div>
+                  <p id="mouse-input-summary" class="mouse-input-summary">0 presses · 0 wheel events</p>
+                  <p class="mouse-input-scope">App-window events from any mouse. Remapped buttons appear as their assigned action; DPI and color keys may not emit events.</p>
+                </section>
+              </div>
+              <p class="illustration-note" id="mouse-view-note">ILLUSTRATION · PLACEMENT PREVIEW</p>
+            </div>
+            <div class="assignment-column" id="assign-right"></div>
+          </div>
+          <div class="selection-detail"><span class="tiny-square"></span><span id="selection-description">Button 1 · Left click</span><span class="selection-hint">Click a numbered point to focus its assignment.</span></div>
+          <p class="settings-footnote">All seven assignments use the Game I device slot. Profiles are saved locally.</p>
+</section>
+
+        <section role="tabpanel" id="panel-sensitivity" aria-labelledby="tab-sensitivity" hidden>
+          <div class="section-heading"><div><h2>Pointer speed.</h2><p>Choose a stage to edit. Apply changes sends your settings to the mouse.</p></div><span class="quiet-tag">200 — 12,800 DPI</span></div>
+          <div id="dpi-grid" class="dpi-workspace"></div>
+          <div class="polling-setting"><div><h3>Polling rate</h3><p>How often your mouse reports movement.</p></div><select id="polling-rate" aria-label="Polling rate"><option value="125">125 Hz</option><option value="250">250 Hz</option><option value="500">500 Hz</option><option value="1000" selected>1000 Hz</option></select></div>
+          <section class="advanced-controls" aria-labelledby="timing-heading">
+            <div class="field-heading"><div><h3 id="timing-heading">Double Click Speed</h3><p class="field-footnote">Also controls Rapid Fire timing. Try 50 ms if rapid clicks register as a single click on Linux.</p></div><output id="double-click-value" for="double-click-speed"></output></div>
+            <input id="double-click-speed" type="range" min="8" max="300" step="1" aria-label="Double Click Speed in milliseconds">
+            <p class="field-footnote">Stored on the mouse when you choose Apply changes. This does not change Linux's desktop double-click threshold.</p>
+          </section>
+          <section class="advanced-controls" aria-labelledby="desktop-controls-heading">
+            <h3 id="desktop-controls-heading">Desktop behavior</h3><p class="field-footnote">These controls affect your Linux desktop session, including other mice. They are separate from mouse DPI.</p>
+            <div class="field-heading"><label class="field-label" for="pointer-speed">Mouse sensitivity</label><output id="pointer-speed-value" for="pointer-speed"></output></div>
+            <input id="pointer-speed" type="range" min="1" max="11" step="1" value="6" disabled><p id="pointer-speed-note" class="field-footnote"></p>
+            <div class="field-heading"><label class="field-label" for="wheel-speed">Wheel speed multiplier</label><output id="wheel-speed-value" for="wheel-speed"></output></div>
+            <input id="wheel-speed" type="range" min="1" max="11" step="1" value="1" disabled>
+            <label class="symmetry-toggle"><input id="wheel-helper-enabled" type="checkbox" disabled> Enable wheel helper while Resa is open</label><p id="wheel-speed-note" class="field-footnote">Optional imwheel support requires an X11 session.</p>
+            <div class="desktop-control-actions"><button id="session-refresh" type="button" class="text-button">Reload desktop settings</button><button id="session-apply" type="button" class="secondary-button" disabled>Apply desktop settings</button></div>
+            <p id="session-status" class="field-footnote" role="status" aria-live="polite"></p>
+          </section>
+        </section>
+
+        <section role="tabpanel" id="panel-lighting" aria-labelledby="tab-lighting" hidden>
+          <div class="section-heading"><div><h2>Set the atmosphere.</h2><p>Choose an effect, build your palette, or light up each button press.</p></div><span class="quiet-tag">LIGHTING</span></div>
+          <div class="lighting-layout"><div class="lighting-preview"><div id="lighting-art"></div><span id="effect-caption">LOCAL PREVIEW</span></div><div class="lighting-settings">
+            <label class="lights-toggle"><span>Lights on</span><input id="lights-enabled" type="checkbox" checked></label>
+            <label class="field-label" for="effect">Effect</label><select id="effect"></select>
+            <div id="accent-controls">
+              <div class="field-heading"><label class="field-label" for="color">Accent color</label><span id="color-value" class="mono"></span></div><div class="color-row"><input type="color" id="color" aria-label="Lighting color"><div id="swatches" class="swatches"></div></div>
+            </div>
+            <div id="palette-controls"><h3>Color slots</h3><p class="field-footnote">Pick each color and check the slots to include. Colors snap to 16 levels per channel.</p><div id="palette-slots" class="palette-slots"></div></div>
+            <div id="brightness-controls"><div class="field-heading"><label class="field-label" for="brightness">Brightness</label><output id="brightness-value"></output></div><input type="range" min="1" max="7" step="1" id="brightness"></div>
+            <div id="speed-controls"><div class="field-heading"><label class="field-label" for="speed">Animation speed</label><output id="speed-value"></output></div><input type="range" min="0" max="5" step="1" id="speed"></div>
+            <div id="direction-controls"><label class="field-label" for="light-direction">Direction</label><select id="light-direction"></select><label class="symmetry-toggle"><input type="checkbox" id="light-symmetry"> Symmetry</label></div>
+            <div id="response-controls"><h3>Button response</h3><p class="field-footnote">Choose the light effect for each button press.</p><div id="response-buttons" class="response-buttons"></div></div>
+            <p id="lighting-note" class="field-footnote">Edits are sent when you choose Apply changes.</p>
+          </div></div>
+          <p class="settings-footnote">The illustration previews color only. Check the physical lights after applying. Additional effects will be available as support is added.</p>
+        </section>
+
+        <section role="tabpanel" id="panel-macros" aria-labelledby="tab-macros" hidden>
+          <div class="section-heading"><div><h2>Make every move count.</h2><p>Arrange a key sequence and preview its timing locally.</p></div><span class="quiet-tag">EDITOR PREVIEW</span></div>
+          <div class="macro-layout"><div class="macro-editor"><div class="macro-toolbar"><span>SEQUENCE <span id="macro-count">0 / 64</span></span><button id="clear-macro" class="text-button">Clear sequence</button></div><ol id="macro-events"></ol><div id="macro-empty" class="empty-state"><svg><use href="#i-keyboard"/></svg><h3>A shortcut starts here.</h3><p>Add a key press, a release, or a delay<br>to build your first sequence.</p></div></div><aside class="macro-controls"><h3>Add an event</h3><label class="field-label" for="event-type">Event type</label><select id="event-type"><option value="down">Key down</option><option value="up">Key up</option><option value="delay">Delay</option></select><div id="key-field"><label class="field-label" for="event-key">Key</label><select id="event-key"></select></div><div id="delay-field" hidden><label class="field-label" for="event-delay">Delay in milliseconds</label><input type="number" id="event-delay" min="10" max="10000" step="10" value="100"></div><button id="add-event" class="secondary-button">+ Add to sequence</button><div class="macro-divider"></div><button id="play-macro" class="secondary-button">Preview sequence <span>▷</span></button><p class="field-footnote">Preview highlights the timeline only.<br>No keystrokes are sent or recorded.</p></aside></div>
+        </section>
+      </div>
+
+      </fieldset>
+      <section class="profiles-section" aria-label="Local profiles"><div class="profile-heading"><p class="eyebrow">LOCAL PROFILES</p><span>Saved on this computer</span></div><div id="profiles" class="profiles"></div></section>
+    </main>
+
+    <footer class="action-bar"><div class="preview-notice"><span class="preview-icon">◈</span><div><strong>Mouse settings</strong><p id="save-status" aria-live="polite">Connect the mouse to Linux to load its settings.</p><details id="device-error" hidden><summary>Error details</summary><pre id="device-error-text"></pre></details></div></div><div class="footer-actions"><button id="device-retry" class="secondary-button" hidden><svg class="retry-icon" aria-hidden="true"><use href="#i-refresh"/></svg>Retry read</button><button id="undo" class="text-button" disabled>Undo changes</button><button id="save" class="apply-button" disabled>Apply changes</button></div></footer>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="details-dialog"><div class="dialog-heading"><h2>Device details</h2><button id="close-details" class="icon-button" aria-label="Close device details">×</button></div><p>Device discovery details. Use Refresh in the header to reload mouse settings.</p><button id="device-restore" class="secondary-button" disabled>Restore previous mouse settings</button><pre id="device-details">Device discovery has not run.</pre></dialog>
+  <dialog id="mouse-photo-dialog" class="mouse-photo-dialog" aria-labelledby="mouse-photo-title">
+    <div class="dialog-heading"><div><h2 id="mouse-photo-title">Your Thor II, from every angle.</h2><p>Original reference photos · the 3D model is an approximation.</p></div><button type="button" id="close-mouse-photos" class="icon-button" aria-label="Close mouse photographs">×</button></div>
+    <figure class="reference-figure"><img id="mouse-reference-photo" alt="Your Fantech Thor II X16v2"><figcaption><button type="button" id="mouse-photo-prev" class="icon-button" aria-label="Previous mouse photo">←</button><span id="mouse-photo-caption"></span><button type="button" id="mouse-photo-next" class="icon-button" aria-label="Next mouse photo">→</button></figcaption></figure>
+    <div id="mouse-photo-thumbnails" class="reference-thumbnails" role="group" aria-label="Mouse reference photographs"></div>
+  </dialog>
+</body>
+</html>
