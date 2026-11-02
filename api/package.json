@@ -1,0 +1,13 @@
+{
+  "name": "vm-screenshot-ui",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./web/input.css -o ./static/app.css --minify && cp node_modules/htmx.org/dist/htmx.min.js static/htmx.min.js && cp node_modules/htmx.org/LICENSE static/htmx-LICENSE.txt",
+    "watch": "tailwindcss -i ./web/input.css -o ./static/app.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "htmx.org": "^2.0.11"
+  }
+}

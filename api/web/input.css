@@ -1,0 +1,47 @@
+@import "tailwindcss" source(none);
+@source "../templates";
+@source "../static/network.js";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --color-paper: #f6f5f1;
+  --color-ink: #252723;
+  --color-muted: #70726c;
+  --color-line: #e5e6df;
+  --color-accent: #d64b2c;
+}
+
+@layer base {
+  button, a { -webkit-tap-highlight-color: transparent; }
+  button:not(:disabled), summary { cursor: pointer; }
+  button:focus-visible, a:focus-visible { outline: 3px solid #d64b2c; outline-offset: 4px; }
+  button:disabled { cursor: wait; }
+}
+
+.dot-grid { background-image: radial-gradient(#dedfd7 1px, transparent 1px); background-size: 18px 18px; }
+.capture-loading { display: none; }
+.htmx-request .capture-idle { display: none; }
+.htmx-request .capture-loading { display: inline-flex; }
+dialog::backdrop { background: rgb(15 18 15 / 88%); backdrop-filter: blur(6px); }
+dialog[open] { display: flex; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Packet colors keep protocol names visible, so color is never the only cue. */
+.packet-row { border-bottom: 1px solid var(--color-line); color: #252723; }
+.packet-row:hover { filter: brightness(.97); }
+.packet-control { background: #fef3c7; }
+.packet-hid { background: #ede9fe; }
+.packet-usb { background: #eff6ff; }
+.packet-dns { background: #e0f2fe; }
+.packet-tcp { background: #e0e7ff; }
+.packet-tls { background: #d1fae5; }
+.packet-http { background: #dcfce7; }
+.packet-udp { background: #fce7f3; }
+.packet-icmp { background: #ffedd5; }
+.packet-other { background: #f5f5f4; }
+.packet-key { border: 1px solid #d6d3d1; border-radius: 5px; padding: 4px 8px; color: #44403c; }
+.protocol-filter { min-height: 36px; border: 1px solid var(--color-line); border-radius: 8px; padding: 4px 12px; font-size: 11px; }
+.protocol-filter:hover { background: var(--color-paper); }
+.protocol-filter[aria-pressed="true"] { background: var(--color-ink); border-color: var(--color-ink); color: white; }
