@@ -1,0 +1,135 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-13-button1-fordward-left-1792251871-HG3OUP7G.pcapng",
+  "sha256": "22bf6c077c1c98ef5067c16b0f335b8de51c3edb449327badf4648d0f096f6b7",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-13-button1-fordward-left-1792251871-HG3OUP7G.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792251872.0399427,
+    "deadline": 1792251932.0399432,
+    "status": "stopped",
+    "name": "13 Button1 Fordward-Left",
+    "notes": "Left Click",
+    "reason": "duration limit",
+    "ended": 1792251933.5210247
+  },
+  "summary": {
+    "capture": "trace-13-button1-fordward-left-1792251871-HG3OUP7G.pcapng",
+    "sha256": "22bf6c077c1c98ef5067c16b0f335b8de51c3edb449327badf4648d0f096f6b7",
+    "bytes": 3098928,
+    "packets": 30257,
+    "duration": 59.947864,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 12311,
+      "1": 17946
+    },
+    "control_frames": 12311,
+    "feature_requests": 1760,
+    "set_report_requests": 1756,
+    "get_report_requests": 4,
+    "truncated_frames": 17722,
+    "feature_payloads": {
+      "": 1760
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 30257,
+    "excluded_before_five_seconds": 588,
+    "retained_count": 29669,
+    "selected": [
+      {
+        "frame": 6105,
+        "report_hex": "07 18 03 04 40 00 21 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 6116,
+        "report_hex": "07 18 03 05 40 00 21 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17048,
+        "report_hex": "07 18 03 04 40 00 25 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17056,
+        "report_hex": "07 18 03 05 40 00 21 07",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "logical_coordinate_hex": "0044",
+  "report_template_hex": "07 18 03 04 40 00 VALUE 07",
+  "button1_sequence_full_bytes_hex": [
+    "21",
+    "25"
+  ],
+  "button3_full_byte_hex": "21",
+  "bursts": [
+    {
+      "phase": "Startup: button1 Left Click, button3 Left Click",
+      "burst": 1,
+      "first": 16.080182,
+      "last": 20.373175,
+      "candidate_count": 867,
+      "differences_from_previous": [],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Apply: button1 Forward, button3 Left Click",
+      "burst": 2,
+      "first": 48.77058,
+      "last": 52.465615,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 78,
+          "before": "07 18 03 04 40 00 21 07",
+          "after": "07 18 03 04 40 00 25 07",
+          "frame": 17048,
+          "time": 49.141222
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 17863,
+          "time": 49.375527
+        }
+      ],
+      "fixed_finalizer_present": true
+    }
+  ],
+  "button1_mapping_complete": true,
+  "restore_captured": false,
+  "last_captured_assignments": {
+    "1": "Forward",
+    "3": "Left Click"
+  },
+  "live_api_check": {
+    "running_vm": "[redacted local identifier]",
+    "screenshot_http_status": 200,
+    "screenshot_valid_png": true,
+    "new_capture_saved_and_stopped": true,
+    "test_started_new_usb_capture": false
+  },
+  "limitations": [
+    "Capture title says Forward-Left, but observed traffic is startup Left then a single Apply to Forward; final restore is not present.",
+    "Only captured assignment state is established; screenshot after recording shows the Windows desktop, not Button-tab values.",
+    "Button1 association combines isolated guided change, operator recording name and retained static KEYMAP corroboration.",
+    "VirtualBox candidate bytes occur in control-phase setup slots; shortened payloads were not reconstructed.",
+    "This analysis does not send HID commands or change Resa application code."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

@@ -1,0 +1,323 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-18-cycle-breathing-slot1-custom-confirm-1792254427-VCIUW4UY.pcapng",
+  "sha256": "df2c0effe241b9bafb941713b230e4f7b811134fb80729a2f5fad42786fc488b",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-18-cycle-breathing-slot1-custom-confirm-1792254427-VCIUW4UY.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792254428.4992676,
+    "deadline": 1792254548.499268,
+    "status": "stopped",
+    "name": "18 cycle breathing Slot1 Custom Confirm",
+    "reason": "stopped by user",
+    "ended": 1792254489.4448578
+  },
+  "summary": {
+    "capture": "trace-18-cycle-breathing-slot1-custom-confirm-1792254427-VCIUW4UY.pcapng",
+    "sha256": "df2c0effe241b9bafb941713b230e4f7b811134fb80729a2f5fad42786fc488b",
+    "bytes": 3791208,
+    "packets": 37147,
+    "duration": 59.344005,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 18387,
+      "1": 18760
+    },
+    "control_frames": 18387,
+    "feature_requests": 2627,
+    "set_report_requests": 2622,
+    "get_report_requests": 5,
+    "truncated_frames": 22467,
+    "feature_payloads": {
+      "": 2627
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 37147,
+    "excluded_before_five_seconds": 793,
+    "retained_count": 36354,
+    "selected": [
+      {
+        "frame": 1833,
+        "report_hex": "07 18 03 00 20 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 1841,
+        "report_hex": "07 18 03 01 20 00 7f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 1848,
+        "report_hex": "07 18 03 02 20 00 3f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 11856,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 11863,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 16263,
+        "report_hex": "07 18 03 00 20 00 f0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 16271,
+        "report_hex": "07 18 03 01 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 16281,
+        "report_hex": "07 18 03 02 20 00 0f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 25042,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 25049,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 28114,
+        "report_hex": "07 18 03 00 20 00 f0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 28123,
+        "report_hex": "07 18 03 01 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 28130,
+        "report_hex": "07 18 03 02 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 37130,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 37139,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "picker_screenshot": {
+    "source": "assets/screenshot-1792254476989891737.png",
+    "sha256": "87cc7aa0fe0ce9036bc4483f82ebb8c6f317163b8da0dfb0557c4621f382adab",
+    "observed_rgb": [
+      0,
+      0,
+      0
+    ],
+    "observed_luminosity": 0,
+    "observed_preview": "black",
+    "hue": 178,
+    "saturation": 31,
+    "dialog_state": "open, prior to final Apply"
+  },
+  "bursts": [
+    {
+      "phase": "Startup: quantized slot1 custom color",
+      "first": 12.881024,
+      "last": 16.912434,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "channel_evidence": [
+        {
+          "coordinate_hex": "0020",
+          "frame": 1833,
+          "report_hex": "07 18 03 00 20 00 b0 07",
+          "value_hex": "b0"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 1841,
+          "report_hex": "07 18 03 01 20 00 7f 07",
+          "value_hex": "7f"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 1848,
+          "report_hex": "07 18 03 02 20 00 3f 07",
+          "value_hex": "3f"
+        }
+      ],
+      "user_rgb_nibbles": [
+        11,
+        7,
+        3
+      ],
+      "preserved_low_nibbles": [
+        0,
+        15,
+        15
+      ],
+      "differences_from_previous": [],
+      "finalizer_frames": [
+        11856,
+        11863
+      ]
+    },
+    {
+      "phase": "First Apply: blue channel maximum",
+      "first": 27.053215,
+      "last": 30.8914,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "channel_evidence": [
+        {
+          "coordinate_hex": "0020",
+          "frame": 16263,
+          "report_hex": "07 18 03 00 20 00 f0 07",
+          "value_hex": "f0"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 16271,
+          "report_hex": "07 18 03 01 20 00 ff 07",
+          "value_hex": "ff"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 16281,
+          "report_hex": "07 18 03 02 20 00 0f 07",
+          "value_hex": "0f"
+        }
+      ],
+      "user_rgb_nibbles": [
+        15,
+        15,
+        0
+      ],
+      "preserved_low_nibbles": [
+        0,
+        15,
+        15
+      ],
+      "differences_from_previous": [
+        {
+          "index": 34,
+          "before": "07 18 03 00 20 00 b0 07",
+          "after": "07 18 03 00 20 00 f0 07",
+          "frame": 16263,
+          "time": 27.298512
+        },
+        {
+          "index": 35,
+          "before": "07 18 03 01 20 00 7f 07",
+          "after": "07 18 03 01 20 00 ff 07",
+          "frame": 16271,
+          "time": 27.299488
+        },
+        {
+          "index": 36,
+          "before": "07 18 03 02 20 00 3f 07",
+          "after": "07 18 03 02 20 00 0f 07",
+          "frame": 16281,
+          "time": 27.300864
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 17543,
+          "time": 27.678188
+        }
+      ],
+      "finalizer_frames": [
+        25042,
+        25049
+      ]
+    },
+    {
+      "phase": "Final Apply: screenshot black",
+      "first": 53.646943,
+      "last": 57.430067,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "channel_evidence": [
+        {
+          "coordinate_hex": "0020",
+          "frame": 28114,
+          "report_hex": "07 18 03 00 20 00 f0 07",
+          "value_hex": "f0"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 28123,
+          "report_hex": "07 18 03 01 20 00 ff 07",
+          "value_hex": "ff"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 28130,
+          "report_hex": "07 18 03 02 20 00 ff 07",
+          "value_hex": "ff"
+        }
+      ],
+      "user_rgb_nibbles": [
+        15,
+        15,
+        15
+      ],
+      "preserved_low_nibbles": [
+        0,
+        15,
+        15
+      ],
+      "differences_from_previous": [
+        {
+          "index": 36,
+          "before": "07 18 03 02 20 00 0f 07",
+          "after": "07 18 03 02 20 00 ff 07",
+          "frame": 28130,
+          "time": 53.854512
+        }
+      ],
+      "finalizer_frames": [
+        37130,
+        37139
+      ]
+    }
+  ],
+  "final_custom_apply_complete": true,
+  "effect_speed_field_constant_hex": "95",
+  "slot1_rgb_fields_hex": [
+    "0020",
+    "0021",
+    "0022"
+  ],
+  "channel_mask_hex": "f0",
+  "preserve_dpi_mask_hex": "0f",
+  "limitations": [
+    "The screenshot shows selected RGB 0/0/0 and Lum 0 while the color dialog is open; the later complete final Apply carries the corresponding maximum inverted nibbles.",
+    "Startup high nibbles 11/7/3 are consistent with the earlier suggested 64/128/192 quantization, but exact startup picker values were not photographed or confirmed.",
+    "One exact black endpoint and earlier guided primary colors do not establish every encoder rounding boundary or every 8-bit RGB value.",
+    "Only GUI color slot 1 has been isolated; remaining slots are static serialization candidates pending GUI correlation.",
+    "Physical color fidelity, brightness and persistence remain unmeasured. Candidate VirtualBox setup bytes are used without filling missing payload bytes.",
+    "No new HID configuration commands or Resa app changes were performed during analysis."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

@@ -1,0 +1,177 @@
+{
+  "device": "Fantech X16v2 30fa:1440",
+  "button_slots_observed": {
+    "1": "0044",
+    "2": "0046",
+    "3": "0045",
+    "4": "0048",
+    "5": "0047",
+    "6": "0049",
+    "7": "004a"
+  },
+  "action_mask_hex": "1f",
+  "preserve_upper_mask_hex": "e0",
+  "scope": "Common ordinary-action dictionary with all seven button slots runtime correlated via guided changes. Keyboard/modifier encoding is separate. These capture analyses do not install new Resa controls.",
+  "actions": [
+    {
+      "ui_action": "Left click",
+      "action_code_hex": "01",
+      "byte_with_recorded_20_flags_hex": "21",
+      "recordings": [
+        "08"
+      ]
+    },
+    {
+      "ui_action": "Right click",
+      "action_code_hex": "03",
+      "byte_with_recorded_20_flags_hex": "23",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "Middle click",
+      "action_code_hex": "02",
+      "byte_with_recorded_20_flags_hex": "22",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "Back",
+      "action_code_hex": "04",
+      "byte_with_recorded_20_flags_hex": "24",
+      "recordings": [
+        "08",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "ui_action": "Forward",
+      "action_code_hex": "05",
+      "byte_with_recorded_20_flags_hex": "25",
+      "recordings": [
+        "08",
+        "11"
+      ]
+    },
+    {
+      "ui_action": "Rapid Fire",
+      "action_code_hex": "09",
+      "byte_with_recorded_20_flags_hex": "29",
+      "recordings": [
+        "11"
+      ]
+    },
+    {
+      "ui_action": "DPI Loop",
+      "action_code_hex": "06",
+      "byte_with_recorded_20_flags_hex": "26",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "DPI up",
+      "action_code_hex": "0b",
+      "byte_with_recorded_20_flags_hex": "2b",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "DPI down",
+      "action_code_hex": "0c",
+      "byte_with_recorded_20_flags_hex": "2c",
+      "recordings": [
+        "12"
+      ]
+    },
+    {
+      "ui_action": "Color cycle",
+      "action_code_hex": "15",
+      "byte_with_recorded_20_flags_hex": "35",
+      "recordings": [
+        "12"
+      ]
+    }
+  ],
+  "recording12_source": "captures/vm-052785d3b59d/trace-12-button5-remaining-action-1792250416-TEKTHPZD.pcapng",
+  "recording12_sha256": "d001e890c8625b0a87272347be5970917744ec30a0ba30f86520c8cef53faffa",
+  "recording12_evidence": [
+    {
+      "frame": 1423,
+      "relative_time": 5.746564,
+      "report_hex": "07 18 03 07 40 00 24 07",
+      "full_byte_hex": "24",
+      "action_low_five_bits_hex": "04",
+      "phase": "Backward (startup)"
+    },
+    {
+      "frame": 16203,
+      "relative_time": 14.430245,
+      "report_hex": "07 18 03 07 40 00 23 07",
+      "full_byte_hex": "23",
+      "action_low_five_bits_hex": "03",
+      "phase": "Right Click"
+    },
+    {
+      "frame": 30443,
+      "relative_time": 23.75711,
+      "report_hex": "07 18 03 07 40 00 22 07",
+      "full_byte_hex": "22",
+      "action_low_five_bits_hex": "02",
+      "phase": "Middle Click"
+    },
+    {
+      "frame": 44734,
+      "relative_time": 31.6641,
+      "report_hex": "07 18 03 07 40 00 26 07",
+      "full_byte_hex": "26",
+      "action_low_five_bits_hex": "06",
+      "phase": "DPI Loop"
+    },
+    {
+      "frame": 59567,
+      "relative_time": 42.476989,
+      "report_hex": "07 18 03 07 40 00 2b 07",
+      "full_byte_hex": "2b",
+      "action_low_five_bits_hex": "0b",
+      "phase": "DPI+"
+    },
+    {
+      "frame": 74043,
+      "relative_time": 51.461984,
+      "report_hex": "07 18 03 07 40 00 2c 07",
+      "full_byte_hex": "2c",
+      "action_low_five_bits_hex": "0c",
+      "phase": "DPI-"
+    },
+    {
+      "frame": 88877,
+      "relative_time": 60.554177,
+      "report_hex": "07 18 03 07 40 00 35 07",
+      "full_byte_hex": "35",
+      "action_low_five_bits_hex": "15",
+      "phase": "LED Loop"
+    },
+    {
+      "frame": 102747,
+      "relative_time": 67.508224,
+      "report_hex": "07 18 03 07 40 00 24 07",
+      "full_byte_hex": "24",
+      "action_low_five_bits_hex": "04",
+      "phase": "Backward (restore)"
+    }
+  ],
+  "limitations": [
+    "Action labels follow the exact operator recording notes and guided sequence; USB bytes alone do not supply UI names.",
+    "Recorded assignment traffic does not establish physical clicks, DPI changes, LED effects, hold/toggle behavior, or persistence.",
+    "VirtualBox control-phase setup slots contain candidate bytes; many records are shortened. Missing bytes were not reconstructed.",
+    "Reuse across buttons is supported by the retained shared vendor serializer and independently mapped button-4/5 coordinates; this recording directly changes only button 5.",
+    "Other button coordinates and keyboard/modifier encoding require separate evidence.",
+    "No physical device commands or app code changes were performed during this analysis."
+  ],
+  "slot_evidence": "button-slot-mapping.json"
+}

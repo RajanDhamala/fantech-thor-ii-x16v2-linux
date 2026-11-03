@@ -1,0 +1,422 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-15-cycle-breathing-speed-max-mid-main-1792253669-QUN2RKNS.pcapng",
+  "sha256": "a79cab1a508ee2a8c2beb43f5b8c6ce0e36eab9b329d437830efc2f8b7227d69",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-15-cycle-breathing-speed-max-mid-main-1792253669-QUN2RKNS.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792253670.0849228,
+    "deadline": 1792253790.0849235,
+    "status": "stopped",
+    "name": "15 cycle breathing speed Max-Mid-Main",
+    "reason": "stopped by user",
+    "ended": 1792253704.613749
+  },
+  "summary": {
+    "capture": "trace-15-cycle-breathing-speed-max-mid-main-1792253669-QUN2RKNS.pcapng",
+    "sha256": "a79cab1a508ee2a8c2beb43f5b8c6ce0e36eab9b329d437830efc2f8b7227d69",
+    "bytes": 4803192,
+    "packets": 47111,
+    "duration": 32.974101,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 24463,
+      "1": 22648
+    },
+    "control_frames": 24463,
+    "feature_requests": 3476,
+    "set_report_requests": 3469,
+    "get_report_requests": 7,
+    "truncated_frames": 28749,
+    "feature_payloads": {
+      "": 3476
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 47111,
+    "excluded_before_five_seconds": 133,
+    "retained_count": 46978,
+    "selected": [
+      {
+        "frame": 366,
+        "report_hex": "07 18 03 04 18 00 80 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 373,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 12548,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 12555,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14388,
+        "report_hex": "07 18 03 04 18 00 95 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14395,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 26318,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 26355,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 27238,
+        "report_hex": "07 18 03 04 18 00 92 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 27247,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 39106,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 39171,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 39994,
+        "report_hex": "07 18 03 04 18 00 90 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 40001,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 47099,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 47106,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "analysis_window": {
+    "ignore_first_seconds": 5,
+    "excluded_packet_records": 133,
+    "retained_packet_records": 46978,
+    "startup_separated": true
+  },
+  "operator_context": {
+    "completion": "Done all, final custom color chosen.",
+    "slot_confirmation": "Only slot one.",
+    "exact_custom_rgb": null
+  },
+  "bursts": [
+    {
+      "phase": "Startup: DPI Breathing, minimum",
+      "first": 6.77745,
+      "last": 10.459058,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "80",
+        "001d": "ff",
+        "0020": "00",
+        "0021": "1f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 366,
+          "relative_time": 6.963939,
+          "report_hex": "07 18 03 04 18 00 80 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 373,
+          "relative_time": 6.964593,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 410,
+          "relative_time": 7.008399,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 417,
+          "relative_time": 7.009664,
+          "report_hex": "07 18 03 01 20 00 1f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 424,
+          "relative_time": 7.010982,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Cycle Breathing maximum speed",
+      "first": 17.643607,
+      "last": 21.23894,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "95",
+        "001d": "ff",
+        "0020": "00",
+        "0021": "1f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 14388,
+          "relative_time": 17.806172,
+          "report_hex": "07 18 03 04 18 00 95 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 14395,
+          "relative_time": 17.806687,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 14430,
+          "relative_time": 17.833347,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 14438,
+          "relative_time": 17.833813,
+          "report_hex": "07 18 03 01 20 00 1f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 14446,
+          "relative_time": 17.834274,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 80 07",
+          "after": "07 18 03 04 18 00 95 07",
+          "frame": 14388,
+          "time": 17.806172
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 15867,
+          "time": 18.212939
+        }
+      ],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Cycle Breathing middle speed",
+      "first": 23.348341,
+      "last": 26.942364,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "92",
+        "001d": "ff",
+        "0020": "00",
+        "0021": "1f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 27238,
+          "relative_time": 23.508421,
+          "report_hex": "07 18 03 04 18 00 92 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 27247,
+          "relative_time": 23.508916,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 27338,
+          "relative_time": 23.537113,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 27347,
+          "relative_time": 23.538348,
+          "report_hex": "07 18 03 01 20 00 1f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 27356,
+          "relative_time": 23.539319,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 95 07",
+          "after": "07 18 03 04 18 00 92 07",
+          "frame": 27238,
+          "time": 23.508421
+        }
+      ],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Cycle Breathing minimum speed",
+      "first": 29.196876,
+      "last": 32.66134,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "90",
+        "001d": "ff",
+        "0020": "00",
+        "0021": "1f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 39994,
+          "relative_time": 29.337291,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 40001,
+          "relative_time": 29.338095,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 40038,
+          "relative_time": 29.364944,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 40045,
+          "relative_time": 29.365509,
+          "report_hex": "07 18 03 01 20 00 1f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 40052,
+          "relative_time": 29.366337,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 92 07",
+          "after": "07 18 03 04 18 00 90 07",
+          "frame": 39994,
+          "time": 29.337291
+        }
+      ],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    }
+  ],
+  "static_cross_checks": [
+    {
+      "app_relative_path": "evidence/ghidra-typed-pass/00419e20.c",
+      "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec"
+    },
+    {
+      "app_relative_path": "evidence/ghidra-typed-pass/00422610.c",
+      "sha256": "868d3b9d5ba259d8ff4641355470df5eb12b427f1e50cad57738dad4d2314b67"
+    },
+    {
+      "app_relative_path": "extracted/payload/config.ini",
+      "sha256": "b65c47dcb29aa4165e42e01d31dc08c123c3c81f03f76251f1018575d4d34ed9"
+    }
+  ],
+  "limitations": [
+    "Labels follow guided actions, recording names and operator completion report; operator explicitly confirms only slot 1 was edited in recording 17.",
+    "Physical lighting behavior, timing units and persistence are not independently measured.",
+    "Originals are preserved; VirtualBox candidate setup-slot bytes are analyzed without reconstructing shortened payloads.",
+    "REA TShark provider was unavailable earlier; these are local-parser and sharkd observations plus retained static decompilation, not newly produced REA Evidence.",
+    "Final custom-color Apply in 17 is incomplete; only slot 1 is runtime-correlated for colors and participation. Exact selected custom RGB is not supplied.",
+    "No device configuration commands or Resa app changes were performed during analysis."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

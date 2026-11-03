@@ -1,0 +1,710 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-23-flowing-water-slot1-color-toggle-1792255930-3DTBTLSV.pcapng",
+  "sha256": "bab1d8383e455fa09a21b7d532858f326d0a89aeacd0c9ecefc6bf7472623e27",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-23-flowing-water-slot1-color-toggle-1792255930-3DTBTLSV.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792255930.564634,
+    "deadline": 1792256050.5646348,
+    "status": "stopped",
+    "name": "23 flowing water slot1 color toggle",
+    "reason": "stopped by user",
+    "ended": 1792255969.8998675
+  },
+  "summary": {
+    "capture": "trace-23-flowing-water-slot1-color-toggle-1792255930-3DTBTLSV.pcapng",
+    "sha256": "bab1d8383e455fa09a21b7d532858f326d0a89aeacd0c9ecefc6bf7472623e27",
+    "bytes": 5896848,
+    "packets": 57627,
+    "duration": 37.896533,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 24463,
+      "1": 33164
+    },
+    "control_frames": 24463,
+    "feature_requests": 3481,
+    "set_report_requests": 3474,
+    "get_report_requests": 7,
+    "truncated_frames": 34007,
+    "feature_payloads": {
+      "": 3481
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 57627,
+    "excluded_before_five_seconds": 133,
+    "retained_packet_records": 57494,
+    "selected": [
+      {
+        "frame": 366,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 373,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 410,
+        "report_hex": "07 18 03 00 20 00 f0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 417,
+        "report_hex": "07 18 03 01 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 424,
+        "report_hex": "07 18 03 02 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 575,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 640,
+        "report_hex": "07 18 03 02 38 00 3b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 675,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14020,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14063,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17314,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17321,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17448,
+        "report_hex": "07 18 03 00 20 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17457,
+        "report_hex": "07 18 03 01 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17464,
+        "report_hex": "07 18 03 02 20 00 7f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17765,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17892,
+        "report_hex": "07 18 03 02 38 00 0b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17929,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 30532,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 30569,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31532,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31541,
+        "report_hex": "07 18 03 05 18 00 fe 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31634,
+        "report_hex": "07 18 03 00 20 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31643,
+        "report_hex": "07 18 03 01 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31650,
+        "report_hex": "07 18 03 02 20 00 7f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31923,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 32054,
+        "report_hex": "07 18 03 02 38 00 0b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 32091,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44511,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44549,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45378,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45385,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45514,
+        "report_hex": "07 18 03 00 20 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45521,
+        "report_hex": "07 18 03 01 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45528,
+        "report_hex": "07 18 03 02 20 00 7f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45829,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45955,
+        "report_hex": "07 18 03 02 38 00 0b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45991,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 57554,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 57591,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "all_three_applies_complete": true,
+  "bursts": [
+    {
+      "burst": 1,
+      "first": 5.454085,
+      "last": 9.020994,
+      "feature_setups": 872,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 14020,
+          "timestamp": 1792255940.581885,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 9.006448
+        },
+        {
+          "frame": 14063,
+          "timestamp": 1792255940.596484,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 9.021047
+        }
+      ],
+      "differences_vs_previous": [],
+      "phase": "Startup: prior Flowing Water state",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 366,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "001d": {
+          "value": "ff",
+          "frame": 373,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        "0020": {
+          "value": "f0",
+          "frame": 410,
+          "report_hex": "07 18 03 00 20 00 f0 07"
+        },
+        "0021": {
+          "value": "ff",
+          "frame": 417,
+          "report_hex": "07 18 03 01 20 00 ff 07"
+        },
+        "0022": {
+          "value": "ff",
+          "frame": 424,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 575,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "3b",
+          "frame": 640,
+          "report_hex": "07 18 03 02 38 00 3b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 675,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 2,
+      "first": 20.672875,
+      "last": 24.099162,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 30532,
+          "timestamp": 1792255955.659781,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 24.084344
+        },
+        {
+          "frame": 30569,
+          "timestamp": 1792255955.674669,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 24.099232
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 00 20 00 f0 07",
+          "after": "07 18 03 00 20 00 00 07",
+          "frame": 17448
+        },
+        {
+          "before": "07 18 03 02 20 00 ff 07",
+          "after": "07 18 03 02 20 00 7f 07",
+          "frame": 17464
+        },
+        {
+          "before": "07 18 03 02 38 00 3b 07",
+          "after": "07 18 03 02 38 00 0b 07",
+          "frame": 17892
+        },
+        {
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 18849
+        }
+      ],
+      "phase": "Slot1 color Apply; direction also changes to Clockwise",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 17314,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "001d": {
+          "value": "ff",
+          "frame": 17321,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        "0020": {
+          "value": "00",
+          "frame": 17448,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        "0021": {
+          "value": "ff",
+          "frame": 17457,
+          "report_hex": "07 18 03 01 20 00 ff 07"
+        },
+        "0022": {
+          "value": "7f",
+          "frame": 17464,
+          "report_hex": "07 18 03 02 20 00 7f 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 17765,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "0b",
+          "frame": 17892,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 17929,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 3,
+      "first": 27.207108,
+      "last": 30.551761,
+      "feature_setups": 868,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 44511,
+          "timestamp": 1792255962.111995,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 30.536558
+        },
+        {
+          "frame": 44549,
+          "timestamp": 1792255962.127206,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 30.551769
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 05 18 00 ff 07",
+          "after": "07 18 03 05 18 00 fe 07",
+          "frame": 31541
+        }
+      ],
+      "phase": "Slot1 disabled",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 31532,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "001d": {
+          "value": "fe",
+          "frame": 31541,
+          "report_hex": "07 18 03 05 18 00 fe 07"
+        },
+        "0020": {
+          "value": "00",
+          "frame": 31634,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        "0021": {
+          "value": "ff",
+          "frame": 31643,
+          "report_hex": "07 18 03 01 20 00 ff 07"
+        },
+        "0022": {
+          "value": "7f",
+          "frame": 31650,
+          "report_hex": "07 18 03 02 20 00 7f 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 31923,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "0b",
+          "frame": 32054,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 32091,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 4,
+      "first": 32.15467,
+      "last": 35.458313,
+      "feature_setups": 872,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 57554,
+          "timestamp": 1792255967.018872,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 35.443435
+        },
+        {
+          "frame": 57591,
+          "timestamp": 1792255967.033796,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 35.458359
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 05 18 00 fe 07",
+          "after": "07 18 03 05 18 00 ff 07",
+          "frame": 45385
+        }
+      ],
+      "phase": "Slot1 enabled",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 45378,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "001d": {
+          "value": "ff",
+          "frame": 45385,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        "0020": {
+          "value": "00",
+          "frame": 45514,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        "0021": {
+          "value": "ff",
+          "frame": 45521,
+          "report_hex": "07 18 03 01 20 00 ff 07"
+        },
+        "0022": {
+          "value": "7f",
+          "frame": 45528,
+          "report_hex": "07 18 03 02 20 00 7f 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 45829,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "0b",
+          "frame": 45955,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 45991,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    }
+  ],
+  "shared_palette_layout_confirmed_for_slot1": true,
+  "shared_slot1_toggle_confirmed": true,
+  "limitations": [
+    "Operator completed the guided slot1 color/off/on plan; exact chosen RGB was not photographed.",
+    "Changed high nibbles are 0/15/7, matching the previously established palette layout but not the expected pure-red endpoint 0/15/15. Do not label the selected color pure red or infer exact 8-bit RGB.",
+    "First Apply also changes direction from Overwrite to Clockwise (003a 3b->0b), alongside the known startup-to-Apply 006f 00->04. Subsequent off/on Applies isolate only 001d bit0.",
+    "Slot1 runtime correspondence is confirmed for Flowing Water. Other slots retain the Cycle Breathing and static serializer evidence; no separate Flowing Water sweep of slots2-7 is claimed.",
+    "Raw speed/brightness and physical color/participation/persistence are not measured. Shortened VirtualBox candidate setup-slot records are not reconstructed.",
+    "Local parser/sharkd verification is not new REA Evidence; its TShark provider was previously unavailable. No analyst device commands or Resa implementation changes were performed."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

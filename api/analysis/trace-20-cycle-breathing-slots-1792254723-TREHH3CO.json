@@ -1,0 +1,622 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-20-cycle-breathing-slots-1792254723-TREHH3CO.pcapng",
+  "sha256": "5d3ab9df81854b4b86009e31ca3876ddb7ac8496fb00cc9bde96a9d7548b55fd",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-20-cycle-breathing-slots-1792254723-TREHH3CO.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792254724.163608,
+    "deadline": 1792254844.1636086,
+    "status": "stopped",
+    "name": "20 cycle breathing slots",
+    "reason": "stopped by user",
+    "ended": 1792254797.8195205
+  },
+  "summary": {
+    "capture": "trace-20-cycle-breathing-slots-1792254723-TREHH3CO.pcapng",
+    "sha256": "5d3ab9df81854b4b86009e31ca3876ddb7ac8496fb00cc9bde96a9d7548b55fd",
+    "bytes": 9332136,
+    "packets": 91359,
+    "duration": 72.008594,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 42691,
+      "1": 48668
+    },
+    "control_frames": 42691,
+    "feature_requests": 6119,
+    "set_report_requests": 6106,
+    "get_report_requests": 13,
+    "truncated_frames": 54773,
+    "feature_payloads": {
+      "": 6119
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 91359,
+    "excluded_before_five_seconds": 856,
+    "retained_count": 90503,
+    "selected": [
+      {
+        "frame": 16690,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 16701,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 29253,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 29319,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 19287,
+        "report_hex": "07 18 03 03 20 00 0f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 19294,
+        "report_hex": "07 18 03 04 20 00 0f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 20743,
+        "report_hex": "07 18 03 07 68 00 04 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 42048,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 42055,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31833,
+        "report_hex": "07 18 03 07 20 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31856,
+        "report_hex": "07 18 03 00 28 00 0f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 55088,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 55122,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44687,
+        "report_hex": "07 18 03 01 28 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44707,
+        "report_hex": "07 18 03 03 28 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 67736,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 67743,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 57513,
+        "report_hex": "07 18 03 05 28 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 57522,
+        "report_hex": "07 18 03 06 28 00 0f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 80968,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 81035,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 69854,
+        "report_hex": "07 18 03 07 28 00 03 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 91342,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 91351,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 83780,
+        "report_hex": "07 18 03 06 38 00 00 07",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "bursts": [
+    {
+      "phase": "Startup",
+      "first": 10.436064,
+      "last": 14.478636,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "differences_from_previous": [],
+      "palette_fields": {
+        "0020": "f0",
+        "0021": "ff",
+        "0022": "ff",
+        "0023": "ff",
+        "0024": "8f",
+        "0025": "00",
+        "0026": "0f",
+        "0027": "f0",
+        "0028": "8f",
+        "0029": "f0",
+        "002a": "0f",
+        "002b": "f0",
+        "002c": "00",
+        "002d": "f0",
+        "002e": "ff",
+        "002f": "f3",
+        "0030": "03",
+        "0031": "03",
+        "003e": "8f",
+        "003f": "40"
+      },
+      "finalizer_frames": [
+        16690,
+        16701
+      ]
+    },
+    {
+      "phase": "Slot 2 to white (guided)",
+      "first": 22.686352,
+      "last": 26.57151,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "differences_from_previous": [
+        {
+          "index": 37,
+          "before": "07 18 03 03 20 00 ff 07",
+          "after": "07 18 03 03 20 00 0f 07",
+          "frame": 19287,
+          "time": 22.904367
+        },
+        {
+          "index": 38,
+          "before": "07 18 03 04 20 00 8f 07",
+          "after": "07 18 03 04 20 00 0f 07",
+          "frame": 19294,
+          "time": 22.90543
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 20743,
+          "time": 23.250684
+        }
+      ],
+      "palette_fields": {
+        "0020": "f0",
+        "0021": "ff",
+        "0022": "ff",
+        "0023": "0f",
+        "0024": "0f",
+        "0025": "00",
+        "0026": "0f",
+        "0027": "f0",
+        "0028": "8f",
+        "0029": "f0",
+        "002a": "0f",
+        "002b": "f0",
+        "002c": "00",
+        "002d": "f0",
+        "002e": "ff",
+        "002f": "f3",
+        "0030": "03",
+        "0031": "03",
+        "003e": "8f",
+        "003f": "40"
+      },
+      "finalizer_frames": [
+        29253,
+        29319
+      ]
+    },
+    {
+      "phase": "Slot 3 to white (guided)",
+      "first": 32.398133,
+      "last": 36.042516,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "differences_from_previous": [
+        {
+          "index": 41,
+          "before": "07 18 03 07 20 00 f0 07",
+          "after": "07 18 03 07 20 00 00 07",
+          "frame": 31833,
+          "time": 32.5937
+        },
+        {
+          "index": 44,
+          "before": "07 18 03 00 28 00 8f 07",
+          "after": "07 18 03 00 28 00 0f 07",
+          "frame": 31856,
+          "time": 32.619134
+        }
+      ],
+      "palette_fields": {
+        "0020": "f0",
+        "0021": "ff",
+        "0022": "ff",
+        "0023": "0f",
+        "0024": "0f",
+        "0025": "00",
+        "0026": "0f",
+        "0027": "00",
+        "0028": "0f",
+        "0029": "f0",
+        "002a": "0f",
+        "002b": "f0",
+        "002c": "00",
+        "002d": "f0",
+        "002e": "ff",
+        "002f": "f3",
+        "0030": "03",
+        "0031": "03",
+        "003e": "8f",
+        "003f": "40"
+      },
+      "finalizer_frames": [
+        42048,
+        42055
+      ]
+    },
+    {
+      "phase": "Slot 4 to white (guided)",
+      "first": 42.551175,
+      "last": 46.227751,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "differences_from_previous": [
+        {
+          "index": 45,
+          "before": "07 18 03 01 28 00 f0 07",
+          "after": "07 18 03 01 28 00 00 07",
+          "frame": 44687,
+          "time": 42.792266
+        },
+        {
+          "index": 47,
+          "before": "07 18 03 03 28 00 f0 07",
+          "after": "07 18 03 03 28 00 00 07",
+          "frame": 44707,
+          "time": 42.794332
+        }
+      ],
+      "palette_fields": {
+        "0020": "f0",
+        "0021": "ff",
+        "0022": "ff",
+        "0023": "0f",
+        "0024": "0f",
+        "0025": "00",
+        "0026": "0f",
+        "0027": "00",
+        "0028": "0f",
+        "0029": "00",
+        "002a": "0f",
+        "002b": "00",
+        "002c": "00",
+        "002d": "f0",
+        "002e": "ff",
+        "002f": "f3",
+        "0030": "03",
+        "0031": "03",
+        "003e": "8f",
+        "003f": "40"
+      },
+      "finalizer_frames": [
+        55088,
+        55122
+      ]
+    },
+    {
+      "phase": "Slot 5 to white (guided)",
+      "first": 50.382757,
+      "last": 54.056376,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "differences_from_previous": [
+        {
+          "index": 49,
+          "before": "07 18 03 05 28 00 f0 07",
+          "after": "07 18 03 05 28 00 00 07",
+          "frame": 57513,
+          "time": 50.608957
+        },
+        {
+          "index": 50,
+          "before": "07 18 03 06 28 00 ff 07",
+          "after": "07 18 03 06 28 00 0f 07",
+          "frame": 57522,
+          "time": 50.610035
+        }
+      ],
+      "palette_fields": {
+        "0020": "f0",
+        "0021": "ff",
+        "0022": "ff",
+        "0023": "0f",
+        "0024": "0f",
+        "0025": "00",
+        "0026": "0f",
+        "0027": "00",
+        "0028": "0f",
+        "0029": "00",
+        "002a": "0f",
+        "002b": "00",
+        "002c": "00",
+        "002d": "00",
+        "002e": "0f",
+        "002f": "f3",
+        "0030": "03",
+        "0031": "03",
+        "003e": "8f",
+        "003f": "40"
+      },
+      "finalizer_frames": [
+        67736,
+        67743
+      ]
+    },
+    {
+      "phase": "Slot 6 to white (guided)",
+      "first": 58.148846,
+      "last": 61.873684,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "differences_from_previous": [
+        {
+          "index": 51,
+          "before": "07 18 03 07 28 00 f3 07",
+          "after": "07 18 03 07 28 00 03 07",
+          "frame": 69854,
+          "time": 58.410972
+        }
+      ],
+      "palette_fields": {
+        "0020": "f0",
+        "0021": "ff",
+        "0022": "ff",
+        "0023": "0f",
+        "0024": "0f",
+        "0025": "00",
+        "0026": "0f",
+        "0027": "00",
+        "0028": "0f",
+        "0029": "00",
+        "002a": "0f",
+        "002b": "00",
+        "002c": "00",
+        "002d": "00",
+        "002e": "0f",
+        "002f": "03",
+        "0030": "03",
+        "0031": "03",
+        "003e": "8f",
+        "003f": "40"
+      },
+      "finalizer_frames": [
+        80968,
+        81035
+      ]
+    },
+    {
+      "phase": "Slot 7 to white (guided)",
+      "first": 67.0508,
+      "last": 70.43692,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "differences_from_previous": [
+        {
+          "index": 70,
+          "before": "07 18 03 06 38 00 8f 07",
+          "after": "07 18 03 06 38 00 00 07",
+          "frame": 83780,
+          "time": 67.364329
+        }
+      ],
+      "palette_fields": {
+        "0020": "f0",
+        "0021": "ff",
+        "0022": "ff",
+        "0023": "0f",
+        "0024": "0f",
+        "0025": "00",
+        "0026": "0f",
+        "0027": "00",
+        "0028": "0f",
+        "0029": "00",
+        "002a": "0f",
+        "002b": "00",
+        "002c": "00",
+        "002d": "00",
+        "002e": "0f",
+        "002f": "03",
+        "0030": "03",
+        "0031": "03",
+        "003e": "00",
+        "003f": "40"
+      },
+      "finalizer_frames": [
+        91342,
+        91351
+      ]
+    }
+  ],
+  "palette_slots": {
+    "1": {
+      "R": {
+        "coordinate_hex": "0020",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0021",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0022",
+        "mask_hex": "f0"
+      }
+    },
+    "2": {
+      "R": {
+        "coordinate_hex": "0023",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0024",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0025",
+        "mask_hex": "f0"
+      }
+    },
+    "3": {
+      "R": {
+        "coordinate_hex": "0026",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0027",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0028",
+        "mask_hex": "f0"
+      }
+    },
+    "4": {
+      "R": {
+        "coordinate_hex": "0029",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "002a",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "002b",
+        "mask_hex": "f0"
+      }
+    },
+    "5": {
+      "R": {
+        "coordinate_hex": "002c",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "002d",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "002e",
+        "mask_hex": "f0"
+      }
+    },
+    "6": {
+      "R": {
+        "coordinate_hex": "002f",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0030",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0031",
+        "mask_hex": "f0"
+      }
+    },
+    "7": {
+      "R": {
+        "coordinate_hex": "003e",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "003e",
+        "mask_hex": "0f"
+      },
+      "B": {
+        "coordinate_hex": "003f",
+        "mask_hex": "0f"
+      }
+    }
+  },
+  "all_seven_gui_palette_groups_correlated": true,
+  "mode_speed_constant_hex": "95",
+  "participation_constant_hex": "ff",
+  "brightness_byte_constant_hex": "40",
+  "slot1_unchanged": true,
+  "first_six_slots_dpi_low_nibbles_preserved": true,
+  "all_six_changes_complete": true,
+  "final_palette_state": "Slot 1 unchanged; slots 2-7 user components all zero, consistent with white. No restoration was requested.",
+  "static_cross_check": {
+    "source": "../resa/evidence/ghidra-typed-pass/00419e20.c",
+    "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec",
+    "first_six_slot_channels_lines": "956-1100",
+    "seventh_slot_lines": "1163-1178"
+  },
+  "limitations": [
+    "Operator reports completing the guided slot-2-through-slot-7 white sequence. Exact white-picker fields are not photographed; nibbles become zero, consistent with white under the retained encoding.",
+    "Runtime changes independently identify each GUI slot group; channel bytes already at zero do not change. Unchanged channel associations are corroborated by retained static serialization.",
+    "Only slot 1 participation was isolated previously; other toggle bit positions are static correlations rather than separate toggle sweeps.",
+    "Slot 7 is not another sequential three-byte palette entry: R/G share 003e and B shares 003f with brightness.",
+    "Physical color, speed, brightness and persistence remain unmeasured. Shortened VirtualBox candidate setup bytes are not reconstructed.",
+    "No physical device commands or Resa application changes were performed during this analysis."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

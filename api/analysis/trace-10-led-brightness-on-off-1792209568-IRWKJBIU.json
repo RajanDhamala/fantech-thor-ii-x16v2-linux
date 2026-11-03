@@ -1,0 +1,720 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-10-led-brightness-on-off-1792209568-IRWKJBIU.pcapng",
+  "sha256": "b090a0caf0f0c57dbaf5cc2ca03105e83245f2fdabeaab7a0d08d2c2344efaef",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-10-led-brightness-on-off-1792209568-IRWKJBIU.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792209568.871677,
+    "deadline": 1792209688.8716772,
+    "status": "stopped",
+    "name": "10 Led brightness on off",
+    "notes": "Rgb",
+    "reason": "stopped by user",
+    "ended": 1792209639.2765474
+  },
+  "operator_context": {
+    "instruction_order": [
+      "Select Light On and maximum brightness, Apply",
+      "Lowest reachable brightness, Apply",
+      "Middle brightness, Apply"
+    ],
+    "actual_correction": "Operator could not move the slider to its absolute start/minimum.",
+    "label_confidence": "Maximum/lowest/middle labels correlate with the guided action order; exact UI positions are not numerically recorded.",
+    "physical_lights_at_lowest": "pending operator response",
+    "preceding_screenshot": "assets/screenshot-1792209481359210987.png",
+    "preceding_screenshot_shows": "Light On, one brightness slider, no visible color or off control.",
+    "preceding_screenshot_sha256": "13e4e41cf040e1b83b694d41575a43dc95409422b86d81cd48ab8a183c3e974e"
+  },
+  "summary": {
+    "capture": "trace-10-led-brightness-on-off-1792209568-IRWKJBIU.pcapng",
+    "sha256": "b090a0caf0f0c57dbaf5cc2ca03105e83245f2fdabeaab7a0d08d2c2344efaef",
+    "bytes": 6390016,
+    "packets": 62369,
+    "duration": 69.069326,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 24463,
+      "1": 37906
+    },
+    "control_frames": 24463,
+    "feature_requests": 3481,
+    "set_report_requests": 3474,
+    "get_report_requests": 7,
+    "truncated_frames": 36378,
+    "feature_payloads": {
+      "": 3481
+    }
+  },
+  "analysis_window": {
+    "capture": "trace-10-led-brightness-on-off-1792209568-IRWKJBIU",
+    "ignore_first_seconds": 5,
+    "display_filter": "frame.time_relative >= 5",
+    "retained_packet_records": 60776,
+    "excluded_packet_records": 1593,
+    "first_retained_frame": 1594,
+    "full_capture_packet_records": 62369,
+    "verified_partition": true,
+    "fresh_decoder_per_capture": true,
+    "scope_note": "Full-capture totals include early traffic. Setting comparisons exclude the first five seconds and separate startup."
+  },
+  "candidate_phases": [
+    {
+      "phase": "Startup (previous persisted state)",
+      "burst": 1,
+      "first": 9.497355,
+      "last": 12.812098,
+      "feature_setups": 874,
+      "cmd18_count": 867,
+      "other_candidate_reports": [],
+      "selected_records": {
+        "001C": {
+          "frame": 6274,
+          "timestamp": 1792209579.416078,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x712af4002d90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 03 04 18 00 90 07",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 1027,
+          "index": 24,
+          "requested_length": 1936,
+          "relative_time": 9.597629
+        },
+        "003F": {
+          "frame": 6773,
+          "timestamp": 1792209579.587857,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x712af4002d90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 03 07 38 00 50 07",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 1795,
+          "index": 56,
+          "requested_length": 1872,
+          "relative_time": 9.769408
+        }
+      },
+      "raw_brightness_code": 5,
+      "packed_mode_bits": 1,
+      "differences_vs_09_final_apply": [
+        {
+          "kind": "replace",
+          "reference_range": [
+            131,
+            131
+          ],
+          "recording_range": [
+            131,
+            131
+          ],
+          "reference_hex": [
+            "07 18 03 07 68 00 04 07"
+          ],
+          "recording_records": [
+            {
+              "frame": 7617,
+              "timestamp": 1792209579.773302,
+              "captured_length": 64,
+              "original_length": 72,
+              "urb_id": "0x712af4003350",
+              "event": "S",
+              "transfer_type": 2,
+              "endpoint": 0,
+              "device": 2,
+              "bus": 0,
+              "setup_flag": 0,
+              "data_flag": 1,
+              "status": 0,
+              "urb_length": 8,
+              "data_length": 0,
+              "setup_hex": "07 18 03 07 68 00 00 07",
+              "payload_hex": "",
+              "bm_request_type": 7,
+              "request": 24,
+              "value": 1795,
+              "index": 104,
+              "requested_length": 1792,
+              "relative_time": 9.954853
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "Apply 1 (guided maximum)",
+      "burst": 2,
+      "first": 28.83459,
+      "last": 32.156518,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "other_candidate_reports": [],
+      "selected_records": {
+        "001C": {
+          "frame": 21618,
+          "timestamp": 1792209598.772992,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x712af4003350",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 03 04 18 00 a0 07",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 1027,
+          "index": 24,
+          "requested_length": 1952,
+          "relative_time": 28.954543
+        },
+        "003F": {
+          "frame": 22237,
+          "timestamp": 1792209598.928786,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x712af4002d90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 03 07 38 00 00 07",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 1795,
+          "index": 56,
+          "requested_length": 1792,
+          "relative_time": 29.110337
+        }
+      },
+      "raw_brightness_code": 0,
+      "packed_mode_bits": 2,
+      "differences_vs_09_final_apply": [
+        {
+          "kind": "replace",
+          "reference_range": [
+            28,
+            28
+          ],
+          "recording_range": [
+            28,
+            28
+          ],
+          "reference_hex": [
+            "07 18 03 04 18 00 90 07"
+          ],
+          "recording_records": [
+            {
+              "frame": 21618,
+              "timestamp": 1792209598.772992,
+              "captured_length": 64,
+              "original_length": 72,
+              "urb_id": "0x712af4003350",
+              "event": "S",
+              "transfer_type": 2,
+              "endpoint": 0,
+              "device": 2,
+              "bus": 0,
+              "setup_flag": 0,
+              "data_flag": 1,
+              "status": 0,
+              "urb_length": 8,
+              "data_length": 0,
+              "setup_hex": "07 18 03 04 18 00 a0 07",
+              "payload_hex": "",
+              "bm_request_type": 7,
+              "request": 24,
+              "value": 1027,
+              "index": 24,
+              "requested_length": 1952,
+              "relative_time": 28.954543
+            }
+          ]
+        },
+        {
+          "kind": "replace",
+          "reference_range": [
+            71,
+            71
+          ],
+          "recording_range": [
+            71,
+            71
+          ],
+          "reference_hex": [
+            "07 18 03 07 38 00 50 07"
+          ],
+          "recording_records": [
+            {
+              "frame": 22237,
+              "timestamp": 1792209598.928786,
+              "captured_length": 64,
+              "original_length": 72,
+              "urb_id": "0x712af4002d90",
+              "event": "S",
+              "transfer_type": 2,
+              "endpoint": 0,
+              "device": 2,
+              "bus": 0,
+              "setup_flag": 0,
+              "data_flag": 1,
+              "status": 0,
+              "urb_length": 8,
+              "data_length": 0,
+              "setup_hex": "07 18 03 07 38 00 00 07",
+              "payload_hex": "",
+              "bm_request_type": 7,
+              "request": 24,
+              "value": 1795,
+              "index": 56,
+              "requested_length": 1792,
+              "relative_time": 29.110337
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "Apply 2 (guided lowest reachable; absolute minimum not reached)",
+      "burst": 3,
+      "first": 46.260546,
+      "last": 49.359615,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "other_candidate_reports": [],
+      "selected_records": {
+        "001C": {
+          "frame": 35860,
+          "timestamp": 1792209616.209694,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x712af4000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 03 04 18 00 a0 07",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 1027,
+          "index": 24,
+          "requested_length": 1952,
+          "relative_time": 46.391245
+        },
+        "003F": {
+          "frame": 36609,
+          "timestamp": 1792209616.351316,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x712af4000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 03 07 38 00 60 07",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 1795,
+          "index": 56,
+          "requested_length": 1888,
+          "relative_time": 46.532867
+        }
+      },
+      "raw_brightness_code": 6,
+      "packed_mode_bits": 2,
+      "differences_vs_09_final_apply": [
+        {
+          "kind": "replace",
+          "reference_range": [
+            28,
+            28
+          ],
+          "recording_range": [
+            28,
+            28
+          ],
+          "reference_hex": [
+            "07 18 03 04 18 00 90 07"
+          ],
+          "recording_records": [
+            {
+              "frame": 35860,
+              "timestamp": 1792209616.209694,
+              "captured_length": 64,
+              "original_length": 72,
+              "urb_id": "0x712af4000b90",
+              "event": "S",
+              "transfer_type": 2,
+              "endpoint": 0,
+              "device": 2,
+              "bus": 0,
+              "setup_flag": 0,
+              "data_flag": 1,
+              "status": 0,
+              "urb_length": 8,
+              "data_length": 0,
+              "setup_hex": "07 18 03 04 18 00 a0 07",
+              "payload_hex": "",
+              "bm_request_type": 7,
+              "request": 24,
+              "value": 1027,
+              "index": 24,
+              "requested_length": 1952,
+              "relative_time": 46.391245
+            }
+          ]
+        },
+        {
+          "kind": "replace",
+          "reference_range": [
+            71,
+            71
+          ],
+          "recording_range": [
+            71,
+            71
+          ],
+          "reference_hex": [
+            "07 18 03 07 38 00 50 07"
+          ],
+          "recording_records": [
+            {
+              "frame": 36609,
+              "timestamp": 1792209616.351316,
+              "captured_length": 64,
+              "original_length": 72,
+              "urb_id": "0x712af4000b90",
+              "event": "S",
+              "transfer_type": 2,
+              "endpoint": 0,
+              "device": 2,
+              "bus": 0,
+              "setup_flag": 0,
+              "data_flag": 1,
+              "status": 0,
+              "urb_length": 8,
+              "data_length": 0,
+              "setup_hex": "07 18 03 07 38 00 60 07",
+              "payload_hex": "",
+              "bm_request_type": 7,
+              "request": 24,
+              "value": 1795,
+              "index": 56,
+              "requested_length": 1888,
+              "relative_time": 46.532867
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "Apply 3 (guided middle)",
+      "burst": 4,
+      "first": 51.400856,
+      "last": 54.562242,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "other_candidate_reports": [],
+      "selected_records": {
+        "001C": {
+          "frame": 49072,
+          "timestamp": 1792209621.335308,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x712af4002d90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 03 04 18 00 a0 07",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 1027,
+          "index": 24,
+          "requested_length": 1952,
+          "relative_time": 51.516859
+        },
+        "003F": {
+          "frame": 49717,
+          "timestamp": 1792209621.50739,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x712af4002d90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 03 07 38 00 40 07",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 1795,
+          "index": 56,
+          "requested_length": 1856,
+          "relative_time": 51.688941
+        }
+      },
+      "raw_brightness_code": 4,
+      "packed_mode_bits": 2,
+      "differences_vs_09_final_apply": [
+        {
+          "kind": "replace",
+          "reference_range": [
+            28,
+            28
+          ],
+          "recording_range": [
+            28,
+            28
+          ],
+          "reference_hex": [
+            "07 18 03 04 18 00 90 07"
+          ],
+          "recording_records": [
+            {
+              "frame": 49072,
+              "timestamp": 1792209621.335308,
+              "captured_length": 64,
+              "original_length": 72,
+              "urb_id": "0x712af4002d90",
+              "event": "S",
+              "transfer_type": 2,
+              "endpoint": 0,
+              "device": 2,
+              "bus": 0,
+              "setup_flag": 0,
+              "data_flag": 1,
+              "status": 0,
+              "urb_length": 8,
+              "data_length": 0,
+              "setup_hex": "07 18 03 04 18 00 a0 07",
+              "payload_hex": "",
+              "bm_request_type": 7,
+              "request": 24,
+              "value": 1027,
+              "index": 24,
+              "requested_length": 1952,
+              "relative_time": 51.516859
+            }
+          ]
+        },
+        {
+          "kind": "replace",
+          "reference_range": [
+            71,
+            71
+          ],
+          "recording_range": [
+            71,
+            71
+          ],
+          "reference_hex": [
+            "07 18 03 07 38 00 50 07"
+          ],
+          "recording_records": [
+            {
+              "frame": 49717,
+              "timestamp": 1792209621.50739,
+              "captured_length": 64,
+              "original_length": 72,
+              "urb_id": "0x712af4002d90",
+              "event": "S",
+              "transfer_type": 2,
+              "endpoint": 0,
+              "device": 2,
+              "bus": 0,
+              "setup_flag": 0,
+              "data_flag": 1,
+              "status": 0,
+              "urb_length": 8,
+              "data_length": 0,
+              "setup_hex": "07 18 03 07 38 00 40 07",
+              "payload_hex": "",
+              "bm_request_type": 7,
+              "request": 24,
+              "value": 1795,
+              "index": 56,
+              "requested_length": 1856,
+              "relative_time": 51.688941
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "successive_apply_comparisons": [
+    {
+      "from_apply": 1,
+      "to_apply": 2,
+      "differences": [
+        {
+          "ordinal_one_based": 71,
+          "before_hex": "07 18 03 07 38 00 00 07",
+          "after_record": {
+            "frame": 36609,
+            "timestamp": 1792209616.351316,
+            "captured_length": 64,
+            "original_length": 72,
+            "urb_id": "0x712af4000b90",
+            "event": "S",
+            "transfer_type": 2,
+            "endpoint": 0,
+            "device": 2,
+            "bus": 0,
+            "setup_flag": 0,
+            "data_flag": 1,
+            "status": 0,
+            "urb_length": 8,
+            "data_length": 0,
+            "setup_hex": "07 18 03 07 38 00 60 07",
+            "payload_hex": "",
+            "bm_request_type": 7,
+            "request": 24,
+            "value": 1795,
+            "index": 56,
+            "requested_length": 1888,
+            "relative_time": 46.532867
+          }
+        }
+      ],
+      "other_candidate_records_identical": 866
+    },
+    {
+      "from_apply": 2,
+      "to_apply": 3,
+      "differences": [
+        {
+          "ordinal_one_based": 71,
+          "before_hex": "07 18 03 07 38 00 60 07",
+          "after_record": {
+            "frame": 49717,
+            "timestamp": 1792209621.50739,
+            "captured_length": 64,
+            "original_length": 72,
+            "urb_id": "0x712af4002d90",
+            "event": "S",
+            "transfer_type": 2,
+            "endpoint": 0,
+            "device": 2,
+            "bus": 0,
+            "setup_flag": 0,
+            "data_flag": 1,
+            "status": 0,
+            "urb_length": 8,
+            "data_length": 0,
+            "setup_hex": "07 18 03 07 38 00 40 07",
+            "payload_hex": "",
+            "bm_request_type": 7,
+            "request": 24,
+            "value": 1795,
+            "index": 56,
+            "requested_length": 1856,
+            "relative_time": 51.688941
+          }
+        }
+      ],
+      "other_candidate_records_identical": 866
+    }
+  ],
+  "findings": [
+    "Four complete 867-candidate command-18 sequences: startup plus three Apply actions.",
+    "Startup matches recording 09 final Apply except known startup field 006F (04 to 00).",
+    "First Apply changes mode/timing field 001C from 90 to A0 and brightness field 003F from 50 to 00.",
+    "All three Apply sequences keep 001C=A0. Subsequent Apply actions change only the brightness candidate record at logical coordinate 003F, with values 00 to 60 to 40 (raw brightness codes 0 to 6 to 4).",
+    "Given the guided maximum/lowest/middle order, larger observed raw code correlates with lower requested brightness. This inverse UI relationship is an inference, not an independently measured luminance scale.",
+    "Do not equate raw brightness code 0 with off. No off transition or absolute-minimum UI position was confirmed.",
+    "Final captured state is Light On candidate mode with raw brightness code 4; original recording 09 configuration is not restored."
+  ],
+  "limitations": [
+    "Exact UI brightness percentages and slider endpoint range are unknown. Raw code 7 was not observed in this recording and is not assigned a meaning.",
+    "Physical light output at the lowest setting remains unconfirmed. Color selection and on/off are not established.",
+    "36,378 records are shorter than their original lengths. Candidate comparison uses only observed VirtualBox control-phase setup-slot bytes; missing data is not reconstructed.",
+    "Static field-packing attribution is retained in lighting-mapping.json from the read-only vendor Apply decompilation. Logical report coordinates are not verified physical memory addresses.",
+    "No HID write, captured sequence replay, or safe standalone Linux transaction was established or executed."
+  ],
+  "original_capture_and_metadata_untouched": true,
+  "baseline_reference": "Recording 09 final Apply",
+  "existing_linux_off": {
+    "operator_report": "Earlier cloned Linux configuration can turn the mouse lights off; user considers off support sufficient.",
+    "implementation_path": "../../FantechX9ThorDriver/x16_backend.py",
+    "implementation_sha256": "cdc872bc3a8b8a293a20182a338e634e34df9be92069195700898aa94b19edfe",
+    "static_observation": "X16Driver.build_payloads accepts Off and has an explicit Off branch. Inspected source only; no import, device access or execution.",
+    "hardware_status": "Working off behavior reported by user; not independently rerun by analyst.",
+    "scope_decision": "Reuse the existing Linux off path; no additional Windows off/RGB capture requested.",
+    "protocol_boundary": "Do not equate its live command-13/14 path with Windows command-18 brightness field values."
+  },
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

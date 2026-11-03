@@ -1,0 +1,57 @@
+{
+  "device": {
+    "vendor_id": "30fa",
+    "product_id": "1440"
+  },
+  "transport": {
+    "interface": 1,
+    "report_id": 7,
+    "report_length": 8
+  },
+  "candidate_field": {
+    "command_hex": "18",
+    "block_coordinate_hex": "0018",
+    "offset_hex": "06",
+    "value_byte_index": 6,
+    "physical_address_verified": false
+  },
+  "rate_codes": {
+    "1000": {
+      "code_hex": "00",
+      "evidence": "1000 Hz Apply captures 02/03, restored by 05; 06 sweep final restoration"
+    },
+    "500": {
+      "code_hex": "01",
+      "evidence": "500 Hz capture 04 and starting configuration of 05"
+    },
+    "250": {
+      "code_hex": "03",
+      "evidence": "06 sweep second burst, candidate frame 16178"
+    },
+    "125": {
+      "code_hex": "07",
+      "evidence": "06 sweep third burst, candidate frame 28572"
+    }
+  },
+  "validation": "controlled UI-to-configuration capture correlation for all four visible choices, including 1000/500 forward-reverse and sweep restoration",
+  "physical_reporting_frequency_measured": false,
+  "safe_linux_replay_established": false,
+  "captures": [
+    {
+      "file": "trace-04-polling-1000-to-500-1792206857-QPDF4WZS.pcapng",
+      "sha256": "b6c2dd73db717e5b775ee03763d44cbdbf3b1ab0d72b412df53e407ddf9506ce"
+    },
+    {
+      "file": "trace-05-polling-500-to-1000-1792207040-6LHSSJUX.pcapng",
+      "sha256": "b1b9231f3b90f7320844a920dce61d5b3d6925597ffaac9a532d3d0619666af4"
+    },
+    {
+      "file": "trace-06-polling-sweep-250-125-1000-1792207271-XOHBMEBE.pcapng",
+      "sha256": "8682aceb4e331b90c325e0c8b605a22602163d1dba7fefa2949044bc203b1cb7"
+    }
+  ],
+  "analysis_ignore_first_seconds": 5,
+  "startup_handled_separately": true,
+  "formula_inference": "code=(1000/rate_hz)-1 for these four recorded choices only",
+  "capture_collection_status": "complete for 125, 250, 500, 1000 Hz UI choices"
+}

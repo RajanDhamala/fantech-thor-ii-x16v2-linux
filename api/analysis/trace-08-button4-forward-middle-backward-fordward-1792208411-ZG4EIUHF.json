@@ -1,0 +1,311 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-08-button4-forward-middle-backward-fordward-1792208411-ZG4EIUHF.pcapng",
+  "sha256": "d22ea70f5ad0b9a70bff99ead5448062c2e570df2c876e6f67ce93acca482fd8",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-08-button4-forward-middle-backward-fordward-1792208411-ZG4EIUHF.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792208411.2179272,
+    "deadline": 1792208531.2179275,
+    "status": "stopped",
+    "name": "08 Button4 forward middle backward fordward",
+    "notes": "Button 4",
+    "reason": "stopped by user",
+    "ended": 1792208453.2767613
+  },
+  "operator_context": {
+    "original_name_mentions_middle_click": true,
+    "correction": "Operator says the first assignment for button 4 was Left Click, not Middle Click.",
+    "actual_sequence": [
+      "Forward (preceding screenshot)",
+      "Left Click (explicitly corrected)",
+      "Backward (guided sequence)",
+      "Forward (guided restoration)"
+    ],
+    "profile": "Game I highlighted in preceding screenshot",
+    "screenshot": "assets/screenshot-1792208095015541602.png",
+    "original_capture_and_metadata_untouched": true
+  },
+  "summary": {
+    "capture": "trace-08-button4-forward-middle-backward-fordward-1792208411-ZG4EIUHF.pcapng",
+    "sha256": "d22ea70f5ad0b9a70bff99ead5448062c2e570df2c876e6f67ce93acca482fd8",
+    "bytes": 6581376,
+    "packets": 64209,
+    "duration": 40.671789,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 24463,
+      "1": 39746
+    },
+    "control_frames": 24463,
+    "feature_requests": 3475,
+    "set_report_requests": 3468,
+    "get_report_requests": 7,
+    "truncated_frames": 37298,
+    "feature_payloads": {
+      "": 3475
+    }
+  },
+  "analysis_window": {
+    "capture": "trace-08-button4-forward-middle-backward-fordward-1792208411-ZG4EIUHF",
+    "ignore_first_seconds": 5,
+    "display_filter": "frame.time_relative >= 5",
+    "retained_packet_records": 61908,
+    "excluded_packet_records": 2301,
+    "first_retained_frame": 2302,
+    "full_capture_packet_records": 64209,
+    "verified_partition": true,
+    "fresh_decoder_per_capture": true,
+    "scope_note": "Full-capture totals include early traffic. Setting comparisons exclude the first five seconds and separate startup."
+  },
+  "candidate_bursts": [
+    {
+      "phase": "Startup: Forward",
+      "burst": 1,
+      "first": 6.218569,
+      "last": 9.518285,
+      "feature_setups": 869,
+      "candidate_reports": 867,
+      "matches_07_final_apply": false,
+      "differences_vs_07_apply": [
+        {
+          "kind": "replace",
+          "reference_range": [
+            131,
+            131
+          ],
+          "recording_range": [
+            131,
+            131
+          ],
+          "reference_bytes": [
+            "07 18 03 07 68 00 04 07"
+          ],
+          "recording_bytes": [
+            "07 18 03 07 68 00 00 07"
+          ],
+          "recording_frames": [
+            5409
+          ]
+        }
+      ],
+      "button_field_record": {
+        "frame": 4468,
+        "timestamp": 1792208418.762939,
+        "captured_length": 64,
+        "original_length": 72,
+        "urb_id": "0x712af4003840",
+        "event": "S",
+        "transfer_type": 2,
+        "endpoint": 0,
+        "device": 2,
+        "bus": 0,
+        "setup_flag": 0,
+        "data_flag": 1,
+        "status": 0,
+        "urb_length": 8,
+        "data_length": 0,
+        "setup_hex": "07 18 03 00 48 00 25 07",
+        "payload_hex": "",
+        "bm_request_type": 7,
+        "request": 24,
+        "value": 3,
+        "index": 72,
+        "requested_length": 1829,
+        "relative_time": 6.56563
+      }
+    },
+    {
+      "phase": "First Apply: Left Click (operator correction)",
+      "burst": 2,
+      "first": 18.330642,
+      "last": 21.517903,
+      "feature_setups": 869,
+      "candidate_reports": 867,
+      "matches_07_final_apply": false,
+      "differences_vs_07_apply": [
+        {
+          "kind": "replace",
+          "reference_range": [
+            84,
+            84
+          ],
+          "recording_range": [
+            84,
+            84
+          ],
+          "reference_bytes": [
+            "07 18 03 00 48 00 25 07"
+          ],
+          "recording_bytes": [
+            "07 18 03 00 48 00 21 07"
+          ],
+          "recording_frames": [
+            21410
+          ]
+        }
+      ],
+      "button_field_record": {
+        "frame": 21410,
+        "timestamp": 1792208430.871476,
+        "captured_length": 64,
+        "original_length": 72,
+        "urb_id": "0x712af40022e0",
+        "event": "S",
+        "transfer_type": 2,
+        "endpoint": 0,
+        "device": 2,
+        "bus": 0,
+        "setup_flag": 0,
+        "data_flag": 1,
+        "status": 0,
+        "urb_length": 8,
+        "data_length": 0,
+        "setup_hex": "07 18 03 00 48 00 21 07",
+        "payload_hex": "",
+        "bm_request_type": 7,
+        "request": 24,
+        "value": 3,
+        "index": 72,
+        "requested_length": 1825,
+        "relative_time": 18.674167
+      }
+    },
+    {
+      "phase": "Second Apply: Backward (guided sequence)",
+      "burst": 3,
+      "first": 25.991013,
+      "last": 29.127958,
+      "feature_setups": 868,
+      "candidate_reports": 867,
+      "matches_07_final_apply": false,
+      "differences_vs_07_apply": [
+        {
+          "kind": "replace",
+          "reference_range": [
+            84,
+            84
+          ],
+          "recording_range": [
+            84,
+            84
+          ],
+          "reference_bytes": [
+            "07 18 03 00 48 00 25 07"
+          ],
+          "recording_bytes": [
+            "07 18 03 00 48 00 24 07"
+          ],
+          "recording_frames": [
+            36446
+          ]
+        }
+      ],
+      "button_field_record": {
+        "frame": 36446,
+        "timestamp": 1792208438.54385,
+        "captured_length": 64,
+        "original_length": 72,
+        "urb_id": "0x712af40022e0",
+        "event": "S",
+        "transfer_type": 2,
+        "endpoint": 0,
+        "device": 2,
+        "bus": 0,
+        "setup_flag": 0,
+        "data_flag": 1,
+        "status": 0,
+        "urb_length": 8,
+        "data_length": 0,
+        "setup_hex": "07 18 03 00 48 00 24 07",
+        "payload_hex": "",
+        "bm_request_type": 7,
+        "request": 24,
+        "value": 3,
+        "index": 72,
+        "requested_length": 1828,
+        "relative_time": 26.346541
+      }
+    },
+    {
+      "phase": "Restore Apply: Forward (guided sequence)",
+      "burst": 4,
+      "first": 33.063622,
+      "last": 36.252973,
+      "feature_setups": 869,
+      "candidate_reports": 867,
+      "matches_07_final_apply": true,
+      "differences_vs_07_apply": [],
+      "button_field_record": {
+        "frame": 50586,
+        "timestamp": 1792208445.590413,
+        "captured_length": 64,
+        "original_length": 72,
+        "urb_id": "0x712af4000b90",
+        "event": "S",
+        "transfer_type": 2,
+        "endpoint": 0,
+        "device": 2,
+        "bus": 0,
+        "setup_flag": 0,
+        "data_flag": 1,
+        "status": 0,
+        "urb_length": 8,
+        "data_length": 0,
+        "setup_hex": "07 18 03 00 48 00 25 07",
+        "payload_hex": "",
+        "bm_request_type": 7,
+        "request": 24,
+        "value": 3,
+        "index": 72,
+        "requested_length": 1829,
+        "relative_time": 33.393104
+      }
+    }
+  ],
+  "mapping": {
+    "gui_button": 4,
+    "logical_coordinate_hex": "0048",
+    "block_coordinate_hex": "0048",
+    "offset_hex": "00",
+    "report_template_hex": "07 18 03 00 48 00 VALUE 07",
+    "value_byte_index_zero_based": 6,
+    "observed_values_hex": [
+      "25",
+      "21",
+      "24",
+      "25"
+    ],
+    "correlated_assignments": {
+      "Left Click": "21",
+      "Backward": "24",
+      "Forward": "25"
+    },
+    "label_basis": "Left Click explicitly corrected by operator; Backward and Forward follow guided actions and preceding UI screenshot. Byte differences alone do not identify UI labels.",
+    "physical_address_verified": false,
+    "button_slot_order": "GUI numbering must not be inferred from sequential configuration offsets."
+  },
+  "conclusions": [
+    "First Apply changes exactly one of 867 candidate reports versus recording 07 final Apply: button-field value 25 to 21.",
+    "Second Apply changes only that same candidate field versus the reference, to 24.",
+    "Restore Apply matches all 867 candidate report byte strings from recording 07 final Apply.",
+    "Startup differs from restored Apply only at the previously observed startup-versus-Apply field 006F, not attributed to button remapping.",
+    "DPI packed byte E4, stage-enable mask 3D, and polling code 00 remain fixed throughout.",
+    "Middle Click was not experimentally selected in this recording."
+  ],
+  "limitations": [
+    "VirtualBox control-phase setup slots contain candidate data-stage bytes; many records are shortened. No missing payload bytes were reconstructed.",
+    "UI labels rely on operator actions; button 4 association is not an independently measured physical-button event.",
+    "Only the observed slot and assignments were changed; this does not validate every button, action, or profile.",
+    "Physical behavior, memory addresses, and safe standalone Linux write transactions remain unverified. No device commands were replayed."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

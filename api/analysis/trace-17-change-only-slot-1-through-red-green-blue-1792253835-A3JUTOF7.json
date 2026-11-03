@@ -1,0 +1,573 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-17-change-only-slot-1-through-red-green-blue-1792253835-A3JUTOF7.pcapng",
+  "sha256": "e519e2f7353fb7b4c794fa26a85f18709b8ecb9a919798bbf56bef812a47e721",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-17-change-only-slot-1-through-red-green-blue-1792253835-A3JUTOF7.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792253835.625314,
+    "deadline": 1792253955.6253142,
+    "status": "stopped",
+    "name": "17 Change only slot 1 through red green blue",
+    "reason": "stopped by user",
+    "ended": 1792253896.2016222
+  },
+  "summary": {
+    "capture": "trace-17-change-only-slot-1-through-red-green-blue-1792253835-A3JUTOF7.pcapng",
+    "sha256": "e519e2f7353fb7b4c794fa26a85f18709b8ecb9a919798bbf56bef812a47e721",
+    "bytes": 6917652,
+    "packets": 67618,
+    "duration": 59.063535,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 29034,
+      "1": 38584
+    },
+    "control_frames": 29034,
+    "feature_requests": 4136,
+    "set_report_requests": 4127,
+    "get_report_requests": 9,
+    "truncated_frames": 39980,
+    "feature_payloads": {
+      "": 4136
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 67618,
+    "excluded_before_five_seconds": 567,
+    "retained_count": 67051,
+    "selected": [
+      {
+        "frame": 2302,
+        "report_hex": "07 18 03 00 20 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 2311,
+        "report_hex": "07 18 03 01 20 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 2325,
+        "report_hex": "07 18 03 02 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 15078,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 15118,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17268,
+        "report_hex": "07 18 03 00 20 00 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17275,
+        "report_hex": "07 18 03 01 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17282,
+        "report_hex": "07 18 03 02 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 27744,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 27805,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 30246,
+        "report_hex": "07 18 03 00 20 00 f0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 30253,
+        "report_hex": "07 18 03 01 20 00 0f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 30262,
+        "report_hex": "07 18 03 02 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 41640,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 41709,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44404,
+        "report_hex": "07 18 03 00 20 00 f0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44411,
+        "report_hex": "07 18 03 01 20 00 7f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44420,
+        "report_hex": "07 18 03 02 20 00 0f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 55652,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 55661,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 59761,
+        "report_hex": "07 18 03 00 20 00 f0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 59769,
+        "report_hex": "07 18 03 01 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 59776,
+        "report_hex": "07 18 03 02 20 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 67605,
+        "report_hex": "07 18 03 07 30 02 00 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 67612,
+        "report_hex": "07 18 09 00 30 02 00 07",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "analysis_window": {
+    "ignore_first_seconds": 5,
+    "excluded_packet_records": 567,
+    "retained_packet_records": 67051,
+    "startup_separated": true
+  },
+  "operator_context": {
+    "completion": "Done all, final custom color chosen.",
+    "slot_confirmation": "Only slot one.",
+    "exact_custom_rgb": null
+  },
+  "bursts": [
+    {
+      "phase": "Startup: original slot-1 color",
+      "first": 7.123546,
+      "last": 10.916225,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "90",
+        "001d": "ff",
+        "0020": "00",
+        "0021": "1f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 2140,
+          "relative_time": 7.29447,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 2147,
+          "relative_time": 7.294968,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 2302,
+          "relative_time": 7.337982,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 2311,
+          "relative_time": 7.338396,
+          "report_hex": "07 18 03 01 20 00 1f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 2325,
+          "relative_time": 7.342207,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "First guided color: red",
+      "first": 18.958816,
+      "last": 22.617923,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "90",
+        "001d": "ff",
+        "0020": "00",
+        "0021": "ff",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 15,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 17222,
+          "relative_time": 19.107439,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 17229,
+          "relative_time": 19.107981,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 17268,
+          "relative_time": 19.150268,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 17275,
+          "relative_time": 19.151098,
+          "report_hex": "07 18 03 01 20 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 17282,
+          "relative_time": 19.151823,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "index": 35,
+          "before": "07 18 03 01 20 00 1f 07",
+          "after": "07 18 03 01 20 00 ff 07",
+          "frame": 17275,
+          "time": 19.151098
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 18377,
+          "time": 19.557563
+        }
+      ],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Second guided color: green",
+      "first": 28.39484,
+      "last": 32.009028,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "90",
+        "001d": "ff",
+        "0020": "f0",
+        "0021": "0f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 15,
+        "G": 0,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 30146,
+          "relative_time": 28.511265,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 30153,
+          "relative_time": 28.511877,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 30246,
+          "relative_time": 28.540271,
+          "report_hex": "07 18 03 00 20 00 f0 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 30253,
+          "relative_time": 28.540781,
+          "report_hex": "07 18 03 01 20 00 0f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 30262,
+          "relative_time": 28.541292,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "index": 34,
+          "before": "07 18 03 00 20 00 00 07",
+          "after": "07 18 03 00 20 00 f0 07",
+          "frame": 30246,
+          "time": 28.540271
+        },
+        {
+          "index": 35,
+          "before": "07 18 03 01 20 00 ff 07",
+          "after": "07 18 03 01 20 00 0f 07",
+          "frame": 30253,
+          "time": 28.540781
+        }
+      ],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Third guided color: blue choice",
+      "first": 39.423855,
+      "last": 42.943087,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "90",
+        "001d": "ff",
+        "0020": "f0",
+        "0021": "7f",
+        "0022": "0f"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 15,
+        "G": 7,
+        "B": 0
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 44301,
+          "relative_time": 39.567932,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 44309,
+          "relative_time": 39.568222,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 44404,
+          "relative_time": 39.598287,
+          "report_hex": "07 18 03 00 20 00 f0 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 44411,
+          "relative_time": 39.598634,
+          "report_hex": "07 18 03 01 20 00 7f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 44420,
+          "relative_time": 39.598958,
+          "report_hex": "07 18 03 02 20 00 0f 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "index": 35,
+          "before": "07 18 03 01 20 00 0f 07",
+          "after": "07 18 03 01 20 00 7f 07",
+          "frame": 44411,
+          "time": 39.598634
+        },
+        {
+          "index": 36,
+          "before": "07 18 03 02 20 00 ff 07",
+          "after": "07 18 03 02 20 00 0f 07",
+          "frame": 44420,
+          "time": 39.598958
+        }
+      ],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Final custom-color attempt (incomplete)",
+      "first": 56.276585,
+      "last": 59.035495,
+      "candidate_count": 652,
+      "complete_apply_sequence": false,
+      "fields": {
+        "001c": "90",
+        "001d": "ff",
+        "0020": "f0",
+        "0021": "ff",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 15,
+        "G": 15,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 59718,
+          "relative_time": 56.396832,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 59725,
+          "relative_time": 56.397413,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 59761,
+          "relative_time": 56.441985,
+          "report_hex": "07 18 03 00 20 00 f0 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 59769,
+          "relative_time": 56.44243,
+          "report_hex": "07 18 03 01 20 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 59776,
+          "relative_time": 56.442836,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "kind": "replace",
+          "before_count": 2,
+          "after_count": 2,
+          "before": [
+            "07 18 03 01 20 00 7f 07",
+            "07 18 03 02 20 00 0f 07"
+          ],
+          "after": [
+            [
+              59769,
+              "07 18 03 01 20 00 ff 07"
+            ],
+            [
+              59776,
+              "07 18 03 02 20 00 ff 07"
+            ]
+          ]
+        },
+        {
+          "kind": "delete",
+          "before_count": 215,
+          "after_count": 0,
+          "before": [
+            "07 18 00 00 30 02 00 00",
+            "07 18 03 00 38 02 00 07",
+            "07 18 03 01 38 02 00 07",
+            "07 18 03 02 38 02 00 07",
+            "07 18 03 03 38 02 00 07",
+            "07 18 03 04 38 02 00 07",
+            "07 18 03 05 38 02 00 07",
+            "07 18 03 06 38 02 00 07"
+          ],
+          "after": []
+        }
+      ],
+      "tail": [
+        "07 18 03 07 30 02 00 07",
+        "07 18 09 00 30 02 00 07"
+      ]
+    }
+  ],
+  "static_cross_checks": [
+    {
+      "app_relative_path": "evidence/ghidra-typed-pass/00419e20.c",
+      "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec"
+    },
+    {
+      "app_relative_path": "evidence/ghidra-typed-pass/00422610.c",
+      "sha256": "868d3b9d5ba259d8ff4641355470df5eb12b427f1e50cad57738dad4d2314b67"
+    },
+    {
+      "app_relative_path": "extracted/payload/config.ini",
+      "sha256": "b65c47dcb29aa4165e42e01d31dc08c123c3c81f03f76251f1018575d4d34ed9"
+    }
+  ],
+  "limitations": [
+    "Labels follow guided actions, recording names and operator completion report; operator explicitly confirms only slot 1 was edited in recording 17.",
+    "Physical lighting behavior, timing units and persistence are not independently measured.",
+    "Originals are preserved; VirtualBox candidate setup-slot bytes are analyzed without reconstructing shortened payloads.",
+    "REA TShark provider was unavailable earlier; these are local-parser and sharkd observations plus retained static decompilation, not newly produced REA Evidence.",
+    "Final custom-color Apply in 17 is incomplete; only slot 1 is runtime-correlated for colors and participation. Exact selected custom RGB is not supplied.",
+    "No device configuration commands or Resa app changes were performed during analysis."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

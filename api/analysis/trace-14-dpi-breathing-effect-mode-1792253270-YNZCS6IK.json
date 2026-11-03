@@ -1,0 +1,183 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-14-dpi-breathing-effect-mode-1792253270-YNZCS6IK.pcapng",
+  "sha256": "7571442fe701ab3aa12a1625a69aebbfe0fbc65e4057ffb5d38eaa1d42f21ec8",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-14-dpi-breathing-effect-mode-1792253270-YNZCS6IK.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792253271.0799704,
+    "deadline": 1792253391.0799708,
+    "status": "stopped",
+    "name": "14 Dpi breathing effect mode",
+    "reason": "stopped by user",
+    "ended": 1792253307.2529435
+  },
+  "operator_correction": "Speed slider under DPI Breathing Effect: maximum -> middle -> minimum, Apply after each.",
+  "original_plan": "Effect-mode transition Light On -> DPI Breathing -> Light On; not followed. Actual speed sweep is useful and is analyzed without relabeling original metadata.",
+  "summary": {
+    "capture": "trace-14-dpi-breathing-effect-mode-1792253270-YNZCS6IK.pcapng",
+    "sha256": "7571442fe701ab3aa12a1625a69aebbfe0fbc65e4057ffb5d38eaa1d42f21ec8",
+    "bytes": 5124336,
+    "packets": 50199,
+    "duration": 34.565905,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 24463,
+      "1": 25736
+    },
+    "control_frames": 24463,
+    "feature_requests": 3488,
+    "set_report_requests": 3481,
+    "get_report_requests": 7,
+    "truncated_frames": 30293,
+    "feature_payloads": {
+      "": 3488
+    }
+  },
+  "analysis_window": {
+    "ignore_first_seconds": 5,
+    "excluded_packet_records": 257,
+    "retained_packet_records": 49942,
+    "startup_separated": true
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 50199,
+    "excluded_before_five_seconds": 257,
+    "retained_count": 49942,
+    "selected": [
+      {
+        "frame": 1280,
+        "report_hex": "07 18 03 04 18 00 80 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14016,
+        "report_hex": "07 18 03 04 18 00 85 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 25406,
+        "report_hex": "07 18 03 04 18 00 82 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 38414,
+        "report_hex": "07 18 03 04 18 00 80 07",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "effect": "DPI Breathing Effect",
+  "logical_coordinate_hex": "001c",
+  "report_template_hex": "07 18 03 04 18 00 VALUE 07",
+  "mode_mask_hex": "70",
+  "speed_mask_hex": "07",
+  "mode_bits": 0,
+  "preserved_upper_bits_hex": "80",
+  "brightness_003f_constant_hex": "40",
+  "direction_003a_constant_hex": "0b",
+  "bursts": [
+    {
+      "phase": "Startup: minimum-speed DPI Breathing",
+      "first": 8.818903,
+      "last": 12.680964,
+      "candidate_count": 867,
+      "frame": 1280,
+      "relative_time": 9.017634,
+      "report_hex": "07 18 03 04 18 00 80 07",
+      "full_byte_hex": "80",
+      "speed_raw": 0,
+      "mode_bits": 0,
+      "differences_from_previous": []
+    },
+    {
+      "phase": "Maximum speed",
+      "first": 16.827349,
+      "last": 20.398592,
+      "candidate_count": 867,
+      "frame": 14016,
+      "relative_time": 16.981137,
+      "report_hex": "07 18 03 04 18 00 85 07",
+      "full_byte_hex": "85",
+      "speed_raw": 5,
+      "mode_bits": 0,
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 80 07",
+          "after": "07 18 03 04 18 00 85 07",
+          "frame": 14016,
+          "time": 16.981137
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 15183,
+          "time": 17.373926
+        }
+      ]
+    },
+    {
+      "phase": "Middle speed",
+      "first": 25.275071,
+      "last": 28.86863,
+      "candidate_count": 867,
+      "frame": 25406,
+      "relative_time": 25.41942,
+      "report_hex": "07 18 03 04 18 00 82 07",
+      "full_byte_hex": "82",
+      "speed_raw": 2,
+      "mode_bits": 0,
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 85 07",
+          "after": "07 18 03 04 18 00 82 07",
+          "frame": 25406,
+          "time": 25.41942
+        }
+      ]
+    },
+    {
+      "phase": "Minimum speed",
+      "first": 30.595778,
+      "last": 34.118951,
+      "candidate_count": 867,
+      "frame": 38414,
+      "relative_time": 30.749238,
+      "report_hex": "07 18 03 04 18 00 80 07",
+      "full_byte_hex": "80",
+      "speed_raw": 0,
+      "mode_bits": 0,
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 82 07",
+          "after": "07 18 03 04 18 00 80 07",
+          "frame": 38414,
+          "time": 30.749238
+        }
+      ]
+    }
+  ],
+  "final_assignment": "DPI Breathing, speed minimum (raw 0), under operator effect context",
+  "limitations": [
+    "Operator explicitly confirms the Speed slider, maximum then middle then minimum, with Apply after each; original recording name and metadata are preserved.",
+    "No Light On-to-DPI-Breathing transition or Light On restore is captured; the effect stays DPI Breathing according to operator context.",
+    "Raw values 5/2/0 correlate slider positions, not measured periods, frequencies or physical breathing behavior. Intermediate values and other effects are not independently validated by this sweep.",
+    "Candidate bytes occur in shortened VirtualBox control-phase setup slots; missing bytes are not reconstructed.",
+    "A fresh screenshot shows only the Windows desktop, not the effect control panel. No closed-menu controls screenshot is available.",
+    "No new HID configuration commands were sent and no Resa code was changed during analysis."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

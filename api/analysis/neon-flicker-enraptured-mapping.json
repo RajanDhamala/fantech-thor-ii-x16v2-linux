@@ -1,0 +1,79 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-21-neon-flicker-enraptured-1792255088-4CHDUC3F.pcapng",
+  "sha256": "0f8291babc194cbf21b32a2fc349589c8cfcfbe4dbcf0f56b59e2a00a742b088",
+  "mode_encoding": {
+    "low_three_mode_bits": {
+      "coordinate_hex": "001c",
+      "mask_hex": "70",
+      "shift": 4
+    },
+    "high_mode_bit": {
+      "coordinate_hex": "0033",
+      "mask_hex": "80",
+      "destination_bit": 3
+    },
+    "speed": {
+      "coordinate_hex": "001c",
+      "mask_hex": "07"
+    },
+    "preserve_extension_other_mask_hex": "7f"
+  },
+  "speed_positions": {
+    "maximum": 5,
+    "middle": 2,
+    "minimum": 0
+  },
+  "effects": {
+    "Neon": {
+      "mode": 6,
+      "full_bytes_001c_hex": [
+        "e5",
+        "e2",
+        "e0"
+      ],
+      "extension_0033_hex": "1f",
+      "maximum_middle_minimum_frames": [
+        13488,
+        23916,
+        37620
+      ]
+    },
+    "Flicker": {
+      "mode": 8,
+      "full_bytes_001c_hex": [
+        "85",
+        "82",
+        "80"
+      ],
+      "extension_0033_hex": "9f",
+      "maximum_middle_minimum_frames": [
+        48456,
+        57880,
+        67540
+      ]
+    },
+    "Enraptured": {
+      "mode": 11,
+      "full_bytes_001c_hex": [
+        "b5",
+        "b2",
+        "b0"
+      ],
+      "extension_0033_hex": "9f",
+      "maximum_middle_minimum_frames": [
+        90500,
+        100918,
+        110636
+      ]
+    }
+  },
+  "all_planned_steps_complete": true,
+  "limitations": [
+    "Effect and speed labels follow the operator-confirmed completion of the guided Neon, Flicker, Enraptured maximum/middle/minimum order.",
+    "An extra unchanged Apply is captured after Flicker minimum; its purpose is unknown and is not labeled an operator error.",
+    "Raw speed codes correlate slider positions, not measured timing, frequency or physical animation behavior.",
+    "Mode bits span 001c mask 70 and 0033 mask 80; preserve unrelated bits, including low 0033 settings. Special Button Response flag semantics remain separate.",
+    "Shortened VirtualBox candidate setup-slot bytes are analyzed without reconstruction. No new REA Evidence is claimed; the prior TShark provider was unavailable.",
+    "No device commands or Resa code changes were performed during this analysis. Physical effects and persistence remain unmeasured."
+  ]
+}
