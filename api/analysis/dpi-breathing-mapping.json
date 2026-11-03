@@ -1,0 +1,50 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-14-dpi-breathing-effect-mode-1792253270-YNZCS6IK.pcapng",
+  "sha256": "7571442fe701ab3aa12a1625a69aebbfe0fbc65e4057ffb5d38eaa1d42f21ec8",
+  "effect": "DPI Breathing Effect",
+  "logical_coordinate_hex": "001c",
+  "report_template_hex": "07 18 03 04 18 00 VALUE 07",
+  "mode_mask_hex": "70",
+  "speed_mask_hex": "07",
+  "mode_bits": 0,
+  "preserved_upper_bits_hex": "80",
+  "limitations": [
+    "Operator explicitly confirms the Speed slider, maximum then middle then minimum, with Apply after each; original recording name and metadata are preserved.",
+    "No Light On-to-DPI-Breathing transition or Light On restore is captured; the effect stays DPI Breathing according to operator context.",
+    "Raw values 5/2/0 correlate slider positions, not measured periods, frequencies or physical breathing behavior. Intermediate values and other effects are not independently validated by this sweep.",
+    "Candidate bytes occur in shortened VirtualBox control-phase setup slots; missing bytes are not reconstructed.",
+    "A fresh screenshot shows only the Windows desktop, not the effect control panel. No closed-menu controls screenshot is available.",
+    "No new HID configuration commands were sent and no Resa code was changed during analysis."
+  ],
+  "slider_positions": {
+    "maximum": 5,
+    "middle": 2,
+    "minimum": 0
+  },
+  "evidence": [
+    {
+      "phase": "Startup: minimum-speed DPI Breathing",
+      "frame": 1280,
+      "report_hex": "07 18 03 04 18 00 80 07",
+      "speed_raw": 0
+    },
+    {
+      "phase": "Maximum speed",
+      "frame": 14016,
+      "report_hex": "07 18 03 04 18 00 85 07",
+      "speed_raw": 5
+    },
+    {
+      "phase": "Middle speed",
+      "frame": 25406,
+      "report_hex": "07 18 03 04 18 00 82 07",
+      "speed_raw": 2
+    },
+    {
+      "phase": "Minimum speed",
+      "frame": 38414,
+      "report_hex": "07 18 03 04 18 00 80 07",
+      "speed_raw": 0
+    }
+  ]
+}

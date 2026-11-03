@@ -1,0 +1,338 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-16-toggle-only-slot-1-off-1792253770-BTYGOSG3.pcapng",
+  "sha256": "45c94aec8a8c4a8f61b970ed2c5ca896556d3c17151f7f7d7fab21d8326f0dd5",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-16-toggle-only-slot-1-off-1792253770-BTYGOSG3.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792253770.6171286,
+    "deadline": 1792253890.6171288,
+    "status": "stopped",
+    "name": "16 Toggle only slot 1 off",
+    "reason": "stopped by user",
+    "ended": 1792253795.0991971
+  },
+  "summary": {
+    "capture": "trace-16-toggle-only-slot-1-off-1792253770-BTYGOSG3.pcapng",
+    "sha256": "45c94aec8a8c4a8f61b970ed2c5ca896556d3c17151f7f7d7fab21d8326f0dd5",
+    "bytes": 3969672,
+    "packets": 38863,
+    "duration": 22.955949,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 18387,
+      "1": 20476
+    },
+    "control_frames": 18387,
+    "feature_requests": 2607,
+    "set_report_requests": 2602,
+    "get_report_requests": 5,
+    "truncated_frames": 23325,
+    "feature_payloads": {
+      "": 2607
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 38863,
+    "excluded_before_five_seconds": 133,
+    "retained_count": 38730,
+    "selected": [
+      {
+        "frame": 366,
+        "report_hex": "07 18 03 04 18 00 90 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 373,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 13200,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 13238,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14252,
+        "report_hex": "07 18 03 04 18 00 90 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14261,
+        "report_hex": "07 18 03 05 18 00 fe 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 25850,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 25857,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 26714,
+        "report_hex": "07 18 03 04 18 00 90 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 26721,
+        "report_hex": "07 18 03 05 18 00 ff 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 38786,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 38825,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "analysis_window": {
+    "ignore_first_seconds": 5,
+    "excluded_packet_records": 133,
+    "retained_packet_records": 38730,
+    "startup_separated": true
+  },
+  "operator_context": {
+    "completion": "Done all, final custom color chosen.",
+    "slot_confirmation": "Only slot one.",
+    "exact_custom_rgb": null
+  },
+  "bursts": [
+    {
+      "phase": "Startup: slot 1 enabled",
+      "first": 6.943015,
+      "last": 10.690781,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "90",
+        "001d": "ff",
+        "0020": "00",
+        "0021": "1f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 366,
+          "relative_time": 7.107436,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 373,
+          "relative_time": 7.108538,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 409,
+          "relative_time": 7.160987,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 417,
+          "relative_time": 7.161529,
+          "report_hex": "07 18 03 01 20 00 1f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 424,
+          "relative_time": 7.162032,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Slot 1 disabled",
+      "first": 12.777449,
+      "last": 16.300788,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "90",
+        "001d": "fe",
+        "0020": "00",
+        "0021": "1f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 14252,
+          "relative_time": 12.929461,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 14261,
+          "relative_time": 12.930433,
+          "report_hex": "07 18 03 05 18 00 fe 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 14351,
+          "relative_time": 12.958069,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 14361,
+          "relative_time": 12.959329,
+          "report_hex": "07 18 03 01 20 00 1f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 14370,
+          "relative_time": 12.960451,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "index": 29,
+          "before": "07 18 03 05 18 00 ff 07",
+          "after": "07 18 03 05 18 00 fe 07",
+          "frame": 14261,
+          "time": 12.930433
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 15453,
+          "time": 13.333783
+        }
+      ],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Slot 1 enabled again",
+      "first": 18.538523,
+      "last": 22.01943,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "fields": {
+        "001c": "90",
+        "001d": "ff",
+        "0020": "00",
+        "0021": "1f",
+        "0022": "ff"
+      },
+      "slot1_user_rgb_nibbles": {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      "evidence": [
+        {
+          "coordinate_hex": "001c",
+          "frame": 26714,
+          "relative_time": 18.724852,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        {
+          "coordinate_hex": "001d",
+          "frame": 26721,
+          "relative_time": 18.725282,
+          "report_hex": "07 18 03 05 18 00 ff 07"
+        },
+        {
+          "coordinate_hex": "0020",
+          "frame": 26812,
+          "relative_time": 18.753641,
+          "report_hex": "07 18 03 00 20 00 00 07"
+        },
+        {
+          "coordinate_hex": "0021",
+          "frame": 26821,
+          "relative_time": 18.754074,
+          "report_hex": "07 18 03 01 20 00 1f 07"
+        },
+        {
+          "coordinate_hex": "0022",
+          "frame": 26830,
+          "relative_time": 18.75482,
+          "report_hex": "07 18 03 02 20 00 ff 07"
+        }
+      ],
+      "differences_from_previous": [
+        {
+          "index": 29,
+          "before": "07 18 03 05 18 00 fe 07",
+          "after": "07 18 03 05 18 00 ff 07",
+          "frame": 26721,
+          "time": 18.725282
+        }
+      ],
+      "tail": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    }
+  ],
+  "static_cross_checks": [
+    {
+      "app_relative_path": "evidence/ghidra-typed-pass/00419e20.c",
+      "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec"
+    },
+    {
+      "app_relative_path": "evidence/ghidra-typed-pass/00422610.c",
+      "sha256": "868d3b9d5ba259d8ff4641355470df5eb12b427f1e50cad57738dad4d2314b67"
+    },
+    {
+      "app_relative_path": "extracted/payload/config.ini",
+      "sha256": "b65c47dcb29aa4165e42e01d31dc08c123c3c81f03f76251f1018575d4d34ed9"
+    }
+  ],
+  "limitations": [
+    "Labels follow guided actions, recording names and operator completion report; operator explicitly confirms only slot 1 was edited in recording 17.",
+    "Physical lighting behavior, timing units and persistence are not independently measured.",
+    "Originals are preserved; VirtualBox candidate setup-slot bytes are analyzed without reconstructing shortened payloads.",
+    "REA TShark provider was unavailable earlier; these are local-parser and sharkd observations plus retained static decompilation, not newly produced REA Evidence.",
+    "Final custom-color Apply in 17 is incomplete; only slot 1 is runtime-correlated for colors and participation. Exact selected custom RGB is not supplied.",
+    "No device configuration commands or Resa app changes were performed during analysis."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

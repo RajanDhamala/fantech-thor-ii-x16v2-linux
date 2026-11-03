@@ -1,0 +1,294 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-11-button5-1792240266-NXMGP7X5.pcapng",
+  "sha256": "9795847f7d6f7f608aa967a2c20d9012809a89381758c28ed6d89f55ce0b87e8",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-11-button5-1792240266-NXMGP7X5.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792240266.9556792,
+    "deadline": 1792240386.9556797,
+    "status": "stopped",
+    "name": "11 Button5",
+    "notes": "Backward fordward rapide fire",
+    "reason": "stopped by user",
+    "ended": 1792240307.5701098
+  },
+  "summary": {
+    "capture": "trace-11-button5-1792240266-NXMGP7X5.pcapng",
+    "sha256": "9795847f7d6f7f608aa967a2c20d9012809a89381758c28ed6d89f55ce0b87e8",
+    "bytes": 5941152,
+    "packets": 58053,
+    "duration": 39.25203,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 24463,
+      "1": 33590
+    },
+    "control_frames": 24463,
+    "feature_requests": 3486,
+    "set_report_requests": 3479,
+    "get_report_requests": 7,
+    "truncated_frames": 34220,
+    "feature_payloads": {
+      "": 3486
+    }
+  },
+  "analysis_window": {
+    "ignore_first_seconds": 5,
+    "excluded_packet_records": 1377,
+    "retained_packet_records": 56676,
+    "first_retained_frame": 1378,
+    "startup_separated": true,
+    "independent_decoder": "/usr/bin/sharkd",
+    "decoder_full_packet_count": 58053
+  },
+  "operator_context": {
+    "screenshot": "assets/screenshot-1792239959741416484.png",
+    "profile": "Game I highlighted in screenshot",
+    "button": 5,
+    "sequence_basis": "Operator said done after Forward, Backward, Rapid Fire, Backward instructions. Capture contains startup and three Apply bursts; final restore absent."
+  },
+  "button5": {
+    "logical_coordinate_hex": "0047",
+    "block_hex": "0040",
+    "offset_hex": "07",
+    "report_template_hex": "07 18 03 07 40 00 VALUE 07",
+    "correlated_full_bytes": {
+      "Backward": "24",
+      "Forward": "25",
+      "Rapid Fire": "29"
+    },
+    "action_low_five_bits": {
+      "Backward": "04",
+      "Forward": "05",
+      "Rapid Fire": "09"
+    },
+    "unchanged_high_bits_hex": "20",
+    "physical_address_verified": false
+  },
+  "bursts": [
+    {
+      "phase": "Backward (startup)",
+      "burst": 1,
+      "first": 6.963733,
+      "last": 10.452865,
+      "candidate_count": 867,
+      "button5_evidence": {
+        "frame": 2593,
+        "timestamp": 1792240275.266554,
+        "captured_length": 64,
+        "original_length": 72,
+        "urb_id": "0x765054001b00",
+        "event": "S",
+        "transfer_type": 2,
+        "endpoint": 0,
+        "device": 2,
+        "bus": 0,
+        "setup_flag": 0,
+        "data_flag": 1,
+        "status": 0,
+        "urb_length": 8,
+        "data_length": 0,
+        "setup_hex": "07 18 03 07 40 00 24 07",
+        "payload_hex": "",
+        "bm_request_type": 7,
+        "request": 24,
+        "value": 1795,
+        "index": 64,
+        "requested_length": 1828,
+        "relative_time": 7.301781
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 25 07",
+          "recording_hex": "07 18 03 07 40 00 24 07",
+          "frame": 2593,
+          "relative_time": 7.301781
+        },
+        {
+          "candidate_index_one_based": 131,
+          "reference_hex": "07 18 03 07 68 00 04 07",
+          "recording_hex": "07 18 03 07 68 00 00 07",
+          "frame": 3285,
+          "relative_time": 7.473221
+        }
+      ],
+      "finalizer": [
+        {
+          "frame": 15126,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 15165,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "phase": "Forward (guided first Apply)",
+      "burst": 2,
+      "first": 14.846679,
+      "last": 17.983833,
+      "candidate_count": 867,
+      "button5_evidence": {
+        "frame": 17283,
+        "timestamp": 1792240283.074844,
+        "captured_length": 64,
+        "original_length": 72,
+        "urb_id": "0x765054003e40",
+        "event": "S",
+        "transfer_type": 2,
+        "endpoint": 0,
+        "device": 2,
+        "bus": 0,
+        "setup_flag": 0,
+        "data_flag": 1,
+        "status": 0,
+        "urb_length": 8,
+        "data_length": 0,
+        "setup_hex": "07 18 03 07 40 00 25 07",
+        "payload_hex": "",
+        "bm_request_type": 7,
+        "request": 24,
+        "value": 1795,
+        "index": 64,
+        "requested_length": 1829,
+        "relative_time": 15.110071
+      },
+      "differences_vs_first_apply": [],
+      "finalizer": [
+        {
+          "frame": 29330,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 29369,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "phase": "Backward (guided second Apply)",
+      "burst": 3,
+      "first": 23.693018,
+      "last": 27.030995,
+      "candidate_count": 867,
+      "button5_evidence": {
+        "frame": 31351,
+        "timestamp": 1792240291.99779,
+        "captured_length": 64,
+        "original_length": 72,
+        "urb_id": "0x765054003e40",
+        "event": "S",
+        "transfer_type": 2,
+        "endpoint": 0,
+        "device": 2,
+        "bus": 0,
+        "setup_flag": 0,
+        "data_flag": 1,
+        "status": 0,
+        "urb_length": 8,
+        "data_length": 0,
+        "setup_hex": "07 18 03 07 40 00 24 07",
+        "payload_hex": "",
+        "bm_request_type": 7,
+        "request": 24,
+        "value": 1795,
+        "index": 64,
+        "requested_length": 1828,
+        "relative_time": 24.033017
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 25 07",
+          "recording_hex": "07 18 03 07 40 00 24 07",
+          "frame": 31351,
+          "relative_time": 24.033017
+        }
+      ],
+      "finalizer": [
+        {
+          "frame": 43985,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 44053,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "phase": "Rapid Fire (guided third Apply)",
+      "burst": 4,
+      "first": 35.627179,
+      "last": 38.859041,
+      "candidate_count": 867,
+      "button5_evidence": {
+        "frame": 46617,
+        "timestamp": 1792240303.87325,
+        "captured_length": 64,
+        "original_length": 72,
+        "urb_id": "0x765054003e40",
+        "event": "S",
+        "transfer_type": 2,
+        "endpoint": 0,
+        "device": 2,
+        "bus": 0,
+        "setup_flag": 0,
+        "data_flag": 1,
+        "status": 0,
+        "urb_length": 8,
+        "data_length": 0,
+        "setup_hex": "07 18 03 07 40 00 29 07",
+        "payload_hex": "",
+        "bm_request_type": 7,
+        "request": 24,
+        "value": 1795,
+        "index": 64,
+        "requested_length": 1833,
+        "relative_time": 35.908477
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 25 07",
+          "recording_hex": "07 18 03 07 40 00 29 07",
+          "frame": 46617,
+          "relative_time": 35.908477
+        }
+      ],
+      "finalizer": [
+        {
+          "frame": 57980,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 58017,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Labels correlate the operator-confirmed guided sequence with captured values; physical button presses and repeated click behavior were not measured.",
+    "VirtualBox control-phase setup slots contain candidate bytes; shortened records do not supply complete ordinary data-stage payloads. Missing bytes were not reconstructed.",
+    "No final restoration Apply is present. Last captured button-5 assignment correlates with Rapid Fire.",
+    "Other button addresses and Rapid Fire on button 4 are not runtime-validated by this recording.",
+    "No device commands were replayed and no app support was added."
+  ],
+  "tools": {
+    "rea_inspect_packet_capture": "capability_unavailable: REA_TSHARK_COMMAND not configured; no REA packet Evidence produced",
+    "fallback": "Local PCAPNG/Linux USB header parser; sharkd independently checked total count, early window, and selected frame bytes."
+  },
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

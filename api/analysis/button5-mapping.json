@@ -1,0 +1,61 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-11-button5-1792240266-NXMGP7X5.pcapng",
+  "sha256": "9795847f7d6f7f608aa967a2c20d9012809a89381758c28ed6d89f55ce0b87e8",
+  "operator_context": {
+    "screenshot": "assets/screenshot-1792239959741416484.png",
+    "profile": "Game I highlighted in screenshot",
+    "button": 5,
+    "sequence_basis": "Operator said done after Forward, Backward, Rapid Fire, Backward instructions. Capture contains startup and three Apply bursts; final restore absent."
+  },
+  "button5": {
+    "logical_coordinate_hex": "0047",
+    "block_hex": "0040",
+    "offset_hex": "07",
+    "report_template_hex": "07 18 03 07 40 00 VALUE 07",
+    "correlated_full_bytes": {
+      "Backward": "24",
+      "Forward": "25",
+      "Rapid Fire": "29"
+    },
+    "action_low_five_bits": {
+      "Backward": "04",
+      "Forward": "05",
+      "Rapid Fire": "09"
+    },
+    "unchanged_high_bits_hex": "20",
+    "physical_address_verified": false
+  },
+  "limitations": [
+    "Labels correlate the operator-confirmed guided sequence with captured values; physical button presses and repeated click behavior were not measured.",
+    "VirtualBox control-phase setup slots contain candidate bytes; shortened records do not supply complete ordinary data-stage payloads. Missing bytes were not reconstructed.",
+    "No final restoration Apply is present. Last captured button-5 assignment correlates with Rapid Fire.",
+    "Other button addresses and Rapid Fire on button 4 are not runtime-validated by this recording.",
+    "No device commands were replayed and no app support was added."
+  ],
+  "evidence": [
+    {
+      "phase": "Backward (startup)",
+      "frame": 2593,
+      "relative_time": 7.301781,
+      "report_hex": "07 18 03 07 40 00 24 07"
+    },
+    {
+      "phase": "Forward (guided first Apply)",
+      "frame": 17283,
+      "relative_time": 15.110071,
+      "report_hex": "07 18 03 07 40 00 25 07"
+    },
+    {
+      "phase": "Backward (guided second Apply)",
+      "frame": 31351,
+      "relative_time": 24.033017,
+      "report_hex": "07 18 03 07 40 00 24 07"
+    },
+    {
+      "phase": "Rapid Fire (guided third Apply)",
+      "frame": 46617,
+      "relative_time": 35.908477,
+      "report_hex": "07 18 03 07 40 00 29 07"
+    }
+  ]
+}

@@ -1,0 +1,893 @@
+{
+  "device": "Fantech X16v2 30fa:1440",
+  "source_capture": "captures/vm-052785d3b59d/trace-09-led-effects-lighton-flowing-neon-cycle-1792209114-NSIHEELM.pcapng",
+  "sha256": "c344b3b519089592b98955096a3001989053ae22443805fc08a8079c5b5439ed",
+  "status": "Basic brightness field corroborated by isolated Apply changes; color and physical off unconfirmed",
+  "fields": {
+    "001C": {
+      "role": "mode/timing and separate flag",
+      "observed_values_hex": [
+        "9B",
+        "A3",
+        "B3",
+        "E3",
+        "E0",
+        "90"
+      ],
+      "mode_mask_hex": "70",
+      "timing_mask_hex": "07",
+      "separate_flag_mask_hex": "08",
+      "labels_confirmed": false
+    },
+    "003A": {
+      "role": "direction and symmetry alongside preserved fields",
+      "observed_values_hex": [
+        "0B",
+        "2B",
+        "3B"
+      ],
+      "direction_mask_hex": "30",
+      "symmetry_mask_hex": "40",
+      "direction_names_confirmed": false
+    },
+    "003F": {
+      "role": "brightness alongside preserved field",
+      "observed_values_hex": [
+        "00",
+        "50",
+        "60",
+        "40"
+      ],
+      "brightness_mask_hex": "70",
+      "observed_raw_brightness": [
+        0,
+        4,
+        5,
+        6
+      ],
+      "ui_scale_confirmed": false,
+      "zero_code_note": "Do not infer off from zero; recording 10 associates code 0 with guided maximum brightness.",
+      "off_code_verified": false
+    }
+  },
+  "candidate_phases": [
+    {
+      "burst": 1,
+      "phase": "startup suffix after five-second cutoff",
+      "first": 5.004707,
+      "last": 7.005213,
+      "feature_setups": 515,
+      "comparable_candidate_reports": 515,
+      "complete_sequence": false,
+      "changes_vs_previous_complete_apply": {},
+      "selected_field_records": {}
+    },
+    {
+      "burst": 2,
+      "phase": "Apply 1",
+      "first": 13.211187,
+      "last": 16.48965,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {
+        "001C": {
+          "before": "9B",
+          "after": "A3",
+          "record": {
+            "value_hex": "A3",
+            "frame": 14578,
+            "relative_time": 13.333567,
+            "report_hex": "07 18 03 04 18 00 a3 07"
+          }
+        }
+      },
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "A3",
+          "frame": 14578,
+          "relative_time": 13.333567,
+          "report_hex": "07 18 03 04 18 00 a3 07"
+        },
+        "003A": {
+          "value_hex": "0B",
+          "frame": 15124,
+          "relative_time": 13.473875,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003F": {
+          "value_hex": "00",
+          "frame": 15161,
+          "relative_time": 13.474879,
+          "report_hex": "07 18 03 07 38 00 00 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 14455,
+          "relative_time": 13.303193,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 14555,
+          "relative_time": 13.332992,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 14593,
+          "relative_time": 13.334134,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 15406,
+          "relative_time": 13.551855,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 2,
+        "timing_bits_2_to_0": 3,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 0,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 0
+      }
+    },
+    {
+      "burst": 3,
+      "phase": "Apply 2",
+      "first": 18.672426,
+      "last": 21.98931,
+      "feature_setups": 868,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {
+        "003F": {
+          "before": "00",
+          "after": "50",
+          "record": {
+            "value_hex": "50",
+            "frame": 29342,
+            "relative_time": 18.944075,
+            "report_hex": "07 18 03 07 38 00 50 07"
+          }
+        }
+      },
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "A3",
+          "frame": 28760,
+          "relative_time": 18.803133,
+          "report_hex": "07 18 03 04 18 00 a3 07"
+        },
+        "003A": {
+          "value_hex": "0B",
+          "frame": 29304,
+          "relative_time": 18.942741,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 29342,
+          "relative_time": 18.944075,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 28633,
+          "relative_time": 18.771476,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 28737,
+          "relative_time": 18.802356,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 28774,
+          "relative_time": 18.803597,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 29586,
+          "relative_time": 19.020965,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 2,
+        "timing_bits_2_to_0": 3,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 0,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    },
+    {
+      "burst": 4,
+      "phase": "Apply 3",
+      "first": 29.960381,
+      "last": 33.20769,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {
+        "001C": {
+          "before": "A3",
+          "after": "B3",
+          "record": {
+            "value_hex": "B3",
+            "frame": 43894,
+            "relative_time": 30.099371,
+            "report_hex": "07 18 03 04 18 00 b3 07"
+          }
+        }
+      },
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "B3",
+          "frame": 43894,
+          "relative_time": 30.099371,
+          "report_hex": "07 18 03 04 18 00 b3 07"
+        },
+        "003A": {
+          "value_hex": "0B",
+          "frame": 44408,
+          "relative_time": 30.223813,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 44445,
+          "relative_time": 30.224911,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 43769,
+          "relative_time": 30.068288,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 43871,
+          "relative_time": 30.098807,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 43909,
+          "relative_time": 30.10005,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 44660,
+          "relative_time": 30.286082,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 3,
+        "timing_bits_2_to_0": 3,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 0,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    },
+    {
+      "burst": 5,
+      "phase": "Apply 4",
+      "first": 36.946141,
+      "last": 40.036178,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {},
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "B3",
+          "frame": 57092,
+          "relative_time": 37.06958,
+          "report_hex": "07 18 03 04 18 00 b3 07"
+        },
+        "003A": {
+          "value_hex": "0B",
+          "frame": 57552,
+          "relative_time": 37.208429,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 57589,
+          "relative_time": 37.209526,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 57013,
+          "relative_time": 37.037749,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 57071,
+          "relative_time": 37.068572,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 57108,
+          "relative_time": 37.070168,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 57802,
+          "relative_time": 37.270572,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 3,
+        "timing_bits_2_to_0": 3,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 0,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    },
+    {
+      "burst": 6,
+      "phase": "Apply 5",
+      "first": 41.183122,
+      "last": 44.285643,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {
+        "003A": {
+          "before": "0B",
+          "after": "2B",
+          "record": {
+            "value_hex": "2B",
+            "frame": 70866,
+            "relative_time": 41.427632,
+            "report_hex": "07 18 03 02 38 00 2b 07"
+          }
+        }
+      },
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "B3",
+          "frame": 70102,
+          "relative_time": 41.286416,
+          "report_hex": "07 18 03 04 18 00 b3 07"
+        },
+        "003A": {
+          "value_hex": "2B",
+          "frame": 70866,
+          "relative_time": 41.427632,
+          "report_hex": "07 18 03 02 38 00 2b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 70903,
+          "relative_time": 41.428642,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 69973,
+          "relative_time": 41.255764,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 70079,
+          "relative_time": 41.285902,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 70116,
+          "relative_time": 41.286767,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 71156,
+          "relative_time": 41.504754,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        66,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 3,
+        "timing_bits_2_to_0": 3,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 2,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    },
+    {
+      "burst": 7,
+      "phase": "Apply 6",
+      "first": 45.810578,
+      "last": 48.911907,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {
+        "003A": {
+          "before": "2B",
+          "after": "3B",
+          "record": {
+            "value_hex": "3B",
+            "frame": 83426,
+            "relative_time": 46.068572,
+            "report_hex": "07 18 03 02 38 00 3b 07"
+          }
+        }
+      },
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "B3",
+          "frame": 82878,
+          "relative_time": 45.927382,
+          "report_hex": "07 18 03 04 18 00 b3 07"
+        },
+        "003A": {
+          "value_hex": "3B",
+          "frame": 83426,
+          "relative_time": 46.068572,
+          "report_hex": "07 18 03 02 38 00 3b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 83463,
+          "relative_time": 46.069724,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 82753,
+          "relative_time": 45.896136,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 82855,
+          "relative_time": 45.926715,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 82892,
+          "relative_time": 45.927793,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 83708,
+          "relative_time": 46.145428,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        66,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 3,
+        "timing_bits_2_to_0": 3,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 3,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    },
+    {
+      "burst": 8,
+      "phase": "Apply 7",
+      "first": 54.85215,
+      "last": 58.020128,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {
+        "001C": {
+          "before": "B3",
+          "after": "E3",
+          "record": {
+            "value_hex": "E3",
+            "frame": 98358,
+            "relative_time": 54.990268,
+            "report_hex": "07 18 03 04 18 00 e3 07"
+          }
+        },
+        "003A": {
+          "before": "3B",
+          "after": "0B",
+          "record": {
+            "value_hex": "0B",
+            "frame": 98938,
+            "relative_time": 55.145625,
+            "report_hex": "07 18 03 02 38 00 0b 07"
+          }
+        }
+      },
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "E3",
+          "frame": 98358,
+          "relative_time": 54.990268,
+          "report_hex": "07 18 03 04 18 00 e3 07"
+        },
+        "003A": {
+          "value_hex": "0B",
+          "frame": 98938,
+          "relative_time": 55.145625,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 98975,
+          "relative_time": 55.14668,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 98232,
+          "relative_time": 54.958912,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 98335,
+          "relative_time": 54.989647,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 98372,
+          "relative_time": 54.990708,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 99332,
+          "relative_time": 55.223434,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 6,
+        "timing_bits_2_to_0": 3,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 0,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    },
+    {
+      "burst": 9,
+      "phase": "Apply 8",
+      "first": 59.586226,
+      "last": 62.78574,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {
+        "001C": {
+          "before": "E3",
+          "after": "E0",
+          "record": {
+            "value_hex": "E0",
+            "frame": 112512,
+            "relative_time": 59.740736,
+            "report_hex": "07 18 03 04 18 00 e0 07"
+          }
+        }
+      },
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "E0",
+          "frame": 112512,
+          "relative_time": 59.740736,
+          "report_hex": "07 18 03 04 18 00 e0 07"
+        },
+        "003A": {
+          "value_hex": "0B",
+          "frame": 113336,
+          "relative_time": 59.895986,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 113372,
+          "relative_time": 59.896912,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 112225,
+          "relative_time": 59.678528,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 112487,
+          "relative_time": 59.739737,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 112530,
+          "relative_time": 59.74125,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 113644,
+          "relative_time": 59.958713,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 6,
+        "timing_bits_2_to_0": 0,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 0,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    },
+    {
+      "burst": 10,
+      "phase": "Apply 9",
+      "first": 64.580043,
+      "last": 67.84954,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {},
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "E0",
+          "frame": 126033,
+          "relative_time": 64.676879,
+          "report_hex": "07 18 03 04 18 00 e0 07"
+        },
+        "003A": {
+          "value_hex": "0B",
+          "frame": 126572,
+          "relative_time": 64.802347,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 126609,
+          "relative_time": 64.803445,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 125907,
+          "relative_time": 64.646303,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 126011,
+          "relative_time": 64.676359,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 126048,
+          "relative_time": 64.677228,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 126856,
+          "relative_time": 64.864048,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 6,
+        "timing_bits_2_to_0": 0,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 0,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    },
+    {
+      "burst": 11,
+      "phase": "Apply 10",
+      "first": 76.179976,
+      "last": 79.19197,
+      "feature_setups": 869,
+      "comparable_candidate_reports": 867,
+      "complete_sequence": true,
+      "changes_vs_previous_complete_apply": {
+        "001C": {
+          "before": "E0",
+          "after": "90",
+          "record": {
+            "value_hex": "90",
+            "frame": 141822,
+            "relative_time": 76.287041,
+            "report_hex": "07 18 03 04 18 00 90 07"
+          }
+        }
+      },
+      "selected_field_records": {
+        "001C": {
+          "value_hex": "90",
+          "frame": 141822,
+          "relative_time": 76.287041,
+          "report_hex": "07 18 03 04 18 00 90 07"
+        },
+        "003A": {
+          "value_hex": "0B",
+          "frame": 142336,
+          "relative_time": 76.411439,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003F": {
+          "value_hex": "50",
+          "frame": 142373,
+          "relative_time": 76.412304,
+          "report_hex": "07 18 03 07 38 00 50 07"
+        },
+        "0015": {
+          "value_hex": "E4",
+          "frame": 141695,
+          "relative_time": 76.255504,
+          "report_hex": "07 18 03 05 10 00 e4 07"
+        },
+        "0019": {
+          "value_hex": "3D",
+          "frame": 141799,
+          "relative_time": 76.286352,
+          "report_hex": "07 18 03 01 18 00 3d 07"
+        },
+        "001E": {
+          "value_hex": "00",
+          "frame": 141836,
+          "relative_time": 76.287449,
+          "report_hex": "07 18 03 06 18 00 00 07"
+        },
+        "0048": {
+          "value_hex": "25",
+          "frame": 142588,
+          "relative_time": 76.473939,
+          "report_hex": "07 18 03 00 48 00 25 07"
+        }
+      },
+      "differences_vs_08_restore_ordinals_one_based": [
+        28,
+        71
+      ],
+      "decoded_candidates": {
+        "mode_bits_6_to_4": 1,
+        "timing_bits_2_to_0": 0,
+        "separate_flag_bit_3": 0,
+        "direction_bits_5_to_4": 0,
+        "symmetry_bit_6": 0,
+        "brightness_bits_6_to_4": 5
+      }
+    }
+  ],
+  "static_cross_check": {
+    "sources": [
+      {
+        "path": "../../resa/evidence/ghidra-typed-pass/00419e20.c",
+        "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec"
+      },
+      {
+        "path": "../../resa/evidence/ghidra-caller-pass/00424080.c",
+        "sha256": "42e0f6bc795420a2282c1052929674dfa5bdfca985e3bf97a423cbba9d248b47"
+      }
+    ],
+    "mode_timing": "00419e20.c:940: field 001C = 0x80 + ((translated_mode & 7)<<4) + (mode_flag<<3) + (timing & 7), truncated to byte. Translation has special cases; this is not a dropdown index formula.",
+    "direction": "00419e20.c:1138: field 003A includes (LED_FEATURE_DIREC & 3)<<4 and (LED_FEATURE_SYMMETRY & 1)<<6, plus other preserved fields.",
+    "brightness": "00419e20.c:1174: field 003F = (LED_BRIGHT & 7)<<4 + another stored field.",
+    "software_names": "00424080.c:363-408: INI saver ties backing globals to LED_TYPE, LED_CYC_TIME, LED_FEATURE_DIREC, LED_FEATURE_SYMMETRY, and LED_BRIGHT.",
+    "scope": "Existing retained decompilation inspected read-only; no executable or USB command was run."
+  },
+  "final_full_configuration_restored": false,
+  "physical_effect_confirmed": false,
+  "safe_linux_write_verified": false,
+  "limitations": [
+    "Operator changed additional lighting controls; exact per-Apply UI labels and order are pending clarification. No intermediate screenshots were saved during this recording.",
+    "Mode names, direction names, speed scale, visible physical behavior, and exact UI brightness value cannot be established from packet bytes alone.",
+    "Many VirtualBox records have shortened captured lengths. Candidate data-stage bytes were recovered only where present in separate control-phase setup slots. Missing bytes were not reconstructed.",
+    "No standalone 07 13 or 07 14 candidate report was found in the retained control setup slots or captured payload prefixes; shortened records prevent claiming such reports can never occur.",
+    "No physical memory addresses or safe standalone Linux write/replay sequence are established or executed."
+  ],
+  "operator_clarification": "Operator adjusted Flowing Water direction choices (clockwise, anticlockwise, two-way; exact order not recalled) and Neon speed slider. Requested scope is color, on/off, and basic adjustments, not comprehensive RGB effects.",
+  "requested_scope": {
+    "include": [
+      "set color",
+      "turn lighting on/off",
+      "basic brightness or speed where supported"
+    ],
+    "exclude_for_now": [
+      "exhaustive mapping of all effects",
+      "exact direction code-name mapping",
+      "every per-effect option"
+    ],
+    "next": "Use existing Linux off path reported working. Defer extra RGB capture; retain current brightness evidence."
+  },
+  "brightness_capture": {
+    "source": "captures/vm-052785d3b59d/trace-10-led-brightness-on-off-1792209568-IRWKJBIU.pcapng",
+    "sha256": "b090a0caf0f0c57dbaf5cc2ca03105e83245f2fdabeaab7a0d08d2c2344efaef",
+    "report": "analysis/trace-10-led-brightness-on-off-1792209568-IRWKJBIU.md",
+    "apply_raw_codes": [
+      0,
+      6,
+      4
+    ],
+    "only_brightness_changes_between_apply_sequences": true,
+    "maximum_lowest_middle_labels_from_guided_order": true,
+    "inverse_ui_code_relationship": "suggested by guided maximum=0, lowest reachable=6, middle=4; not measured luminance",
+    "absolute_minimum_reached": false,
+    "raw_code_7_observed": false,
+    "physical_off_confirmed": false,
+    "physical_lights_at_lowest": "pending operator response",
+    "color_selection_confirmed": false
+  },
+  "existing_linux_off": {
+    "operator_report": "Earlier cloned Linux configuration can turn the mouse lights off; user considers off support sufficient.",
+    "implementation_path": "../../FantechX9ThorDriver/x16_backend.py",
+    "implementation_sha256": "cdc872bc3a8b8a293a20182a338e634e34df9be92069195700898aa94b19edfe",
+    "static_observation": "X16Driver.build_payloads accepts Off and has an explicit Off branch. Inspected source only; no import, device access or execution.",
+    "hardware_status": "Working off behavior reported by user; not independently rerun by analyst.",
+    "scope_decision": "Reuse the existing Linux off path; no additional Windows off/RGB capture requested.",
+    "protocol_boundary": "Do not equate its live command-13/14 path with Windows command-18 brightness field values."
+  }
+}

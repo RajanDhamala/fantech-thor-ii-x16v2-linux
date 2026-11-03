@@ -1,0 +1,484 @@
+{
+  "effect": "Mono Water Effect",
+  "source": "captures/vm-052785d3b59d/trace-27-mono-water-ampde-speed-direction-1792401710-NYCAUUKD.pcapng",
+  "sha256": "8e3d4aba9cd2d1d4463b427d005665126b9cc35f321af7d81f963e548e1deadb",
+  "mode": 4,
+  "mode_encoding": {
+    "low_coordinate_hex": "001c",
+    "low_mask_hex": "70",
+    "high_coordinate_hex": "0033",
+    "high_mask_hex": "80",
+    "response_flag_coordinate_hex": "001c",
+    "response_flag_mask_hex": "08",
+    "response_flag_value": 0
+  },
+  "speed": {
+    "coordinate_hex": "001c",
+    "mask_hex": "07",
+    "positions": {
+      "maximum": 5,
+      "middle": 2,
+      "minimum": 0
+    },
+    "full_bytes_hex": [
+      "c5",
+      "c2",
+      "c0"
+    ],
+    "frames": [
+      34758,
+      48601,
+      61776
+    ]
+  },
+  "direction": {
+    "coordinate_hex": "003a",
+    "mask_hex": "30",
+    "shift": 4,
+    "choices": {
+      "Clockwise": 0,
+      "Anti Clockwise": 1,
+      "Two way": 2
+    },
+    "observed_full_bytes_hex": [
+      "0b",
+      "1b",
+      "2b"
+    ],
+    "frames": [
+      62322,
+      75552,
+      88928
+    ],
+    "overwrite_available_in_screenshot": false
+  },
+  "symmetry": {
+    "coordinate_hex": "003a",
+    "mask_hex": "40",
+    "observed_off_on_off_hex": [
+      "2b",
+      "6b",
+      "2b"
+    ],
+    "frames": [
+      88928,
+      102006,
+      115776
+    ]
+  },
+  "preserve_003a_other_mask_hex": "8f",
+  "all_planned_applies_complete": true,
+  "report": "analysis/trace-27-mono-water-ampde-speed-direction-1792401710-NYCAUUKD.md",
+  "remaining": [
+    "Physical lighting and persistence checks",
+    "Arbitrary RGB calibration remains unmeasured"
+  ],
+  "limitations": [
+    "Mapping comes from captured candidate bytes and guided user sequence; 72 selected records independently checked using sharkd.",
+    "Many VirtualBox frames are shortened; absent bytes are not reconstructed.",
+    "No animation timing calibration, physical color verification, or device writes by the analyst.",
+    "REA packet provider unavailable because REA_TSHARK_COMMAND is unset; this is local parser/sharkd evidence."
+  ],
+  "brightness": {
+    "coordinate_hex": "003f",
+    "mask_hex": "70",
+    "preserve_mask_hex": "8f",
+    "positions": {
+      "maximum": 0,
+      "middle": 4,
+      "minimum": 6
+    },
+    "full_bytes_hex": [
+      "00",
+      "40",
+      "60"
+    ],
+    "frames": [
+      16887,
+      31003,
+      44727
+    ],
+    "zero_code_means": "guided maximum, not Off",
+    "source": "captures/vm-052785d3b59d/trace-28-mono-water-brightness-1792428713-UJQ7FOCG.pcapng",
+    "sha256": "306eb8403a8d3b1013d585569aea93593eaa8ef20bba4949c9269fdcc7b7f8b1",
+    "report": "analysis/trace-28-mono-water-brightness-1792428713-UJQ7FOCG.md"
+  },
+  "palette_and_participation_recording29": {
+    "source": "captures/vm-052785d3b59d/trace-29-mono-water-all-7-slots-color-toggle-1792429242-GHGGFUJU.pcapng",
+    "sha256": "e3c0fdb323eeaa152f07e8c6c1ef8d6f28013a535b7dafeec045779a32351bcd",
+    "report": "analysis/trace-29-mono-water-all-7-slots-color-toggle-1792429242-GHGGFUJU.md",
+    "complete_slots": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "slots": {
+      "1": {
+        "color_apply_complete": true,
+        "channels": {
+          "R": {
+            "coordinate_hex": "0020",
+            "mask_hex": "f0",
+            "before_full_hex": "00",
+            "after_full_hex": "f0",
+            "frame": 18248
+          },
+          "G": {
+            "coordinate_hex": "0021",
+            "mask_hex": "f0",
+            "before_full_hex": "ff",
+            "after_full_hex": "ff",
+            "frame": 18255
+          },
+          "B": {
+            "coordinate_hex": "0022",
+            "mask_hex": "f0",
+            "before_full_hex": "7f",
+            "after_full_hex": "0f",
+            "frame": 18262
+          }
+        },
+        "exact_selected_RGB": null,
+        "raw_inverted_user_rgb_nibbles": [
+          15,
+          15,
+          0
+        ],
+        "toggle_coordinate_hex": "001d",
+        "toggle_mask_hex": "01",
+        "off_apply_complete": true,
+        "on_apply_complete": true,
+        "toggle_before_off_on_hex": [
+          "ff",
+          "fe",
+          "ff"
+        ],
+        "toggle_frames": [
+          32299,
+          46189
+        ]
+      },
+      "2": {
+        "color_apply_complete": true,
+        "channels": {
+          "R": {
+            "coordinate_hex": "0023",
+            "mask_hex": "f0",
+            "before_full_hex": "0f",
+            "after_full_hex": "0f",
+            "frame": 61035
+          },
+          "G": {
+            "coordinate_hex": "0024",
+            "mask_hex": "f0",
+            "before_full_hex": "0f",
+            "after_full_hex": "ff",
+            "frame": 61042
+          },
+          "B": {
+            "coordinate_hex": "0025",
+            "mask_hex": "f0",
+            "before_full_hex": "00",
+            "after_full_hex": "70",
+            "frame": 61049
+          }
+        },
+        "exact_selected_RGB": null,
+        "raw_inverted_user_rgb_nibbles": [
+          0,
+          15,
+          7
+        ],
+        "toggle_coordinate_hex": "001d",
+        "toggle_mask_hex": "02",
+        "off_apply_complete": true,
+        "on_apply_complete": true,
+        "toggle_before_off_on_hex": [
+          "ff",
+          "fd",
+          "ff"
+        ],
+        "toggle_frames": [
+          74385,
+          87681
+        ]
+      },
+      "3": {
+        "color_apply_complete": true,
+        "channels": {
+          "R": {
+            "coordinate_hex": "0026",
+            "mask_hex": "f0",
+            "before_full_hex": "0f",
+            "after_full_hex": "7f",
+            "frame": 102816
+          },
+          "G": {
+            "coordinate_hex": "0027",
+            "mask_hex": "f0",
+            "before_full_hex": "00",
+            "after_full_hex": "00",
+            "frame": 102823
+          },
+          "B": {
+            "coordinate_hex": "0028",
+            "mask_hex": "f0",
+            "before_full_hex": "0f",
+            "after_full_hex": "0f",
+            "frame": 102904
+          }
+        },
+        "exact_selected_RGB": null,
+        "raw_inverted_user_rgb_nibbles": [
+          7,
+          0,
+          0
+        ],
+        "toggle_coordinate_hex": "001d",
+        "toggle_mask_hex": "04",
+        "off_apply_complete": true,
+        "on_apply_complete": true,
+        "toggle_before_off_on_hex": [
+          "ff",
+          "fb",
+          "ff"
+        ],
+        "toggle_frames": [
+          116323,
+          129549
+        ]
+      },
+      "4": {
+        "color_apply_complete": true,
+        "channels": {
+          "R": {
+            "coordinate_hex": "0029",
+            "mask_hex": "f0",
+            "before_full_hex": "00",
+            "after_full_hex": "b0",
+            "frame": 144649
+          },
+          "G": {
+            "coordinate_hex": "002a",
+            "mask_hex": "f0",
+            "before_full_hex": "0f",
+            "after_full_hex": "7f",
+            "frame": 144656
+          },
+          "B": {
+            "coordinate_hex": "002b",
+            "mask_hex": "f0",
+            "before_full_hex": "00",
+            "after_full_hex": "70",
+            "frame": 144663
+          }
+        },
+        "exact_selected_RGB": null,
+        "raw_inverted_user_rgb_nibbles": [
+          11,
+          7,
+          7
+        ],
+        "toggle_coordinate_hex": "001d",
+        "toggle_mask_hex": "08",
+        "off_apply_complete": true,
+        "on_apply_complete": true,
+        "toggle_before_off_on_hex": [
+          "ff",
+          "f7",
+          "ff"
+        ],
+        "toggle_frames": [
+          157467,
+          170705
+        ]
+      },
+      "5": {
+        "color_apply_complete": true,
+        "channels": {
+          "R": {
+            "coordinate_hex": "002c",
+            "mask_hex": "f0",
+            "before_full_hex": "00",
+            "after_full_hex": "b0",
+            "frame": 185862
+          },
+          "G": {
+            "coordinate_hex": "002d",
+            "mask_hex": "f0",
+            "before_full_hex": "00",
+            "after_full_hex": "f0",
+            "frame": 185869
+          },
+          "B": {
+            "coordinate_hex": "002e",
+            "mask_hex": "f0",
+            "before_full_hex": "0f",
+            "after_full_hex": "bf",
+            "frame": 185876
+          }
+        },
+        "exact_selected_RGB": null,
+        "raw_inverted_user_rgb_nibbles": [
+          11,
+          15,
+          11
+        ],
+        "toggle_coordinate_hex": "001d",
+        "toggle_mask_hex": "10",
+        "off_apply_complete": false,
+        "on_apply_complete": false,
+        "partial_off_candidate": {
+          "candidate_count": 481,
+          "value_hex": "ef",
+          "frame": 198979,
+          "finalizers_recorded": false
+        }
+      }
+    },
+    "remaining": "Repeat slot5 color/off/on, then slots6 and7; partial slot5 off is not accepted as complete."
+  },
+  "palette_and_participation_followup": {
+    "source": "captures/vm-052785d3b59d/trace-29-mono-water-all-5-7-ots-1792429467-ML3WCPYF.pcapng",
+    "sha256": "ff2cca45ad37592650124f5edd122679b81057b0129f8c0364b0c56e464ea219",
+    "report": "analysis/trace-29-mono-water-all-5-7-ots-1792429467-ML3WCPYF.md",
+    "complete_slots": [
+      5,
+      6,
+      7
+    ],
+    "slots": {
+      "5": {
+        "color_apply_complete": true,
+        "off_apply_complete": true,
+        "on_apply_complete": true,
+        "channels": {
+          "R": {
+            "coordinate_hex": "002c",
+            "mask_hex": "f0",
+            "before_full_hex": "b0",
+            "after_full_hex": "b0",
+            "frame": 41494,
+            "raw_inverted_nibble": 11
+          },
+          "G": {
+            "coordinate_hex": "002d",
+            "mask_hex": "f0",
+            "before_full_hex": "f0",
+            "after_full_hex": "f0",
+            "frame": 41501,
+            "raw_inverted_nibble": 15
+          },
+          "B": {
+            "coordinate_hex": "002e",
+            "mask_hex": "f0",
+            "before_full_hex": "bf",
+            "after_full_hex": "7f",
+            "frame": 41508,
+            "raw_inverted_nibble": 7
+          }
+        },
+        "exact_selected_RGB": null,
+        "toggle_coordinate_hex": "001d",
+        "toggle_mask_hex": "10",
+        "toggle_before_off_on_hex": [
+          "ff",
+          "ef",
+          "ff"
+        ],
+        "toggle_frames": [
+          54573,
+          68154
+        ]
+      },
+      "6": {
+        "color_apply_complete": true,
+        "off_apply_complete": true,
+        "on_apply_complete": true,
+        "channels": {
+          "R": {
+            "coordinate_hex": "002f",
+            "mask_hex": "f0",
+            "before_full_hex": "03",
+            "after_full_hex": "f3",
+            "frame": 82685,
+            "raw_inverted_nibble": 15
+          },
+          "G": {
+            "coordinate_hex": "0030",
+            "mask_hex": "f0",
+            "before_full_hex": "03",
+            "after_full_hex": "03",
+            "frame": 82946,
+            "raw_inverted_nibble": 0
+          },
+          "B": {
+            "coordinate_hex": "0031",
+            "mask_hex": "f0",
+            "before_full_hex": "03",
+            "after_full_hex": "f3",
+            "frame": 82957,
+            "raw_inverted_nibble": 15
+          }
+        },
+        "exact_selected_RGB": null,
+        "toggle_coordinate_hex": "001d",
+        "toggle_mask_hex": "20",
+        "toggle_before_off_on_hex": [
+          "ff",
+          "df",
+          "ff"
+        ],
+        "toggle_frames": [
+          94859,
+          107787
+        ]
+      },
+      "7": {
+        "color_apply_complete": true,
+        "off_apply_complete": true,
+        "on_apply_complete": true,
+        "channels": {
+          "R": {
+            "coordinate_hex": "003e",
+            "mask_hex": "f0",
+            "before_full_hex": "00",
+            "after_full_hex": "0f",
+            "frame": 123980,
+            "raw_inverted_nibble": 0
+          },
+          "G": {
+            "coordinate_hex": "003e",
+            "mask_hex": "0f",
+            "before_full_hex": "00",
+            "after_full_hex": "0f",
+            "frame": 123980,
+            "raw_inverted_nibble": 15
+          },
+          "B": {
+            "coordinate_hex": "003f",
+            "mask_hex": "0f",
+            "before_full_hex": "60",
+            "after_full_hex": "6f",
+            "frame": 123987,
+            "raw_inverted_nibble": 15
+          }
+        },
+        "exact_selected_RGB": null,
+        "toggle_coordinate_hex": "001d",
+        "toggle_mask_hex": "40",
+        "toggle_before_off_on_hex": [
+          "ff",
+          "bf",
+          "ff"
+        ],
+        "toggle_frames": [
+          136565,
+          149722
+        ]
+      }
+    }
+  },
+  "all_seven_palette_slots_and_toggles_captured": true
+}

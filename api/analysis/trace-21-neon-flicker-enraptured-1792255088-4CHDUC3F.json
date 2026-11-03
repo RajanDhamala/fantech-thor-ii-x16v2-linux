@@ -1,0 +1,685 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-21-neon-flicker-enraptured-1792255088-4CHDUC3F.pcapng",
+  "sha256": "0f8291babc194cbf21b32a2fc349589c8cfcfbe4dbcf0f56b59e2a00a742b088",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-21-neon-flicker-enraptured-1792255088-4CHDUC3F.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792255089.2311487,
+    "deadline": 1792255209.2311497,
+    "status": "stopped",
+    "name": "21 neon flicker enraptured",
+    "reason": "stopped by user",
+    "ended": 1792255185.7213383
+  },
+  "summary": {
+    "capture": "trace-21-neon-flicker-enraptured-1792255088-4CHDUC3F.pcapng",
+    "sha256": "0f8291babc194cbf21b32a2fc349589c8cfcfbe4dbcf0f56b59e2a00a742b088",
+    "bytes": 12408680,
+    "packets": 121875,
+    "duration": 94.834193,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 66995,
+      "1": 54880
+    },
+    "control_frames": 66995,
+    "feature_requests": 9608,
+    "set_report_requests": 9588,
+    "get_report_requests": 20,
+    "truncated_frames": 75231,
+    "feature_payloads": {
+      "": 9608
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 121875,
+    "excluded_before_five_seconds": 859,
+    "retained_packet_records": 121016,
+    "selected": [
+      {
+        "frame": 3182,
+        "report_hex": "07 18 03 04 18 00 95 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 3393,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 12486,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 12495,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 13488,
+        "report_hex": "07 18 03 04 18 00 e5 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 13707,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 23034,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 23071,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 23916,
+        "report_hex": "07 18 03 04 18 00 e2 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 24311,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 36754,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 36761,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 37620,
+        "report_hex": "07 18 03 04 18 00 e0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 37833,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45720,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 45757,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 48456,
+        "report_hex": "07 18 03 04 18 00 85 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 48796,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 56901,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 56938,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 57880,
+        "report_hex": "07 18 03 04 18 00 82 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 58379,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 66782,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 66789,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 67540,
+        "report_hex": "07 18 03 04 18 00 80 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 67946,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 77254,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 77290,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 77532,
+        "report_hex": "07 18 03 04 18 00 80 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 77865,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 87782,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 87789,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 90500,
+        "report_hex": "07 18 03 04 18 00 b5 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 90870,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 100374,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 100381,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 100918,
+        "report_hex": "07 18 03 04 18 00 b2 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 101131,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 109880,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 109945,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 110636,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 110847,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 121859,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 121867,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "analysis_window": {
+    "ignore_first_seconds": 5,
+    "excluded_packet_records": 859,
+    "retained_packet_records": 121016,
+    "startup_separated": true
+  },
+  "expected_apply_steps": 9,
+  "observed_complete_apply_steps": 10,
+  "extra_unchanged_apply_phase": 8,
+  "bursts": [
+    {
+      "phase": "Startup: Cycle Breathing maximum",
+      "first": 10.148017,
+      "last": 13.983615,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 1,
+      "speed_raw": 5,
+      "mode_speed_001c": {
+        "frame": 3182,
+        "relative_time": 10.365184,
+        "report_hex": "07 18 03 04 18 00 95 07",
+        "value": 149
+      },
+      "mode_extension_0033": {
+        "frame": 3393,
+        "relative_time": 10.488842,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "value": 31
+      },
+      "differences_from_previous": [],
+      "finalizer_frames": [
+        12486,
+        12495
+      ]
+    },
+    {
+      "phase": "Neon maximum",
+      "first": 16.513191,
+      "last": 20.09176,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 6,
+      "speed_raw": 5,
+      "mode_speed_001c": {
+        "frame": 13488,
+        "relative_time": 16.690658,
+        "report_hex": "07 18 03 04 18 00 e5 07",
+        "value": 229
+      },
+      "mode_extension_0033": {
+        "frame": 13707,
+        "relative_time": 16.783634,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "value": 31
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 95 07",
+          "after": "07 18 03 04 18 00 e5 07",
+          "frame": 13488,
+          "time": 16.690658
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 14454,
+          "time": 17.036792
+        }
+      ],
+      "finalizer_frames": [
+        23034,
+        23071
+      ]
+    },
+    {
+      "phase": "Neon middle",
+      "first": 23.93957,
+      "last": 27.715727,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 6,
+      "speed_raw": 2,
+      "mode_speed_001c": {
+        "frame": 23916,
+        "relative_time": 24.080311,
+        "report_hex": "07 18 03 04 18 00 e2 07",
+        "value": 226
+      },
+      "mode_extension_0033": {
+        "frame": 24311,
+        "relative_time": 24.172968,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "value": 31
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 e5 07",
+          "after": "07 18 03 04 18 00 e2 07",
+          "frame": 23916,
+          "time": 24.080311
+        }
+      ],
+      "finalizer_frames": [
+        36754,
+        36761
+      ]
+    },
+    {
+      "phase": "Neon minimum",
+      "first": 30.021757,
+      "last": 33.590871,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 6,
+      "speed_raw": 0,
+      "mode_speed_001c": {
+        "frame": 37620,
+        "relative_time": 30.174198,
+        "report_hex": "07 18 03 04 18 00 e0 07",
+        "value": 224
+      },
+      "mode_extension_0033": {
+        "frame": 37833,
+        "relative_time": 30.314234,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "value": 31
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 e2 07",
+          "after": "07 18 03 04 18 00 e0 07",
+          "frame": 37620,
+          "time": 30.174198
+        }
+      ],
+      "finalizer_frames": [
+        45720,
+        45757
+      ]
+    },
+    {
+      "phase": "Flicker maximum",
+      "first": 42.632567,
+      "last": 46.279896,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 8,
+      "speed_raw": 5,
+      "mode_speed_001c": {
+        "frame": 48456,
+        "relative_time": 42.801804,
+        "report_hex": "07 18 03 04 18 00 85 07",
+        "value": 133
+      },
+      "mode_extension_0033": {
+        "frame": 48796,
+        "relative_time": 42.942661,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "value": 159
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 e0 07",
+          "after": "07 18 03 04 18 00 85 07",
+          "frame": 48456,
+          "time": 42.801804
+        },
+        {
+          "index": 57,
+          "before": "07 18 03 03 30 00 1f 07",
+          "after": "07 18 03 03 30 00 9f 07",
+          "frame": 48796,
+          "time": 42.942661
+        }
+      ],
+      "finalizer_frames": [
+        56901,
+        56938
+      ]
+    },
+    {
+      "phase": "Flicker middle",
+      "first": 49.882895,
+      "last": 53.576945,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 8,
+      "speed_raw": 2,
+      "mode_speed_001c": {
+        "frame": 57880,
+        "relative_time": 50.020266,
+        "report_hex": "07 18 03 04 18 00 82 07",
+        "value": 130
+      },
+      "mode_extension_0033": {
+        "frame": 58379,
+        "relative_time": 50.125545,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "value": 159
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 85 07",
+          "after": "07 18 03 04 18 00 82 07",
+          "frame": 57880,
+          "time": 50.020266
+        }
+      ],
+      "finalizer_frames": [
+        66782,
+        66789
+      ]
+    },
+    {
+      "phase": "Flicker minimum",
+      "first": 56.586269,
+      "last": 60.358884,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 8,
+      "speed_raw": 0,
+      "mode_speed_001c": {
+        "frame": 67540,
+        "relative_time": 56.785498,
+        "report_hex": "07 18 03 04 18 00 80 07",
+        "value": 128
+      },
+      "mode_extension_0033": {
+        "frame": 67946,
+        "relative_time": 56.93983,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "value": 159
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 82 07",
+          "after": "07 18 03 04 18 00 80 07",
+          "frame": 67540,
+          "time": 56.785498
+        }
+      ],
+      "finalizer_frames": [
+        77254,
+        77290
+      ]
+    },
+    {
+      "phase": "Unchanged Apply matching Flicker minimum",
+      "first": 63.753136,
+      "last": 67.374299,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 8,
+      "speed_raw": 0,
+      "mode_speed_001c": {
+        "frame": 77532,
+        "relative_time": 63.91116,
+        "report_hex": "07 18 03 04 18 00 80 07",
+        "value": 128
+      },
+      "mode_extension_0033": {
+        "frame": 77865,
+        "relative_time": 64.033706,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "value": 159
+      },
+      "differences_from_previous": [],
+      "finalizer_frames": [
+        87782,
+        87789
+      ]
+    },
+    {
+      "phase": "Enraptured maximum",
+      "first": 76.22761,
+      "last": 79.889964,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 11,
+      "speed_raw": 5,
+      "mode_speed_001c": {
+        "frame": 90500,
+        "relative_time": 76.378931,
+        "report_hex": "07 18 03 04 18 00 b5 07",
+        "value": 181
+      },
+      "mode_extension_0033": {
+        "frame": 90870,
+        "relative_time": 76.502151,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "value": 159
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 80 07",
+          "after": "07 18 03 04 18 00 b5 07",
+          "frame": 90500,
+          "time": 76.378931
+        }
+      ],
+      "finalizer_frames": [
+        100374,
+        100381
+      ]
+    },
+    {
+      "phase": "Enraptured middle",
+      "first": 82.400538,
+      "last": 86.138816,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 11,
+      "speed_raw": 2,
+      "mode_speed_001c": {
+        "frame": 100918,
+        "relative_time": 82.597019,
+        "report_hex": "07 18 03 04 18 00 b2 07",
+        "value": 178
+      },
+      "mode_extension_0033": {
+        "frame": 101131,
+        "relative_time": 82.705852,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "value": 159
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 b5 07",
+          "after": "07 18 03 04 18 00 b2 07",
+          "frame": 100918,
+          "time": 82.597019
+        }
+      ],
+      "finalizer_frames": [
+        109880,
+        109945
+      ]
+    },
+    {
+      "phase": "Enraptured minimum",
+      "first": 89.395523,
+      "last": 93.077948,
+      "candidate_count": 867,
+      "complete_apply_sequence": true,
+      "mode": 11,
+      "speed_raw": 0,
+      "mode_speed_001c": {
+        "frame": 110636,
+        "relative_time": 89.583329,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "value": 176
+      },
+      "mode_extension_0033": {
+        "frame": 110847,
+        "relative_time": 89.689664,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "value": 159
+      },
+      "differences_from_previous": [
+        {
+          "index": 28,
+          "before": "07 18 03 04 18 00 b2 07",
+          "after": "07 18 03 04 18 00 b0 07",
+          "frame": 110636,
+          "time": 89.583329
+        }
+      ],
+      "finalizer_frames": [
+        121859,
+        121867
+      ]
+    }
+  ],
+  "mode_encoding": {
+    "low_three_mode_bits": {
+      "coordinate_hex": "001c",
+      "mask_hex": "70",
+      "shift": 4
+    },
+    "high_mode_bit": {
+      "coordinate_hex": "0033",
+      "mask_hex": "80",
+      "destination_bit": 3
+    },
+    "speed": {
+      "coordinate_hex": "001c",
+      "mask_hex": "07"
+    },
+    "preserve_extension_other_mask_hex": "7f"
+  },
+  "static_cross_check": {
+    "source": "../resa/evidence/ghidra-typed-pass/00419e20.c",
+    "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec",
+    "roles": "LED_TYPE translation at lines 860-935; low mode bits at 941; high mode bit combined with other fields in the 0033 block around 1110."
+  },
+  "limitations": [
+    "Effect and speed labels follow the operator-confirmed completion of the guided Neon, Flicker, Enraptured maximum/middle/minimum order.",
+    "An extra unchanged Apply is captured after Flicker minimum; its purpose is unknown and is not labeled an operator error.",
+    "Raw speed codes correlate slider positions, not measured timing, frequency or physical animation behavior.",
+    "Mode bits span 001c mask 70 and 0033 mask 80; preserve unrelated bits, including low 0033 settings. Special Button Response flag semantics remain separate.",
+    "Shortened VirtualBox candidate setup-slot bytes are analyzed without reconstruction. No new REA Evidence is claimed; the prior TShark provider was unavailable.",
+    "No device commands or Resa code changes were performed during this analysis. Physical effects and persistence remain unmeasured."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

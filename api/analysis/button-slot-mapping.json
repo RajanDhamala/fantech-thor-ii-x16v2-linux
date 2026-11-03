@@ -1,0 +1,78 @@
+{
+  "device": "Fantech X16v2 30fa:1440",
+  "observed_slots": {
+    "1": "0044",
+    "2": "0046",
+    "3": "0045",
+    "4": "0048",
+    "5": "0047",
+    "6": "0049",
+    "7": "004a"
+  },
+  "recording13": {
+    "source": "captures/vm-052785d3b59d/trace-13-button-slot-mapping-1792251199-53GC3I5W.pcapng",
+    "sha256": "1c359029cfdc438602419139beac11ff3fd7d5ebf0b48f6f9bf4c3e75c335f9a",
+    "slot_evidence": {
+      "2": {
+        "logical_coordinate_hex": "0046",
+        "test_frame": 15978,
+        "restore_frame": 32928,
+        "sequence_hex": [
+          "23",
+          "25",
+          "23"
+        ]
+      },
+      "3": {
+        "logical_coordinate_hex": "0045",
+        "test_frame": 47061,
+        "restore_frame": 62779,
+        "temporary_left_click_frame": 134049,
+        "sequence_hex": [
+          "22",
+          "25",
+          "22",
+          "21"
+        ]
+      },
+      "6": {
+        "logical_coordinate_hex": "0049",
+        "test_frame": 76822,
+        "restore_frame": 90329,
+        "sequence_hex": [
+          "26",
+          "25",
+          "26"
+        ]
+      },
+      "7": {
+        "logical_coordinate_hex": "004a",
+        "test_frame": 103766,
+        "restore_frame": 118166,
+        "sequence_hex": [
+          "35",
+          "25",
+          "35"
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Slot correlations use guided/operator actions plus captured differences and static KEYMAP.",
+    "The final button1-to-Left and button3-to-Middle restores were not captured.",
+    "Slot mapping does not establish arbitrary keyboard/modifier encoding or physical persistence.",
+    "No Resa application changes were installed during this analysis."
+  ],
+  "button1_evidence": {
+    "source": "captures/vm-052785d3b59d/trace-13-button1-fordward-left-1792251871-HG3OUP7G.pcapng",
+    "sha256": "22bf6c077c1c98ef5067c16b0f335b8de51c3edb449327badf4648d0f096f6b7",
+    "startup_frame": 6105,
+    "apply_frame": 17048,
+    "sequence_hex": [
+      "21",
+      "25"
+    ],
+    "restore_captured": false
+  },
+  "all_seven_slots_runtime_correlated": true
+}

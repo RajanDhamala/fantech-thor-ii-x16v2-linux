@@ -1,0 +1,144 @@
+{
+  "effect": "Flowing Water Effect",
+  "source": "captures/vm-052785d3b59d/trace-22-flowing-water-speed-direction-symmetry-1792255672-3QJOHJGS.pcapng",
+  "sha256": "8b90f61ed132023c294b5915ff5c2aaf61d861f74a03df8d73bf84f46956abf7",
+  "mode": 3,
+  "mode_encoding": {
+    "low_coordinate_hex": "001c",
+    "low_mask_hex": "70",
+    "high_coordinate_hex": "0033",
+    "high_mask_hex": "80"
+  },
+  "speed": {
+    "coordinate_hex": "001c",
+    "mask_hex": "07",
+    "positions": {
+      "maximum": 5,
+      "middle": 2,
+      "minimum": 0
+    },
+    "full_bytes_hex": [
+      "b5",
+      "b2",
+      "b0"
+    ],
+    "frames": [
+      17640,
+      31800,
+      46184
+    ]
+  },
+  "direction": {
+    "coordinate_hex": "003a",
+    "mask_hex": "30",
+    "shift": 4,
+    "choices": {
+      "Clockwise": 0,
+      "Anti Clockwise": 1,
+      "Two way": 2,
+      "Overwrite": 3
+    },
+    "observed_full_bytes_hex": [
+      "0b",
+      "1b",
+      "2b",
+      "3b"
+    ],
+    "frames": [
+      46702,
+      60123,
+      73340,
+      86116
+    ]
+  },
+  "symmetry": {
+    "coordinate_hex": "003a",
+    "mask_hex": "40",
+    "observed_off_on_off_hex": [
+      "3b",
+      "7b",
+      "3b"
+    ],
+    "frames": [
+      86116,
+      100326,
+      114282
+    ]
+  },
+  "preserve_003a_other_mask_hex": "8f",
+  "brightness_003f_unchanged_hex": "40",
+  "all_planned_applies_complete": true,
+  "report": "analysis/trace-22-flowing-water-speed-direction-symmetry-1792255672-3QJOHJGS.md",
+  "limitations": [
+    "Labels follow the guided sequence and the operator completion message; capture metadata repeats the eight intended steps.",
+    "Speed codes establish slider-position correlations, not measured animation timing.",
+    "Palette, brightness and unrelated candidate settings are unchanged between Applies; this capture does not independently test Flowing Water palette or brightness controls.",
+    "Many VirtualBox records are shortened; candidate setup-slot bytes are inspected as captured, without reconstructing missing payloads.",
+    "No new REA Evidence is claimed: its packet provider previously lacked REA_TSHARK_COMMAND. Local parser results are independently checked with sharkd.",
+    "No device command or Resa implementation change was performed by the analyst. Physical effect behavior and persistence remain unmeasured."
+  ],
+  "slot1_palette_confirmation": {
+    "source": "captures/vm-052785d3b59d/trace-23-flowing-water-slot1-color-toggle-1792255930-3DTBTLSV.pcapng",
+    "sha256": "bab1d8383e455fa09a21b7d532858f326d0a89aeacd0c9ecefc6bf7472623e27",
+    "channels": {
+      "R": {
+        "coordinate_hex": "0020",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0021",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0022",
+        "mask_hex": "f0"
+      }
+    },
+    "preserve_low_nibble_hex": "0f",
+    "before_full_bytes_hex": [
+      "f0",
+      "ff",
+      "ff"
+    ],
+    "after_full_bytes_hex": [
+      "00",
+      "ff",
+      "7f"
+    ],
+    "after_user_nibbles": [
+      0,
+      15,
+      7
+    ],
+    "exact_selected_rgb": null,
+    "pure_red_endpoint_captured": false,
+    "same_layout_as_cycle_breathing": true,
+    "other_slot_mapping_source": "analysis/cycle-breathing-mapping.json",
+    "other_slots_runtime_tested_in_flowing_water": false
+  },
+  "slot1_participation_confirmation": {
+    "source": "captures/vm-052785d3b59d/trace-23-flowing-water-slot1-color-toggle-1792255930-3DTBTLSV.pcapng",
+    "sha256": "bab1d8383e455fa09a21b7d532858f326d0a89aeacd0c9ecefc6bf7472623e27",
+    "coordinate_hex": "001d",
+    "mask_hex": "01",
+    "preserve_other_bits_mask_hex": "fe",
+    "observed_full_bytes_hex": [
+      "ff",
+      "fe",
+      "ff"
+    ],
+    "off_on_frames": [
+      31541,
+      45385
+    ],
+    "both_applies_complete": true
+  },
+  "palette_confirmation_limits": [
+    "Operator completed the guided slot1 color/off/on plan; exact chosen RGB was not photographed.",
+    "Changed high nibbles are 0/15/7, matching the previously established palette layout but not the expected pure-red endpoint 0/15/15. Do not label the selected color pure red or infer exact 8-bit RGB.",
+    "First Apply also changes direction from Overwrite to Clockwise (003a 3b->0b), alongside the known startup-to-Apply 006f 00->04. Subsequent off/on Applies isolate only 001d bit0.",
+    "Slot1 runtime correspondence is confirmed for Flowing Water. Other slots retain the Cycle Breathing and static serializer evidence; no separate Flowing Water sweep of slots2-7 is claimed.",
+    "Raw speed/brightness and physical color/participation/persistence are not measured. Shortened VirtualBox candidate setup-slot records are not reconstructed.",
+    "Local parser/sharkd verification is not new REA Evidence; its TShark provider was previously unavailable. No analyst device commands or Resa implementation changes were performed."
+  ]
+}

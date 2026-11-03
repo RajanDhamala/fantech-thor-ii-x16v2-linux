@@ -1,0 +1,248 @@
+{
+  "effect": "Cycle Breathing Effect",
+  "mode": {
+    "coordinate_hex": "001c",
+    "mask_hex": "70",
+    "mode_bits": 1,
+    "speed_mask_hex": "07",
+    "observed_speed_positions": {
+      "maximum": 5,
+      "middle": 2,
+      "minimum": 0
+    },
+    "full_bytes_hex": [
+      "95",
+      "92",
+      "90"
+    ],
+    "capture": "captures/vm-052785d3b59d/trace-15-cycle-breathing-speed-max-mid-main-1792253669-QUN2RKNS.pcapng",
+    "sha256": "a79cab1a508ee2a8c2beb43f5b8c6ce0e36eab9b329d437830efc2f8b7227d69"
+  },
+  "slot1_participation": {
+    "coordinate_hex": "001d",
+    "mask_hex": "01",
+    "observed_full_bytes_hex": [
+      "ff",
+      "fe",
+      "ff"
+    ],
+    "restore_complete": true,
+    "preserve_mask_hex": "fe",
+    "capture": "captures/vm-052785d3b59d/trace-16-toggle-only-slot-1-off-1792253770-BTYGOSG3.pcapng",
+    "sha256": "45c94aec8a8c4a8f61b970ed2c5ca896556d3c17151f7f7d7fab21d8326f0dd5"
+  },
+  "slot1_color": {
+    "channels": {
+      "R": {
+        "coordinate_hex": "0020",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0021",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0022",
+        "mask_hex": "f0"
+      }
+    },
+    "preserve_low_nibble_hex": "0f",
+    "low_nibble_role": "Retained Apply code packs DPI palette channels in the low nibble; user palette channels in the high nibble.",
+    "raw_user_rgb_nibbles_by_phase": [
+      {
+        "R": 0,
+        "G": 1,
+        "B": 15
+      },
+      {
+        "R": 0,
+        "G": 15,
+        "B": 15
+      },
+      {
+        "R": 15,
+        "G": 0,
+        "B": 15
+      },
+      {
+        "R": 15,
+        "G": 7,
+        "B": 0
+      },
+      {
+        "R": 15,
+        "G": 15,
+        "B": 15
+      }
+    ],
+    "exact_selected_custom_rgb": null,
+    "custom_apply_complete": false,
+    "custom_apply_candidate_count": 652,
+    "normal_complete_candidate_count": 867,
+    "capture": "captures/vm-052785d3b59d/trace-17-change-only-slot-1-through-red-green-blue-1792253835-A3JUTOF7.pcapng",
+    "sha256": "e519e2f7353fb7b4c794fa26a85f18709b8ecb9a919798bbf56bef812a47e721",
+    "precision": "Four-bit user palette channels. Screenshot black RGB 0/0/0 matches high nibbles 15/15/15 in a complete Apply. Exact rounding across arbitrary RGB values remains unverified.",
+    "static_remaining_slots": "All seven GUI palette groups correlated by 17/18/20. Slot 7 uses the separate 003e/003f packing; see palette_slots.",
+    "custom_confirm_capture": "captures/vm-052785d3b59d/trace-18-cycle-breathing-slot1-custom-confirm-1792254427-VCIUW4UY.pcapng",
+    "custom_confirm_sha256": "df2c0effe241b9bafb941713b230e4f7b811134fb80729a2f5fad42786fc488b",
+    "custom_confirm_apply_complete": true,
+    "custom_confirm_rgb": [
+      0,
+      0,
+      0
+    ],
+    "custom_confirm_user_nibbles": [
+      15,
+      15,
+      15
+    ],
+    "picker_screenshot": {
+      "source": "assets/screenshot-1792254476989891737.png",
+      "sha256": "87cc7aa0fe0ce9036bc4483f82ebb8c6f317163b8da0dfb0557c4621f382adab",
+      "observed_rgb": [
+        0,
+        0,
+        0
+      ],
+      "observed_luminosity": 0,
+      "observed_preview": "black",
+      "hue": 178,
+      "saturation": 31,
+      "dialog_state": "open, prior to final Apply"
+    }
+  },
+  "static_evidence": [
+    {
+      "app_relative_path": "evidence/ghidra-typed-pass/00419e20.c",
+      "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec"
+    },
+    {
+      "app_relative_path": "evidence/ghidra-typed-pass/00422610.c",
+      "sha256": "868d3b9d5ba259d8ff4641355470df5eb12b427f1e50cad57738dad4d2314b67"
+    },
+    {
+      "app_relative_path": "extracted/payload/config.ini",
+      "sha256": "b65c47dcb29aa4165e42e01d31dc08c123c3c81f03f76251f1018575d4d34ed9"
+    }
+  ],
+  "limitations": [
+    "Mode/speed labels and slot ordering follow screenshots, guided changes and operator completion reports.",
+    "Slot 1 toggle and all seven GUI palette groups are correlated; unchanged channels and other participation bits use retained static serialization.",
+    "Recording 17 remains incomplete; recording 18 supplies a complete exact-RGB black endpoint. Arbitrary RGB rounding and physical precision remain unmeasured.",
+    "Slot 7 uses special packing at 003e and the low nibble of 003f, beside brightness. Preserve its unrelated bits.",
+    "Original captures are unchanged; shortened candidate setup-slot bytes are not reconstructed. These are local-parser/sharkd and retained-static observations.",
+    "Physical lighting behavior, timing and persistence remain user checks. No Resa app changes or HID writes were performed during these analyses."
+  ],
+  "palette_slots": {
+    "1": {
+      "R": {
+        "coordinate_hex": "0020",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0021",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0022",
+        "mask_hex": "f0"
+      }
+    },
+    "2": {
+      "R": {
+        "coordinate_hex": "0023",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0024",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0025",
+        "mask_hex": "f0"
+      }
+    },
+    "3": {
+      "R": {
+        "coordinate_hex": "0026",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0027",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0028",
+        "mask_hex": "f0"
+      }
+    },
+    "4": {
+      "R": {
+        "coordinate_hex": "0029",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "002a",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "002b",
+        "mask_hex": "f0"
+      }
+    },
+    "5": {
+      "R": {
+        "coordinate_hex": "002c",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "002d",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "002e",
+        "mask_hex": "f0"
+      }
+    },
+    "6": {
+      "R": {
+        "coordinate_hex": "002f",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "0030",
+        "mask_hex": "f0"
+      },
+      "B": {
+        "coordinate_hex": "0031",
+        "mask_hex": "f0"
+      }
+    },
+    "7": {
+      "R": {
+        "coordinate_hex": "003e",
+        "mask_hex": "f0"
+      },
+      "G": {
+        "coordinate_hex": "003e",
+        "mask_hex": "0f"
+      },
+      "B": {
+        "coordinate_hex": "003f",
+        "mask_hex": "0f"
+      }
+    }
+  },
+  "all_seven_gui_palette_groups_correlated": true,
+  "slot_mapping_capture": "captures/vm-052785d3b59d/trace-20-cycle-breathing-slots-1792254723-TREHH3CO.pcapng",
+  "slot_mapping_sha256": "5d3ab9df81854b4b86009e31ca3876ddb7ac8496fb00cc9bde96a9d7548b55fd",
+  "slot_mapping_complete_applies": 6,
+  "palette_limits": [
+    "Operator reports completing the guided slot-2-through-slot-7 white sequence. Exact white-picker fields are not photographed; nibbles become zero, consistent with white under the retained encoding.",
+    "Runtime changes independently identify each GUI slot group; channel bytes already at zero do not change. Unchanged channel associations are corroborated by retained static serialization.",
+    "Only slot 1 participation was isolated previously; other toggle bit positions are static correlations rather than separate toggle sweeps.",
+    "Slot 7 is not another sequential three-byte palette entry: R/G share 003e and B shares 003f with brightness.",
+    "Physical color, speed, brightness and persistence remain unmeasured. Shortened VirtualBox candidate setup bytes are not reconstructed.",
+    "No physical device commands or Resa application changes were performed during this analysis."
+  ]
+}

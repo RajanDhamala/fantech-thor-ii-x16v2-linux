@@ -1,0 +1,556 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-26-advanced-sensitivity-scroll-doubleclick-1792304302-XCM3YW6M.pcapng",
+  "sha256": "0cd5a14becb04059cac453a94132fabb0ef326b94c186aa6df5f0d5863ce6843",
+  "summary": {
+    "source": "captures/vm-052785d3b59d/trace-26-advanced-sensitivity-scroll-doubleclick-1792304302-XCM3YW6M.pcapng",
+    "sha256": "0cd5a14becb04059cac453a94132fabb0ef326b94c186aa6df5f0d5863ce6843",
+    "bytes": 14331432,
+    "packets": 140363,
+    "duration": 100.008771,
+    "truncated_frames": 84475,
+    "control_frames": 66995,
+    "feature_requests": 9558,
+    "transfer_counts": {
+      "2": 66995,
+      "1": 73368
+    }
+  },
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-26-advanced-sensitivity-scroll-doubleclick-1792304302-XCM3YW6M.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792304302.9250119,
+    "deadline": 1792304422.9250126,
+    "status": "stopped",
+    "name": "26 Advanced Sensitivity Scroll DoubleClick",
+    "notes": "Mouse Sensitivity\nScroll Speed\nDouble Click Speed",
+    "reason": "stopped by user",
+    "ended": 1792304404.3548765
+  },
+  "decoder": {
+    "name": "/usr/bin/sharkd",
+    "packet_count": 140363,
+    "early_packets": 133,
+    "verified_frames": [
+      {
+        "frame": 352,
+        "report_hex": "07 18 03 02 18 00 32 07"
+      },
+      {
+        "frame": 359,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 10898,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 10935,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 13806,
+        "report_hex": "07 18 03 02 18 00 32 07"
+      },
+      {
+        "frame": 13813,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 26118,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 26155,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 27406,
+        "report_hex": "07 18 03 02 18 00 32 07"
+      },
+      {
+        "frame": 27413,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 40158,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 40196,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 42580,
+        "report_hex": "07 18 03 02 18 00 32 07"
+      },
+      {
+        "frame": 42587,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 54790,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 54836,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 58372,
+        "report_hex": "07 18 03 02 18 00 32 07"
+      },
+      {
+        "frame": 58379,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 69392,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 69427,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 69652,
+        "report_hex": "07 18 03 02 18 00 32 07"
+      },
+      {
+        "frame": 69659,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 80259,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 80296,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 80522,
+        "report_hex": "07 18 03 02 18 00 32 07"
+      },
+      {
+        "frame": 80531,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 91370,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 91407,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 91754,
+        "report_hex": "07 18 03 02 18 00 32 07"
+      },
+      {
+        "frame": 91763,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 103996,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 104036,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 104262,
+        "report_hex": "07 18 03 02 18 00 2c 07"
+      },
+      {
+        "frame": 104269,
+        "report_hex": "07 18 03 03 18 00 01 07"
+      },
+      {
+        "frame": 115670,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 115707,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 116080,
+        "report_hex": "07 18 03 02 18 00 96 07"
+      },
+      {
+        "frame": 116087,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 128272,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 128309,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 128596,
+        "report_hex": "07 18 03 02 18 00 08 07"
+      },
+      {
+        "frame": 128603,
+        "report_hex": "07 18 03 03 18 00 00 07"
+      },
+      {
+        "frame": 140290,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 140327,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      }
+    ]
+  },
+  "complete_apply_bursts": 10,
+  "complete_startup_bursts": 1,
+  "double_click_ms_by_burst": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    300,
+    150,
+    8
+  ],
+  "double_click_encoding": {
+    "low_coordinate_hex": "001a",
+    "high_coordinate_hex": "001b",
+    "formula": "value = byte001a + 256 * byte001b",
+    "captured_values": [
+      300,
+      150,
+      8
+    ],
+    "units": "milliseconds from operator UI values",
+    "static_name": "FIRE_TIME, DAT_0066304c",
+    "intermediate_values": "Direct integer serialization supports bounded8..300 slider steps; only anchors300/150/8 and startup50 were captured, and physical intermediate timing is unmeasured."
+  },
+  "sensitivity": {
+    "USB_delta_observed": false,
+    "windows_UI_levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "windows_pointer_speed_table": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "source": "retained00419e20.c lines2320-2361; SystemParametersInfoW 0x71",
+    "operator_restore": {
+      "from": 1,
+      "to": 10,
+      "extra_apply": "Ten Applies are consistent with the planned nine plus restore. Identical payloads prevent uniquely attributing each earlier burst."
+    }
+  },
+  "wheel": {
+    "USB_delta_observed": false,
+    "host_setting": "Windows scroll lines via SystemParametersInfoW 0x69",
+    "user_UI_range": [
+      1,
+      11
+    ]
+  },
+  "limitations": [
+    "No claim that absence of a candidate difference proves every possible report or host action; VirtualBox records are shortened.",
+    "Double Click Speed is the vendor label; retained nameFIRE_TIME does not establish a Linux desktop double-click threshold. No SetDoubleClickTime call was found in the focused retained functions.",
+    "Linux pointer/wheel controls require host support; Windows level tables are not Linux gain calibration.",
+    "No hardware writes, Windows execution or desktop setting changes were performed during this analysis."
+  ],
+  "bursts": [
+    {
+      "burst": 1,
+      "first": 8.408242,
+      "last": 11.604907,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": null,
+      "tail": [
+        {
+          "frame": 10898,
+          "relative_time": 11.590005,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 10935,
+          "relative_time": 11.604934,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 2,
+      "first": 17.926699,
+      "last": 21.151818,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 15719
+        }
+      ],
+      "tail": [
+        {
+          "frame": 26118,
+          "relative_time": 21.137314,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 26155,
+          "relative_time": 21.151844,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 3,
+      "first": 26.241127,
+      "last": 29.496385,
+      "feature_setups": 868,
+      "candidate_count": 867,
+      "differences_vs_previous": [],
+      "tail": [
+        {
+          "frame": 40158,
+          "relative_time": 29.481104,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 40196,
+          "relative_time": 29.496436,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 4,
+      "first": 35.101426,
+      "last": 38.370488,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [],
+      "tail": [
+        {
+          "frame": 54790,
+          "relative_time": 38.355444,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 54836,
+          "relative_time": 38.370526,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 5,
+      "first": 46.145254,
+      "last": 49.54189,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [],
+      "tail": [
+        {
+          "frame": 69392,
+          "relative_time": 49.52735,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 69427,
+          "relative_time": 49.541909,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 6,
+      "first": 53.040359,
+      "last": 56.292333,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [],
+      "tail": [
+        {
+          "frame": 80259,
+          "relative_time": 56.277114,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 80296,
+          "relative_time": 56.292381,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 7,
+      "first": 62.032853,
+      "last": 65.276199,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [],
+      "tail": [
+        {
+          "frame": 91370,
+          "relative_time": 65.261195,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 91407,
+          "relative_time": 65.276212,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 8,
+      "first": 68.371392,
+      "last": 71.699838,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [],
+      "tail": [
+        {
+          "frame": 103996,
+          "relative_time": 71.682914,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 104036,
+          "relative_time": 71.699853,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 9,
+      "first": 74.476329,
+      "last": 77.526347,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 26,
+          "before": "07 18 03 02 18 00 32 07",
+          "after": "07 18 03 02 18 00 2c 07",
+          "frame": 104262
+        },
+        {
+          "ordinal": 27,
+          "before": "07 18 03 03 18 00 00 07",
+          "after": "07 18 03 03 18 00 01 07",
+          "frame": 104269
+        }
+      ],
+      "tail": [
+        {
+          "frame": 115670,
+          "relative_time": 77.51106,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 115707,
+          "relative_time": 77.52636,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 10,
+      "first": 89.870043,
+      "last": 93.291495,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 26,
+          "before": "07 18 03 02 18 00 2c 07",
+          "after": "07 18 03 02 18 00 96 07",
+          "frame": 116080
+        },
+        {
+          "ordinal": 27,
+          "before": "07 18 03 03 18 00 01 07",
+          "after": "07 18 03 03 18 00 00 07",
+          "frame": 116087
+        }
+      ],
+      "tail": [
+        {
+          "frame": 128272,
+          "relative_time": 93.276421,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 128309,
+          "relative_time": 93.291509,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 11,
+      "first": 95.835051,
+      "last": 99.103948,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 26,
+          "before": "07 18 03 02 18 00 96 07",
+          "after": "07 18 03 02 18 00 08 07",
+          "frame": 128596
+        }
+      ],
+      "tail": [
+        {
+          "frame": 140290,
+          "relative_time": 99.089063,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 140327,
+          "relative_time": 99.103962,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    }
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

@@ -1,0 +1,834 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-29-mono-water-all-5-7-ots-1792429467-ML3WCPYF.pcapng",
+  "sha256": "ff2cca45ad37592650124f5edd122679b81057b0129f8c0364b0c56e464ea219",
+  "summary": {
+    "source": "captures/vm-052785d3b59d/trace-29-mono-water-all-5-7-ots-1792429467-ML3WCPYF.pcapng",
+    "sha256": "ff2cca45ad37592650124f5edd122679b81057b0129f8c0364b0c56e464ea219",
+    "bytes": 16600920,
+    "packets": 162185,
+    "duration": 72.659644,
+    "truncated_frames": 95386,
+    "control_frames": 66995,
+    "feature_requests": 9561,
+    "transfer_counts": {
+      "2": 66995,
+      "1": 95190
+    }
+  },
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-29-mono-water-all-5-7-ots-1792429467-ML3WCPYF.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792429467.862532,
+    "deadline": 1792429587.8625326,
+    "status": "stopped",
+    "name": "29 Mono water all 5-7 ots",
+    "reason": "stopped by user",
+    "ended": 1792429541.846075
+  },
+  "complete_startup_bursts": 1,
+  "complete_apply_bursts": 10,
+  "normalizing_slot5_on_applies": 1,
+  "planned_complete_applies": 9,
+  "complete_slots": [
+    5,
+    6,
+    7
+  ],
+  "decoder": {
+    "name": "/usr/bin/sharkd",
+    "packet_count": 162185,
+    "verified_frames": [
+      {
+        "frame": 10470,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 11039,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 11206,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 11251,
+        "report_hex": "07 18 03 07 38 00 60 07"
+      },
+      {
+        "frame": 10480,
+        "report_hex": "07 18 03 05 18 00 ef 07"
+      },
+      {
+        "frame": 23632,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 23699,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 25584,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 26179,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 26376,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 26413,
+        "report_hex": "07 18 03 07 38 00 60 07"
+      },
+      {
+        "frame": 25595,
+        "report_hex": "07 18 03 05 18 00 ff 07"
+      },
+      {
+        "frame": 38175,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 38212,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 41108,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 41681,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 41864,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 41905,
+        "report_hex": "07 18 03 07 38 00 60 07"
+      },
+      {
+        "frame": 41117,
+        "report_hex": "07 18 03 05 18 00 ff 07"
+      },
+      {
+        "frame": 53651,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 53689,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 41494,
+        "report_hex": "07 18 03 04 28 00 b0 07"
+      },
+      {
+        "frame": 41501,
+        "report_hex": "07 18 03 05 28 00 f0 07"
+      },
+      {
+        "frame": 41508,
+        "report_hex": "07 18 03 06 28 00 7f 07"
+      },
+      {
+        "frame": 54562,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 55135,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 55326,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 55362,
+        "report_hex": "07 18 03 07 38 00 60 07"
+      },
+      {
+        "frame": 54573,
+        "report_hex": "07 18 03 05 18 00 ef 07"
+      },
+      {
+        "frame": 67202,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 67240,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 68144,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 68767,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 68942,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 68979,
+        "report_hex": "07 18 03 07 38 00 60 07"
+      },
+      {
+        "frame": 68154,
+        "report_hex": "07 18 03 05 18 00 ff 07"
+      },
+      {
+        "frame": 80188,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 80225,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 82212,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 82975,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 83148,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 83185,
+        "report_hex": "07 18 03 07 38 00 60 07"
+      },
+      {
+        "frame": 82219,
+        "report_hex": "07 18 03 05 18 00 ff 07"
+      },
+      {
+        "frame": 93832,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 93869,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 82685,
+        "report_hex": "07 18 03 07 28 00 f3 07"
+      },
+      {
+        "frame": 82946,
+        "report_hex": "07 18 03 00 30 00 03 07"
+      },
+      {
+        "frame": 82957,
+        "report_hex": "07 18 03 01 30 00 f3 07"
+      },
+      {
+        "frame": 94852,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 95449,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 95634,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 95671,
+        "report_hex": "07 18 03 07 38 00 60 07"
+      },
+      {
+        "frame": 94859,
+        "report_hex": "07 18 03 05 18 00 df 07"
+      },
+      {
+        "frame": 106764,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 106832,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 107780,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 108355,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 108530,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 108569,
+        "report_hex": "07 18 03 07 38 00 60 07"
+      },
+      {
+        "frame": 107787,
+        "report_hex": "07 18 03 05 18 00 ff 07"
+      },
+      {
+        "frame": 120168,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 120205,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 123130,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 123703,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 123950,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 123987,
+        "report_hex": "07 18 03 07 38 00 6f 07"
+      },
+      {
+        "frame": 123137,
+        "report_hex": "07 18 03 05 18 00 ff 07"
+      },
+      {
+        "frame": 135537,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 135573,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 123980,
+        "report_hex": "07 18 03 06 38 00 0f 07"
+      },
+      {
+        "frame": 136558,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 137193,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 137378,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 137417,
+        "report_hex": "07 18 03 07 38 00 6f 07"
+      },
+      {
+        "frame": 136565,
+        "report_hex": "07 18 03 05 18 00 bf 07"
+      },
+      {
+        "frame": 148724,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 148761,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      },
+      {
+        "frame": 149714,
+        "report_hex": "07 18 03 04 18 00 c0 07"
+      },
+      {
+        "frame": 150325,
+        "report_hex": "07 18 03 03 30 00 1f 07"
+      },
+      {
+        "frame": 150508,
+        "report_hex": "07 18 03 02 38 00 2b 07"
+      },
+      {
+        "frame": 150547,
+        "report_hex": "07 18 03 07 38 00 6f 07"
+      },
+      {
+        "frame": 149722,
+        "report_hex": "07 18 03 05 18 00 ff 07"
+      },
+      {
+        "frame": 162112,
+        "report_hex": "07 18 10 00 00 00 00 00"
+      },
+      {
+        "frame": 162147,
+        "report_hex": "07 18 00 00 00 00 00 00"
+      }
+    ]
+  },
+  "slots": {
+    "5": {
+      "color_apply_complete": true,
+      "off_apply_complete": true,
+      "on_apply_complete": true,
+      "channels": {
+        "R": {
+          "coordinate_hex": "002c",
+          "mask_hex": "f0",
+          "before_full_hex": "b0",
+          "after_full_hex": "b0",
+          "frame": 41494,
+          "raw_inverted_nibble": 11
+        },
+        "G": {
+          "coordinate_hex": "002d",
+          "mask_hex": "f0",
+          "before_full_hex": "f0",
+          "after_full_hex": "f0",
+          "frame": 41501,
+          "raw_inverted_nibble": 15
+        },
+        "B": {
+          "coordinate_hex": "002e",
+          "mask_hex": "f0",
+          "before_full_hex": "bf",
+          "after_full_hex": "7f",
+          "frame": 41508,
+          "raw_inverted_nibble": 7
+        }
+      },
+      "exact_selected_RGB": null,
+      "toggle_coordinate_hex": "001d",
+      "toggle_mask_hex": "10",
+      "toggle_before_off_on_hex": [
+        "ff",
+        "ef",
+        "ff"
+      ],
+      "toggle_frames": [
+        54573,
+        68154
+      ]
+    },
+    "6": {
+      "color_apply_complete": true,
+      "off_apply_complete": true,
+      "on_apply_complete": true,
+      "channels": {
+        "R": {
+          "coordinate_hex": "002f",
+          "mask_hex": "f0",
+          "before_full_hex": "03",
+          "after_full_hex": "f3",
+          "frame": 82685,
+          "raw_inverted_nibble": 15
+        },
+        "G": {
+          "coordinate_hex": "0030",
+          "mask_hex": "f0",
+          "before_full_hex": "03",
+          "after_full_hex": "03",
+          "frame": 82946,
+          "raw_inverted_nibble": 0
+        },
+        "B": {
+          "coordinate_hex": "0031",
+          "mask_hex": "f0",
+          "before_full_hex": "03",
+          "after_full_hex": "f3",
+          "frame": 82957,
+          "raw_inverted_nibble": 15
+        }
+      },
+      "exact_selected_RGB": null,
+      "toggle_coordinate_hex": "001d",
+      "toggle_mask_hex": "20",
+      "toggle_before_off_on_hex": [
+        "ff",
+        "df",
+        "ff"
+      ],
+      "toggle_frames": [
+        94859,
+        107787
+      ]
+    },
+    "7": {
+      "color_apply_complete": true,
+      "off_apply_complete": true,
+      "on_apply_complete": true,
+      "channels": {
+        "R": {
+          "coordinate_hex": "003e",
+          "mask_hex": "f0",
+          "before_full_hex": "00",
+          "after_full_hex": "0f",
+          "frame": 123980,
+          "raw_inverted_nibble": 0
+        },
+        "G": {
+          "coordinate_hex": "003e",
+          "mask_hex": "0f",
+          "before_full_hex": "00",
+          "after_full_hex": "0f",
+          "frame": 123980,
+          "raw_inverted_nibble": 15
+        },
+        "B": {
+          "coordinate_hex": "003f",
+          "mask_hex": "0f",
+          "before_full_hex": "60",
+          "after_full_hex": "6f",
+          "frame": 123987,
+          "raw_inverted_nibble": 15
+        }
+      },
+      "exact_selected_RGB": null,
+      "toggle_coordinate_hex": "001d",
+      "toggle_mask_hex": "40",
+      "toggle_before_off_on_hex": [
+        "ff",
+        "bf",
+        "ff"
+      ],
+      "toggle_frames": [
+        136565,
+        149722
+      ]
+    }
+  },
+  "bursts": [
+    {
+      "burst": 1,
+      "first": 5.22213,
+      "last": 8.538831,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": null,
+      "tail": [
+        {
+          "frame": 23632,
+          "relative_time": 8.523556,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 23699,
+          "relative_time": 8.53885,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 2,
+      "first": 11.165137,
+      "last": 14.398341,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 29,
+          "before": "07 18 03 05 18 00 ef 07",
+          "after": "07 18 03 05 18 00 ff 07",
+          "frame": 25595
+        },
+        {
+          "ordinal": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 27455
+        }
+      ],
+      "tail": [
+        {
+          "frame": 38175,
+          "relative_time": 14.383233,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 38212,
+          "relative_time": 14.39846,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 3,
+      "first": 20.164392,
+      "last": 23.304264,
+      "feature_setups": 868,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 50,
+          "before": "07 18 03 06 28 00 bf 07",
+          "after": "07 18 03 06 28 00 7f 07",
+          "frame": 41508
+        }
+      ],
+      "tail": [
+        {
+          "frame": 53651,
+          "relative_time": 23.289191,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 53689,
+          "relative_time": 23.304271,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 4,
+      "first": 26.051377,
+      "last": 29.351312,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 29,
+          "before": "07 18 03 05 18 00 ff 07",
+          "after": "07 18 03 05 18 00 ef 07",
+          "frame": 54573
+        }
+      ],
+      "tail": [
+        {
+          "frame": 67202,
+          "relative_time": 29.335728,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 67240,
+          "relative_time": 29.351322,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 5,
+      "first": 30.793409,
+      "last": 33.898339,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 29,
+          "before": "07 18 03 05 18 00 ef 07",
+          "after": "07 18 03 05 18 00 ff 07",
+          "frame": 68154
+        }
+      ],
+      "tail": [
+        {
+          "frame": 80188,
+          "relative_time": 33.883704,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 80225,
+          "relative_time": 33.898369,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 6,
+      "first": 37.604313,
+      "last": 40.757765,
+      "feature_setups": 872,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 51,
+          "before": "07 18 03 07 28 00 03 07",
+          "after": "07 18 03 07 28 00 f3 07",
+          "frame": 82685
+        },
+        {
+          "ordinal": 55,
+          "before": "07 18 03 01 30 00 03 07",
+          "after": "07 18 03 01 30 00 f3 07",
+          "frame": 82957
+        }
+      ],
+      "tail": [
+        {
+          "frame": 93832,
+          "relative_time": 40.743127,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 93869,
+          "relative_time": 40.757794,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 7,
+      "first": 44.199623,
+      "last": 47.211569,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 29,
+          "before": "07 18 03 05 18 00 ff 07",
+          "after": "07 18 03 05 18 00 df 07",
+          "frame": 94859
+        }
+      ],
+      "tail": [
+        {
+          "frame": 106764,
+          "relative_time": 47.180954,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 106832,
+          "relative_time": 47.211602,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 8,
+      "first": 50.491471,
+      "last": 53.664275,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 29,
+          "before": "07 18 03 05 18 00 df 07",
+          "after": "07 18 03 05 18 00 ff 07",
+          "frame": 107787
+        }
+      ],
+      "tail": [
+        {
+          "frame": 120168,
+          "relative_time": 53.649288,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 120205,
+          "relative_time": 53.664317,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 9,
+      "first": 58.702407,
+      "last": 61.789369,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 70,
+          "before": "07 18 03 06 38 00 00 07",
+          "after": "07 18 03 06 38 00 0f 07",
+          "frame": 123980
+        },
+        {
+          "ordinal": 71,
+          "before": "07 18 03 07 38 00 60 07",
+          "after": "07 18 03 07 38 00 6f 07",
+          "frame": 123987
+        }
+      ],
+      "tail": [
+        {
+          "frame": 135537,
+          "relative_time": 61.77448,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 135573,
+          "relative_time": 61.789407,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 10,
+      "first": 64.038633,
+      "last": 67.023287,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 29,
+          "before": "07 18 03 05 18 00 ff 07",
+          "after": "07 18 03 05 18 00 bf 07",
+          "frame": 136565
+        }
+      ],
+      "tail": [
+        {
+          "frame": 148724,
+          "relative_time": 67.007864,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 148761,
+          "relative_time": 67.023303,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    },
+    {
+      "burst": 11,
+      "first": 68.545603,
+      "last": 71.726347,
+      "feature_setups": 869,
+      "candidate_count": 867,
+      "differences_vs_previous": [
+        {
+          "ordinal": 29,
+          "before": "07 18 03 05 18 00 bf 07",
+          "after": "07 18 03 05 18 00 ff 07",
+          "frame": 149722
+        }
+      ],
+      "tail": [
+        {
+          "frame": 162112,
+          "relative_time": 71.712026,
+          "report_hex": "07 18 10 00 00 00 00 00"
+        },
+        {
+          "frame": 162147,
+          "relative_time": 71.726398,
+          "report_hex": "07 18 00 00 00 00 00 00"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Both original and follow-up recordings are named29 by the user; identify them by full filename and SHA256. The follow-up is not a trace30 file.",
+    "Nine planned color/off/on Applies follow one initial slot5 enable Apply and startup.",
+    "Exact chosen 8-bit RGB values are unknown without picker evidence. Some channels remain unchanged; their association uses the established shared palette layout.",
+    "Slot7 uses003e for R/G and003f low nibble for B. Its003f change60->6f preserves brightness code6.",
+    "VirtualBox shortened frames preserve candidate setup-slot bytes; absent payloads are not reconstructed.",
+    "Local parser/sharkd evidence is not new REA Evidence; its TShark provider remains unavailable.",
+    "No analyst device writes or app implementation changes. Physical colors, animation and persistence remain user checks."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

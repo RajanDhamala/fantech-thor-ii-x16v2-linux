@@ -1,0 +1,348 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-12-button5-remaining-action-1792250416-TEKTHPZD.pcapng",
+  "sha256": "d001e890c8625b0a87272347be5970917744ec30a0ba30f86520c8cef53faffa",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-12-button5-remaining-action-1792250416-TEKTHPZD.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792250416.3344035,
+    "deadline": 1792250536.3344038,
+    "status": "stopped",
+    "name": "12 Button5 remaining action",
+    "notes": "Right click\nMiddle click\nDpi loop\nExtend Dpi plus\nExtend Dpi mius\nExtend led loop\nBackward restore",
+    "reason": "stopped by user",
+    "ended": 1792250489.054292
+  },
+  "summary": {
+    "capture": "trace-12-button5-remaining-action-1792250416-TEKTHPZD.pcapng",
+    "sha256": "d001e890c8625b0a87272347be5970917744ec30a0ba30f86520c8cef53faffa",
+    "bytes": 11585872,
+    "packets": 113263,
+    "duration": 71.319783,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 48767,
+      "1": 64496
+    },
+    "control_frames": 48767,
+    "feature_requests": 6951,
+    "set_report_requests": 6936,
+    "get_report_requests": 15,
+    "truncated_frames": 67025,
+    "feature_payloads": {
+      "": 6951
+    }
+  },
+  "analysis_window": {
+    "ignore_first_seconds": 5,
+    "excluded_packet_records": 331,
+    "retained_packet_records": 112932,
+    "first_retained_frame": 332,
+    "startup_separated": true
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "summary": {
+      "frames": 113263,
+      "protocols": [
+        "frame",
+        "usb",
+        "usbhid"
+      ],
+      "first": 1792250417.327744,
+      "last": 1792250488.647527
+    },
+    "early_count": 331,
+    "retained_count": 112932,
+    "first_retained_frame": 332,
+    "selected": [
+      {
+        "frame": 1423,
+        "report_hex": "07 18 03 07 40 00 24 07",
+        "independent_decoder_bytes_match": true
+      },
+      {
+        "frame": 16203,
+        "report_hex": "07 18 03 07 40 00 23 07",
+        "independent_decoder_bytes_match": true
+      },
+      {
+        "frame": 30443,
+        "report_hex": "07 18 03 07 40 00 22 07",
+        "independent_decoder_bytes_match": true
+      },
+      {
+        "frame": 44734,
+        "report_hex": "07 18 03 07 40 00 26 07",
+        "independent_decoder_bytes_match": true
+      },
+      {
+        "frame": 59567,
+        "report_hex": "07 18 03 07 40 00 2b 07",
+        "independent_decoder_bytes_match": true
+      },
+      {
+        "frame": 74043,
+        "report_hex": "07 18 03 07 40 00 2c 07",
+        "independent_decoder_bytes_match": true
+      },
+      {
+        "frame": 88877,
+        "report_hex": "07 18 03 07 40 00 35 07",
+        "independent_decoder_bytes_match": true
+      },
+      {
+        "frame": 102747,
+        "report_hex": "07 18 03 07 40 00 24 07",
+        "independent_decoder_bytes_match": true
+      }
+    ]
+  },
+  "button": 5,
+  "profile_context": "Game I requested and shown in preceding screenshot; no new screenshot supplied",
+  "logical_coordinate_hex": "0047",
+  "report_template_hex": "07 18 03 07 40 00 VALUE 07",
+  "bursts": [
+    {
+      "phase": "Backward (startup)",
+      "burst": 1,
+      "first": 5.425171,
+      "last": 8.694481,
+      "candidate_count": 867,
+      "button5": {
+        "frame": 1423,
+        "relative_time": 5.746564,
+        "report_hex": "07 18 03 07 40 00 24 07",
+        "full_byte_hex": "24",
+        "action_low_five_bits_hex": "04"
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 23 07",
+          "recording_hex": "07 18 03 07 40 00 24 07",
+          "frame": 1423,
+          "relative_time": 5.746564
+        },
+        {
+          "candidate_index_one_based": 131,
+          "reference_hex": "07 18 03 07 68 00 04 07",
+          "recording_hex": "07 18 03 07 68 00 00 07",
+          "frame": 2195,
+          "relative_time": 5.93213
+        }
+      ],
+      "finalizer": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Right Click",
+      "burst": 2,
+      "first": 14.144734,
+      "last": 17.303348,
+      "candidate_count": 867,
+      "button5": {
+        "frame": 16203,
+        "relative_time": 14.430245,
+        "report_hex": "07 18 03 07 40 00 23 07",
+        "full_byte_hex": "23",
+        "action_low_five_bits_hex": "03"
+      },
+      "differences_vs_first_apply": [],
+      "finalizer": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Middle Click",
+      "burst": 3,
+      "first": 23.437025,
+      "last": 26.802917,
+      "candidate_count": 867,
+      "button5": {
+        "frame": 30443,
+        "relative_time": 23.75711,
+        "report_hex": "07 18 03 07 40 00 22 07",
+        "full_byte_hex": "22",
+        "action_low_five_bits_hex": "02"
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 23 07",
+          "recording_hex": "07 18 03 07 40 00 22 07",
+          "frame": 30443,
+          "relative_time": 23.75711
+        }
+      ],
+      "finalizer": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "DPI Loop",
+      "burst": 4,
+      "first": 31.38561,
+      "last": 34.584355,
+      "candidate_count": 867,
+      "button5": {
+        "frame": 44734,
+        "relative_time": 31.6641,
+        "report_hex": "07 18 03 07 40 00 26 07",
+        "full_byte_hex": "26",
+        "action_low_five_bits_hex": "06"
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 23 07",
+          "recording_hex": "07 18 03 07 40 00 26 07",
+          "frame": 44734,
+          "relative_time": 31.6641
+        }
+      ],
+      "finalizer": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "DPI+",
+      "burst": 5,
+      "first": 42.19101,
+      "last": 45.273218,
+      "candidate_count": 867,
+      "button5": {
+        "frame": 59567,
+        "relative_time": 42.476989,
+        "report_hex": "07 18 03 07 40 00 2b 07",
+        "full_byte_hex": "2b",
+        "action_low_five_bits_hex": "0b"
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 23 07",
+          "recording_hex": "07 18 03 07 40 00 2b 07",
+          "frame": 59567,
+          "relative_time": 42.476989
+        }
+      ],
+      "finalizer": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "DPI-",
+      "burst": 6,
+      "first": 51.150459,
+      "last": 54.334579,
+      "candidate_count": 867,
+      "button5": {
+        "frame": 74043,
+        "relative_time": 51.461984,
+        "report_hex": "07 18 03 07 40 00 2c 07",
+        "full_byte_hex": "2c",
+        "action_low_five_bits_hex": "0c"
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 23 07",
+          "recording_hex": "07 18 03 07 40 00 2c 07",
+          "frame": 74043,
+          "relative_time": 51.461984
+        }
+      ],
+      "finalizer": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "LED Loop",
+      "burst": 7,
+      "first": 60.225373,
+      "last": 63.334423,
+      "candidate_count": 867,
+      "button5": {
+        "frame": 88877,
+        "relative_time": 60.554177,
+        "report_hex": "07 18 03 07 40 00 35 07",
+        "full_byte_hex": "35",
+        "action_low_five_bits_hex": "15"
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 23 07",
+          "recording_hex": "07 18 03 07 40 00 35 07",
+          "frame": 88877,
+          "relative_time": 60.554177
+        }
+      ],
+      "finalizer": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    },
+    {
+      "phase": "Backward (restore)",
+      "burst": 8,
+      "first": 67.214987,
+      "last": 70.240314,
+      "candidate_count": 867,
+      "button5": {
+        "frame": 102747,
+        "relative_time": 67.508224,
+        "report_hex": "07 18 03 07 40 00 24 07",
+        "full_byte_hex": "24",
+        "action_low_five_bits_hex": "04"
+      },
+      "differences_vs_first_apply": [
+        {
+          "candidate_index_one_based": 81,
+          "reference_hex": "07 18 03 07 40 00 23 07",
+          "recording_hex": "07 18 03 07 40 00 24 07",
+          "frame": 102747,
+          "relative_time": 67.508224
+        }
+      ],
+      "finalizer": [
+        "07 18 10 00 00 00 00 00",
+        "07 18 00 00 00 00 00 00"
+      ]
+    }
+  ],
+  "restored_backward": true,
+  "restore_differences_vs_startup": [
+    {
+      "candidate_index_one_based": 131,
+      "startup_hex": "07 18 03 07 68 00 00 07",
+      "restore_hex": "07 18 03 07 68 00 04 07",
+      "frame": 103407
+    }
+  ],
+  "limitations": [
+    "Action labels follow the exact operator recording notes and guided sequence; USB bytes alone do not supply UI names.",
+    "Recorded assignment traffic does not establish physical clicks, DPI changes, LED effects, hold/toggle behavior, or persistence.",
+    "VirtualBox control-phase setup slots contain candidate bytes; many records are shortened. Missing bytes were not reconstructed.",
+    "Reuse across buttons is supported by the retained shared vendor serializer and independently mapped button-4/5 coordinates; this recording directly changes only button 5.",
+    "Other button coordinates and keyboard/modifier encoding require separate evidence.",
+    "No physical device commands or app code changes were performed during this analysis."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

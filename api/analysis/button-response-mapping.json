@@ -1,0 +1,198 @@
+{
+  "effect": "Button Response",
+  "source": "captures/vm-052785d3b59d/trace-24-button-response-button1-effects-1792256277-555NGYCE.pcapng",
+  "sha256": "330536f108c10349e67f115715680b1c9d7782ebecf580fccd130dc66938b636",
+  "button1": {
+    "coordinate_hex": "0044",
+    "selector_mask_hex": "c0",
+    "shift": 6,
+    "preserve_other_mask_hex": "3f",
+    "choices": [
+      {
+        "label": "Cycle Breathing Effect",
+        "code": 0,
+        "full_byte_hex": "21",
+        "frame": 16204
+      },
+      {
+        "label": "Flowing Water Effect",
+        "code": 1,
+        "full_byte_hex": "61",
+        "frame": 31597
+      },
+      {
+        "label": "Comet Streak",
+        "code": 2,
+        "full_byte_hex": "a1",
+        "frame": 46122
+      },
+      {
+        "label": "Mono Water Effect",
+        "code": 3,
+        "full_byte_hex": "e1",
+        "frame": 61254
+      }
+    ],
+    "unchanged_bit5": true,
+    "ordinary_action_low_five_bits_hex": "01",
+    "final_full_byte_hex": "e1",
+    "final_cycle_restore_observed": false
+  },
+  "global_mode_snapshot": {
+    "001c_hex": "9a",
+    "0033_hex": "1f",
+    "separate_flag_001c_mask_hex": "08",
+    "transition_into_button_response_isolated": false
+  },
+  "ordinary_button_slots_prior_source": "analysis/button-slot-mapping.json",
+  "other_response_slots_runtime_correlated": true,
+  "static_packing_corroboration": {
+    "source": "../resa/evidence/ghidra-typed-pass/00419e20.c",
+    "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec",
+    "near_line": 1193,
+    "expression": "local_114[4] = DAT_006ceb88 * 0x40 + (DAT_006cebe0 << 5) + DAT_006ce992; analogous fields for other slots."
+  },
+  "limitations": [
+    "Effect labels follow the guided sequence and original capture notes. Runtime data identifies four states at button1 coordinate0044.",
+    "Five Applies complete, but final intended Cycle Breathing restore is not observed: final burst exactly repeats Mono Water e1. No cause is inferred.",
+    "Runtime changes isolate bits7:6 (maskc0). Bit5 stays set; do not claim all e0 bits belong to the response selector. Lower five action bits remain01 throughout.",
+    "Button Response mode is already selected at startup; recording24 does not isolate its mode-entry transition. 001c=9a has separate bit08 set and low mode1; global mode code12 must not be naively written as a normal mode index.",
+    "Recording24 leaves buttons2-7 unchanged; recording25 now separately correlates their response selectors. See recording25 and its limitations.",
+    "Shortened VirtualBox candidate setup bytes are not reconstructed. Local parser/sharkd and retained static observations are not new REA Evidence.",
+    "No analyst device commands or Resa implementation changes were performed. Physical response effects, timing and persistence remain unmeasured."
+  ],
+  "all_seven_response_slots_runtime_correlated": true,
+  "recording25": {
+    "source": "captures/vm-052785d3b59d/trace-25-button-response-flowing-water-1792256524-7I7UFFPJ.pcapng",
+    "sha256": "588995d0213475bea7b8020a52d3430cada5584743fccb1223fedc14e004b572",
+    "all_six_applies_complete": true,
+    "button_evidence": [
+      {
+        "button": 2,
+        "label": "Right",
+        "coordinate_hex": "0046",
+        "before_hex": "23",
+        "after_hex": "63",
+        "frame": 17300,
+        "response": "Flowing Water Effect",
+        "response_code": 1,
+        "complete_apply": true
+      },
+      {
+        "button": 3,
+        "label": "Wheel press / middle click",
+        "coordinate_hex": "0045",
+        "before_hex": "21",
+        "after_hex": "61",
+        "frame": 32215,
+        "response": "Flowing Water Effect",
+        "response_code": 1,
+        "complete_apply": true
+      },
+      {
+        "button": 4,
+        "label": "Side button4",
+        "coordinate_hex": "0048",
+        "before_hex": "25",
+        "after_hex": "65",
+        "frame": 48184,
+        "response": "Flowing Water Effect",
+        "response_code": 1,
+        "complete_apply": true
+      },
+      {
+        "button": 5,
+        "label": "Side button5",
+        "coordinate_hex": "0047",
+        "before_hex": "24",
+        "after_hex": "64",
+        "frame": 61391,
+        "response": "Flowing Water Effect",
+        "response_code": 1,
+        "complete_apply": true
+      },
+      {
+        "button": 6,
+        "label": "DPI button",
+        "coordinate_hex": "0049",
+        "before_hex": "26",
+        "after_hex": "66",
+        "frame": 76189,
+        "response": "Flowing Water Effect",
+        "response_code": 1,
+        "complete_apply": true
+      },
+      {
+        "button": 7,
+        "label": "Lighting button",
+        "coordinate_hex": "004a",
+        "before_hex": "35",
+        "after_hex": "75",
+        "frame": 90828,
+        "response": "Flowing Water Effect",
+        "response_code": 1,
+        "complete_apply": true
+      }
+    ],
+    "final_button1_hex": "e1",
+    "final_buttons2_to7_response": "Flowing Water Effect"
+  },
+  "response_slots": {
+    "1": {
+      "coordinate_hex": "0044",
+      "selector_mask_hex": "c0",
+      "preserve_other_mask_hex": "3f",
+      "choice_dictionary_captured": true
+    },
+    "2": {
+      "coordinate_hex": "0046",
+      "selector_mask_hex": "c0",
+      "preserve_other_mask_hex": "3f",
+      "flowing_water_transition_captured": true,
+      "choice_dictionary_source": "button1 recording24 plus shared retained serializer"
+    },
+    "3": {
+      "coordinate_hex": "0045",
+      "selector_mask_hex": "c0",
+      "preserve_other_mask_hex": "3f",
+      "flowing_water_transition_captured": true,
+      "choice_dictionary_source": "button1 recording24 plus shared retained serializer"
+    },
+    "4": {
+      "coordinate_hex": "0048",
+      "selector_mask_hex": "c0",
+      "preserve_other_mask_hex": "3f",
+      "flowing_water_transition_captured": true,
+      "choice_dictionary_source": "button1 recording24 plus shared retained serializer"
+    },
+    "5": {
+      "coordinate_hex": "0047",
+      "selector_mask_hex": "c0",
+      "preserve_other_mask_hex": "3f",
+      "flowing_water_transition_captured": true,
+      "choice_dictionary_source": "button1 recording24 plus shared retained serializer"
+    },
+    "6": {
+      "coordinate_hex": "0049",
+      "selector_mask_hex": "c0",
+      "preserve_other_mask_hex": "3f",
+      "flowing_water_transition_captured": true,
+      "choice_dictionary_source": "button1 recording24 plus shared retained serializer"
+    },
+    "7": {
+      "coordinate_hex": "004a",
+      "selector_mask_hex": "c0",
+      "preserve_other_mask_hex": "3f",
+      "flowing_water_transition_captured": true,
+      "choice_dictionary_source": "button1 recording24 plus shared retained serializer"
+    }
+  },
+  "recording25_limits": [
+    "Selector labels and order follow the guided instructions and original capture notes. Each response selector is changed once to Flowing Water; the four-choice dictionary was separately captured on button1 in recording24.",
+    "Bits7:6 use maskc0, preserving ordinary action low five bits and separate bit5. Other response choices on buttons2-7 are supported by the shared retained serializer, not by separate four-choice sweeps.",
+    "Global Button Response bytes remain001c=9a and0033=1f. Its entry transition is not isolated here. Button1 stays Mono Water e1; other six finish Flowing Water. No restore is performed or claimed.",
+    "The wheel selector is wheel press/middle click; no separate scroll-up or scroll-down response was captured.",
+    "Shortened VirtualBox candidate setup bytes are inspected as recorded; missing payload is not reconstructed. Local parser/sharkd observations are not new REA Evidence.",
+    "No analyst device commands or Resa implementation changes were performed. Physical click-triggered lighting behavior, timing and persistence remain unmeasured."
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-13-button-slot-mapping-1792251199-53GC3I5W.pcapng",
+  "sha256": "1c359029cfdc438602419139beac11ff3fd7d5ebf0b48f6f9bf4c3e75c335f9a",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-13-button-slot-mapping-1792251199-53GC3I5W.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792251199.8517904,
+    "deadline": 1792251319.851791,
+    "status": "stopped",
+    "name": "13 Button Slot Mapping",
+    "notes": "Right Click\nMiddle Click\nDPI Loop\nLED Loop\nLeft Click",
+    "reason": "duration limit",
+    "ended": 1792251321.0635393
+  },
+  "summary": {
+    "capture": "trace-13-button-slot-mapping-1792251199-53GC3I5W.pcapng",
+    "sha256": "1c359029cfdc438602419139beac11ff3fd7d5ebf0b48f6f9bf4c3e75c335f9a",
+    "bytes": 14906080,
+    "packets": 145655,
+    "duration": 119.729425,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 60919,
+      "1": 84736
+    },
+    "control_frames": 60919,
+    "feature_requests": 8731,
+    "set_report_requests": 8712,
+    "get_report_requests": 19,
+    "truncated_frames": 85821,
+    "feature_payloads": {
+      "": 8731
+    }
+  },
+  "analysis_window": {
+    "ignore_first_seconds": 5,
+    "excluded_packet_records": 155,
+    "retained_packet_records": 145500,
+    "first_retained_frame": 156,
+    "startup_separated": true
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "summary": {
+      "frames": 145655,
+      "protocols": [
+        "frame",
+        "usb",
+        "usbhid"
+      ],
+      "first": 1792251200.911059,
+      "last": 1792251320.640484
+    },
+    "excluded_before_five_seconds": 155,
+    "retained_count": 145500,
+    "first_retained_frame": 156,
+    "selected": [
+      {
+        "frame": 15978,
+        "report_hex": "07 18 03 06 40 00 25 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 16523,
+        "report_hex": "07 18 03 07 68 00 04 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 32928,
+        "report_hex": "07 18 03 06 40 00 23 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 47061,
+        "report_hex": "07 18 03 05 40 00 25 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 62779,
+        "report_hex": "07 18 03 05 40 00 22 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 76822,
+        "report_hex": "07 18 03 01 48 00 25 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 90329,
+        "report_hex": "07 18 03 01 48 00 26 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 103766,
+        "report_hex": "07 18 03 02 48 00 25 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 118166,
+        "report_hex": "07 18 03 02 48 00 35 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 134049,
+        "report_hex": "07 18 03 05 40 00 21 07",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "operator_correction": "Operator confirms temporary Left Click was assigned to button 3, the scroll-wheel click. Final button-1 action was not captured before duration cutoff.",
+  "slot_mappings": {
+    "2": {
+      "logical_coordinate_hex": "0046",
+      "test_frame": 15978,
+      "restore_frame": 32928,
+      "sequence_hex": [
+        "23",
+        "25",
+        "23"
+      ]
+    },
+    "3": {
+      "logical_coordinate_hex": "0045",
+      "test_frame": 47061,
+      "restore_frame": 62779,
+      "temporary_left_click_frame": 134049,
+      "sequence_hex": [
+        "22",
+        "25",
+        "22",
+        "21"
+      ]
+    },
+    "6": {
+      "logical_coordinate_hex": "0049",
+      "test_frame": 76822,
+      "restore_frame": 90329,
+      "sequence_hex": [
+        "26",
+        "25",
+        "26"
+      ]
+    },
+    "7": {
+      "logical_coordinate_hex": "004a",
+      "test_frame": 103766,
+      "restore_frame": 118166,
+      "sequence_hex": [
+        "35",
+        "25",
+        "35"
+      ]
+    }
+  },
+  "bursts": [
+    {
+      "phase": "Startup",
+      "burst": 1,
+      "first": 7.140733,
+      "last": 10.838581,
+      "candidate_count": 867,
+      "differences_from_previous": [],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 2 to Forward",
+      "burst": 2,
+      "first": 22.868714,
+      "last": 26.434033,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 80,
+          "before": "07 18 03 06 40 00 23 07",
+          "after": "07 18 03 06 40 00 25 07",
+          "frame": 15978,
+          "time": 23.251695
+        },
+        {
+          "index": 131,
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 16523,
+          "time": 23.453514
+        }
+      ],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 2 restore Right Click",
+      "burst": 3,
+      "first": 38.214926,
+      "last": 41.755671,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 80,
+          "before": "07 18 03 06 40 00 25 07",
+          "after": "07 18 03 06 40 00 23 07",
+          "frame": 32928,
+          "time": 38.573284
+        }
+      ],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 3 to Forward",
+      "burst": 4,
+      "first": 48.575638,
+      "last": 52.211311,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 79,
+          "before": "07 18 03 05 40 00 22 07",
+          "after": "07 18 03 05 40 00 25 07",
+          "frame": 47061,
+          "time": 48.987387
+        }
+      ],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 3 restore Middle Click",
+      "burst": 5,
+      "first": 58.177066,
+      "last": 61.66706,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 79,
+          "before": "07 18 03 05 40 00 25 07",
+          "after": "07 18 03 05 40 00 22 07",
+          "frame": 62779,
+          "time": 58.513417
+        }
+      ],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 6 to Forward",
+      "burst": 6,
+      "first": 66.345791,
+      "last": 69.95126,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 85,
+          "before": "07 18 03 01 48 00 26 07",
+          "after": "07 18 03 01 48 00 25 07",
+          "frame": 76822,
+          "time": 66.716679
+        }
+      ],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 6 restore DPI Loop",
+      "burst": 7,
+      "first": 74.691099,
+      "last": 78.249926,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 85,
+          "before": "07 18 03 01 48 00 25 07",
+          "after": "07 18 03 01 48 00 26 07",
+          "frame": 90329,
+          "time": 75.062064
+        }
+      ],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 7 to Forward",
+      "burst": 8,
+      "first": 81.37315,
+      "last": 84.814404,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 86,
+          "before": "07 18 03 02 48 00 35 07",
+          "after": "07 18 03 02 48 00 25 07",
+          "frame": 103766,
+          "time": 81.768346
+        }
+      ],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 7 restore LED Loop",
+      "burst": 9,
+      "first": 97.389761,
+      "last": 100.992301,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 86,
+          "before": "07 18 03 02 48 00 25 07",
+          "after": "07 18 03 02 48 00 35 07",
+          "frame": 118166,
+          "time": 97.898613
+        }
+      ],
+      "fixed_finalizer_present": true
+    },
+    {
+      "phase": "Button 3 to Left Click (operator confirmed)",
+      "burst": 10,
+      "first": 111.950127,
+      "last": 115.549581,
+      "candidate_count": 867,
+      "differences_from_previous": [
+        {
+          "index": 79,
+          "before": "07 18 03 05 40 00 22 07",
+          "after": "07 18 03 05 40 00 21 07",
+          "frame": 134049,
+          "time": 112.273272
+        }
+      ],
+      "fixed_finalizer_present": true
+    }
+  ],
+  "last_captured_state": {
+    "2": "Right Click",
+    "3": "Left Click",
+    "6": "DPI Loop",
+    "7": "LED Loop",
+    "1": "No changed button-1 field observed; current state after cutoff unknown"
+  },
+  "limitations": [
+    "Labels follow the guided sequence, capture notes and explicit operator confirmation that the temporary Left Click was on button 3 (wheel click).",
+    "Button 1 change or restoration is not captured; post-cutoff button-1 state is unknown.",
+    "Assignment traffic is not independent proof of physical click behavior, DPI/LED effect, persistence or storage type.",
+    "VirtualBox candidate bytes occur in control-phase setup slots; missing bytes were not reconstructed.",
+    "This analysis sends no device commands and changes no Resa application code."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}

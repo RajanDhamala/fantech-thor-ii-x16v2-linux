@@ -1,0 +1,1145 @@
+{
+  "source": "captures/vm-052785d3b59d/trace-22-flowing-water-speed-direction-symmetry-1792255672-3QJOHJGS.pcapng",
+  "sha256": "8b90f61ed132023c294b5915ff5c2aaf61d861f74a03df8d73bf84f46956abf7",
+  "original_metadata": {
+    "source": "usb",
+    "vm": "[redacted local identifier]",
+    "adapter": 1,
+    "filename": "trace-22-flowing-water-speed-direction-symmetry-1792255672-3QJOHJGS.pcapng",
+    "usb_uuid": "[redacted local identifier]",
+    "previous_attached": true,
+    "started": 1792255673.0212114,
+    "deadline": 1792255793.0212116,
+    "status": "stopped",
+    "name": "22 Flowing Water Speed Direction Symmetry",
+    "notes": "Speed maximum\nSpeed middle\nSpeed minimum\nAnti Clockwise\nTwo way\nOverwrite\nSymmetry checked\nSymmetry unchecked",
+    "reason": "stopped by user",
+    "ended": 1792255738.803756
+  },
+  "summary": {
+    "capture": "trace-22-flowing-water-speed-direction-symmetry-1792255672-3QJOHJGS.pcapng",
+    "sha256": "8b90f61ed132023c294b5915ff5c2aaf61d861f74a03df8d73bf84f46956abf7",
+    "bytes": 12884056,
+    "packets": 125979,
+    "duration": 64.328194,
+    "interfaces": [
+      {
+        "linktype": 220,
+        "snaplen": 4294967295
+      }
+    ],
+    "transfer_counts": {
+      "2": 54843,
+      "1": 71136
+    },
+    "control_frames": 54843,
+    "feature_requests": 7828,
+    "set_report_requests": 7811,
+    "get_report_requests": 17,
+    "truncated_frames": 74683,
+    "feature_payloads": {
+      "": 7828
+    }
+  },
+  "independent_decoder_check": {
+    "decoder": "/usr/bin/sharkd",
+    "packet_count": 125979,
+    "excluded_before_five_seconds": 133,
+    "retained_packet_records": 125846,
+    "selected": [
+      {
+        "frame": 460,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 911,
+        "report_hex": "07 18 03 03 30 00 9f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 1068,
+        "report_hex": "07 18 03 02 38 00 0b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 1107,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14652,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 14719,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 17640,
+        "report_hex": "07 18 03 04 18 00 b5 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 18091,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 18216,
+        "report_hex": "07 18 03 02 38 00 0b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 18255,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 30722,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 30791,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 31800,
+        "report_hex": "07 18 03 04 18 00 b2 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 32227,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 32388,
+        "report_hex": "07 18 03 02 38 00 0b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 32425,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44753,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 44823,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 46184,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 46573,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 46702,
+        "report_hex": "07 18 03 02 38 00 0b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 46741,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 58804,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 58845,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 59577,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 59969,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 60123,
+        "report_hex": "07 18 03 02 38 00 1b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 60161,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 71900,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 71937,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 72826,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 73215,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 73340,
+        "report_hex": "07 18 03 02 38 00 2b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 73377,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 84970,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 85041,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 85692,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 85991,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 86116,
+        "report_hex": "07 18 03 02 38 00 3b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 86153,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 98760,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 98827,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 99750,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 100203,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 100326,
+        "report_hex": "07 18 03 02 38 00 7b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 100365,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 112686,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 112752,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 113738,
+        "report_hex": "07 18 03 04 18 00 b0 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 114157,
+        "report_hex": "07 18 03 03 30 00 1f 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 114282,
+        "report_hex": "07 18 03 02 38 00 3b 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 114319,
+        "report_hex": "07 18 03 07 38 00 40 07",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 125904,
+        "report_hex": "07 18 10 00 00 00 00 00",
+        "decoder_bytes_match": true
+      },
+      {
+        "frame": 125943,
+        "report_hex": "07 18 00 00 00 00 00 00",
+        "decoder_bytes_match": true
+      }
+    ]
+  },
+  "all_eight_planned_applies_complete": true,
+  "bursts": [
+    {
+      "burst": 1,
+      "first": 5.9173,
+      "last": 9.61485,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 14652,
+          "timestamp": 1792255683.649017,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 9.5998
+        },
+        {
+          "frame": 14719,
+          "timestamp": 1792255683.664082,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 9.614865
+        }
+      ],
+      "differences_vs_previous": [],
+      "phase": "Startup: prior Enraptured minimum",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 460,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "0033": {
+          "value": "9f",
+          "frame": 911,
+          "report_hex": "07 18 03 03 30 00 9f 07"
+        },
+        "003a": {
+          "value": "0b",
+          "frame": 1068,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 1107,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 2,
+      "first": 18.037602,
+      "last": 21.45992,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 30722,
+          "timestamp": 1792255695.479138,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 21.429921
+        },
+        {
+          "frame": 30791,
+          "timestamp": 1792255695.509175,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 21.459958
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 04 18 00 b0 07",
+          "after": "07 18 03 04 18 00 b5 07",
+          "frame": 17640
+        },
+        {
+          "before": "07 18 03 03 30 00 9f 07",
+          "after": "07 18 03 03 30 00 1f 07",
+          "frame": 18091
+        },
+        {
+          "before": "07 18 03 07 68 00 00 07",
+          "after": "07 18 03 07 68 00 04 07",
+          "frame": 19175
+        }
+      ],
+      "phase": "Flowing Water maximum / Clockwise / symmetry off",
+      "selected_fields": {
+        "001c": {
+          "value": "b5",
+          "frame": 17640,
+          "report_hex": "07 18 03 04 18 00 b5 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 18091,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "0b",
+          "frame": 18216,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 18255,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 3,
+      "first": 25.079487,
+      "last": 28.50815,
+      "feature_setups": 868,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 44753,
+          "timestamp": 1792255702.526699,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 28.477482
+        },
+        {
+          "frame": 44823,
+          "timestamp": 1792255702.557397,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500027d0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 28.50818
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 04 18 00 b5 07",
+          "after": "07 18 03 04 18 00 b2 07",
+          "frame": 31800
+        }
+      ],
+      "phase": "Flowing Water middle",
+      "selected_fields": {
+        "001c": {
+          "value": "b2",
+          "frame": 31800,
+          "report_hex": "07 18 03 04 18 00 b2 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 32227,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "0b",
+          "frame": 32388,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 32425,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 4,
+      "first": 31.734711,
+      "last": 35.085167,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 58804,
+          "timestamp": 1792255709.118492,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 35.069275
+        },
+        {
+          "frame": 58845,
+          "timestamp": 1792255709.134395,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 35.085178
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 04 18 00 b2 07",
+          "after": "07 18 03 04 18 00 b0 07",
+          "frame": 46184
+        }
+      ],
+      "phase": "Flowing Water minimum",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 46184,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 46573,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "0b",
+          "frame": 46702,
+          "report_hex": "07 18 03 02 38 00 0b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 46741,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 5,
+      "first": 37.124285,
+      "last": 40.491349,
+      "feature_setups": 875,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 71900,
+          "timestamp": 1792255714.52526,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 40.476043
+        },
+        {
+          "frame": 71937,
+          "timestamp": 1792255714.540586,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 40.491369
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 02 38 00 0b 07",
+          "after": "07 18 03 02 38 00 1b 07",
+          "frame": 60123
+        }
+      ],
+      "phase": "Anti Clockwise",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 59577,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 59969,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "1b",
+          "frame": 60123,
+          "report_hex": "07 18 03 02 38 00 1b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 60161,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 6,
+      "first": 43.137011,
+      "last": 46.508264,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 84970,
+          "timestamp": 1792255720.526345,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 46.477128
+        },
+        {
+          "frame": 85041,
+          "timestamp": 1792255720.557541,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 46.508324
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 02 38 00 1b 07",
+          "after": "07 18 03 02 38 00 2b 07",
+          "frame": 73340
+        }
+      ],
+      "phase": "Two way",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 72826,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 73215,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "2b",
+          "frame": 73340,
+          "report_hex": "07 18 03 02 38 00 2b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 73377,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 7,
+      "first": 49.201661,
+      "last": 52.726332,
+      "feature_setups": 871,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 98760,
+          "timestamp": 1792255726.745439,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500022e0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 52.696222
+        },
+        {
+          "frame": 98827,
+          "timestamp": 1792255726.775629,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500022e0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 52.726412
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 02 38 00 2b 07",
+          "after": "07 18 03 02 38 00 3b 07",
+          "frame": 86116
+        }
+      ],
+      "phase": "Overwrite",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 85692,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 85991,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "3b",
+          "frame": 86116,
+          "report_hex": "07 18 03 02 38 00 3b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 86153,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 8,
+      "first": 54.821912,
+      "last": 58.272978,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 112686,
+          "timestamp": 1792255732.292477,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff50000b90",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 58.24326
+        },
+        {
+          "frame": 112752,
+          "timestamp": 1792255732.322224,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500022e0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 58.273007
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 02 38 00 3b 07",
+          "after": "07 18 03 02 38 00 7b 07",
+          "frame": 100326
+        }
+      ],
+      "phase": "Symmetry checked",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 99750,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 100203,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "7b",
+          "frame": 100326,
+          "report_hex": "07 18 03 02 38 00 7b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 100365,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    },
+    {
+      "burst": 9,
+      "first": 60.464174,
+      "last": 63.804317,
+      "feature_setups": 869,
+      "cmd18_count": 867,
+      "tail": [
+        {
+          "frame": 125904,
+          "timestamp": 1792255737.838125,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500022e0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 10 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 16,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 63.788908
+        },
+        {
+          "frame": 125943,
+          "timestamp": 1792255737.853549,
+          "captured_length": 64,
+          "original_length": 72,
+          "urb_id": "0x78ff500022e0",
+          "event": "S",
+          "transfer_type": 2,
+          "endpoint": 0,
+          "device": 2,
+          "bus": 0,
+          "setup_flag": 0,
+          "data_flag": 1,
+          "status": 0,
+          "urb_length": 8,
+          "data_length": 0,
+          "setup_hex": "07 18 00 00 00 00 00 00",
+          "payload_hex": "",
+          "bm_request_type": 7,
+          "request": 24,
+          "value": 0,
+          "index": 0,
+          "requested_length": 0,
+          "relative_time": 63.804332
+        }
+      ],
+      "differences_vs_previous": [
+        {
+          "before": "07 18 03 02 38 00 7b 07",
+          "after": "07 18 03 02 38 00 3b 07",
+          "frame": 114282
+        }
+      ],
+      "phase": "Symmetry unchecked",
+      "selected_fields": {
+        "001c": {
+          "value": "b0",
+          "frame": 113738,
+          "report_hex": "07 18 03 04 18 00 b0 07"
+        },
+        "0033": {
+          "value": "1f",
+          "frame": 114157,
+          "report_hex": "07 18 03 03 30 00 1f 07"
+        },
+        "003a": {
+          "value": "3b",
+          "frame": 114282,
+          "report_hex": "07 18 03 02 38 00 3b 07"
+        },
+        "003f": {
+          "value": "40",
+          "frame": 114319,
+          "report_hex": "07 18 03 07 38 00 40 07"
+        }
+      }
+    }
+  ],
+  "static_cross_check": {
+    "source": "../resa/evidence/ghidra-typed-pass/00419e20.c",
+    "sha256": "0871f814c5a37732f52d84efe5f9fe08c718d77d13fbb866f13e7c733f26e5ec",
+    "mode_packing": "Low mode bits at 001c mask70; high mode bit at 0033 mask80.",
+    "direction_symmetry": "Retained serializer near line1138 places direction &3 at bits5:4 and symmetry &1 at bit6 of003a, alongside other fields."
+  },
+  "limitations": [
+    "Labels follow the guided sequence and the operator completion message; capture metadata repeats the eight intended steps.",
+    "Speed codes establish slider-position correlations, not measured animation timing.",
+    "Palette, brightness and unrelated candidate settings are unchanged between Applies; this capture does not independently test Flowing Water palette or brightness controls.",
+    "Many VirtualBox records are shortened; candidate setup-slot bytes are inspected as captured, without reconstructing missing payloads.",
+    "No new REA Evidence is claimed: its packet provider previously lacked REA_TSHARK_COMMAND. Local parser results are independently checked with sharkd.",
+    "No device command or Resa implementation change was performed by the analyst. Physical effect behavior and persistence remain unmeasured."
+  ],
+  "publication_note": "Local VM names and host-assigned USB UUIDs are redacted; personal absolute paths are normalized. Capture hashes, packet evidence and findings are retained. Raw captures remain private."
+}
